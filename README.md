@@ -1,18 +1,27 @@
-# NIST CSF 2.0 — Skill de diapositivas
+# NIST CSF Slides Skill — Laboratorio de skills para cursos
 
-Repositorio de trabajo para evolucionar una skill de diseño, generación y auditoría de diapositivas didácticas del curso NIST CSF 2.0.
+Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El módulo inicial se dedica a NIST CSF 2.0, mientras que las nuevas skills pueden ser reutilizables para otras disciplinas.
 
-## Archivos
-- `SKILL.md`: instrucciones operativas de la skill.
-- `prompts/ilustracion-base.md`: prompt visual base v0.1 **reconstruido**; pendiente de validar frente al original.
-- `references/seccion-03.md`: temario acordado y enlaces de proyecto.
-- `CHANGELOG.md`: decisiones y versiones.
+## Skills
+- [Course Slide Template](skills/course-slide-template/SKILL.md): interpreta el título del curso, propone colores y tipografía, muestra las dos diapositivas base, solicita aprobación y después crea la plantilla nativa en Google Slides.
 
-## Configuración
-1. Conectar Codex u otro agente compatible con skills a este repositorio.
-2. Al modificar reglas, actualizar el changelog y conservar la versión anterior mediante Git.
-3. Utilizar la plantilla nativa de Google Slides como referencia, siempre trabajando sobre una copia.
+## Recursos legados y especializados
+- [SKILL.md](SKILL.md): instrucciones iniciales para NIST CSF 2.0.
+- [Prompt de ilustraciones](prompts/ilustracion-base.md): v0.1 reconstruido; pendiente de contrastar con el texto original.
+- [Temario de sección 03](references/seccion-03.md): clases acordadas.
+- [Historial](CHANGELOG.md): cambios versionados.
 
-La plantilla de Google Slides y el temario se referencian por URL; no se copian ni distribuyen sus contenidos aquí.
+## Flujo de plantilla
+1. Título del curso y entradas opcionales.
+2. Interpretación editorial de la temática.
+3. Propuesta de tema tech/profesional (principal oscuro potente, secundario luminoso y blanco puro) y tipografía.
+4. Vista previa de portada de clase y diapositiva de desarrollo.
+5. Aprobación explícita.
+6. Creación de Google Slides editable, sin modificar la referencia.
 
-**Nota:** este repositorio es público actualmente. No subir credenciales, datos personales ni recursos privados.
+La diapositiva de desarrollo siempre utiliza fondo blanco puro, título oscuro, línea del color secundario y un área de contenido vacía.
+
+Referencia Google Slides:
+https://docs.google.com/presentation/d/1LuxRkFk9y4Bb4dDNLOP0gZWYXc90A8TFcxFi4ER-F6A/edit
+
+**Repositorio público:** no subir credenciales ni recursos confidenciales.
