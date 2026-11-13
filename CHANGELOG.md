@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## Corrección del flujo de clases — 2026-11-13
+- Requisito de aprobación previa: **propuesta completa (narración + pantalla + diseño) → auditoría → revisión y aprobación del usuario → construcción**.
+- Tras aprobación, añadir las diapositivas al **Google Slides acumulativo existente** del curso NIST CSF 2.0, no crear un deck nuevo por clase.
+- Clase 4.1 aprobada inmutable y plantilla maestra de referencia inmutable.
+- La presentación separada generada por error para 4.2 se considera borrador no aprobado y no sustituye el archivo acumulativo.
+- Auditoría de narración, composición y no regresión después de añadir cada clase.
+
+
 ## Consolidación de clase aprobada 4.1 — 2026-11-13
 - Incorporado como caso de regresión el resultado aprobado de «Introducción al NIST CSF 2.0», sin alterar el Google Slides.
 - Identidad de portada del curso preservada; dos líneas semánticas, segunda completa en celeste, sin cortar «NIST CSF 2.0».
