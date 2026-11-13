@@ -10,6 +10,8 @@ Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El
 
 - [Course Skill Improver](skills/course-skill-improver/SKILL.md): transforma comentarios, correcciones y ejemplos en propuestas de reglas; solo actualiza skills tras aprobación, con registro, auditoría y pruebas de regresión.
 
+- [Course Image Style Builder](skills/course-image-style-builder/SKILL.md): analiza referencias visuales, adapta su composición y estilo a la paleta aprobada y produce un prompt gráfico maestro reutilizable por curso. Incluye [plantilla de salida](skills/course-image-style-builder/references/output-template.md) y [pruebas](skills/course-image-style-builder/tests/cases.md).
+
 ## Recursos legados y especializados
 - [SKILL.md](SKILL.md): instrucciones iniciales para NIST CSF 2.0.
 - [Prompt de ilustraciones](prompts/ilustracion-base.md): v0.1 reconstruido; pendiente de contrastar con el texto original.
