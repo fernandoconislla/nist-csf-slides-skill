@@ -11,7 +11,9 @@ Transformar un tema o fuentes de referencia en un temario de curso listo para re
 ## Entrada
 Basta con **una** entrada informativa suficiente: tema/título provisional, URL o documento de referencia, o temario existente. Opcionalmente: objetivos de aprendizaje, público, nivel, idioma, duración, enfoque teórico/práctico, herramientas/laboratorios, competencias previas, cursos competidores, contenidos obligatorios/excluidos y restricciones.
 
-Los **enlaces a cursos competidores de Udemy son una entrada explícitamente opcional**: si existen, analizarlos; si no existen, producir el curso normalmente. No exigirlos ni inventar equivalentes.\n\nNo bloquear la generación porque falten entradas opcionales. Cuando existan referencias oficiales, contrastar versiones, identificar su alcance y diferenciar la fuente del diseño pedagógico propio. No inventar estadísticas de demanda o ventas.
+Los **enlaces a cursos competidores de Udemy son una entrada explícitamente opcional**: si existen, analizarlos; si no existen, producir el curso normalmente. No exigirlos ni inventar equivalentes.
+
+No bloquear la generación porque falten entradas opcionales. Cuando existan referencias oficiales, contrastar versiones, identificar su alcance y diferenciar la fuente del diseño pedagógico propio. No inventar estadísticas de demanda o ventas.
 
 ## Regla prioritaria: cobertura integral de las referencias (obligatoria)
 
@@ -95,7 +97,8 @@ Preferir títulos orientados al concepto o habilidad específica. No añadir aut
 ## Flujo
 1. Interpretar entradas, revisar íntegramente las referencias base y construir un inventario exhaustivo de unidades formativas.
 2. Identificar objetivos, competencias y alcance obligatorio de cada referencia; marcar lagunas de acceso.
-3. Si hay competidores proporcionados, realizar el análisis competitivo opcional y registrar sus implicaciones sin sustituir la cobertura oficial.\n4. Construir sección, clase y puntos de contenido, y mapear cada unidad de referencia a su destino.
+3. Si hay competidores proporcionados, realizar el análisis competitivo opcional y registrar sus implicaciones sin sustituir la cobertura oficial.
+4. Construir sección, clase y puntos de contenido, y mapear cada unidad de referencia a su destino.
 4. Auditar cobertura unidad por unidad y después redundancias, secuencia, carga lectiva, precisión, valor práctico y títulos.
 5. Presentar propuesta editorial; permitir cambios.
 6. Generar un **Google Sheets nativo y editable por el usuario**.
@@ -126,7 +129,8 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 10. **Equilibrio entre teoría y práctica:** ejercicios, casos o laboratorios cuando el objetivo y los recursos lo justifiquen.
 11. **Viabilidad y carga lectiva:** alcance realista para duración, nivel, materiales y recursos disponibles.
 12. **Consistencia curricular:** numeración, convenciones de títulos, terminología y ausencia de saltos o duplicados.
-13. **Fidelidad y trazabilidad de referencias:** distinguir fuente oficial, interpretación docente y contenido añadido; señalar lagunas de verificación.\n14. **Análisis competitivo (condicional):** cuando se aporten URLs de competencia, verificar la información pública, originalidad y diferenciación pedagógica; si no se proporcionan, indicar `No aplica`, no penalizar el temario.
+13. **Fidelidad y trazabilidad de referencias:** distinguir fuente oficial, interpretación docente y contenido añadido; señalar lagunas de verificación.
+14. **Análisis competitivo (condicional):** cuando se aporten URLs de competencia, verificar la información pública, originalidad y diferenciación pedagógica; si no se proporcionan, indicar `No aplica`, no penalizar el temario.
 
 ### Método de auditoría
 - Realizar una **auditoría preliminar** del borrador, corregir defectos concretos y luego auditar **la versión final realmente entregada**.
@@ -142,7 +146,8 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 1. **Temario:** visión condensada de secciones y clases, con identificadores y seguimiento editable.
 2. **Puntos de contenido:** cada punto vinculado a su clase con numeración jerárquica y seguimiento opcional.
 3. **Matriz de cobertura:** identificador y ubicación de la referencia, unidad temática, punto(s) del temario, estado (Cubierto / Pendiente / No verificable) y comentario.
-4. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.\n5. **Análisis competitivo (opcional):** tabla de fuentes y diferencias comprobables, solo cuando se hayan aportado competidores y facilite la revisión.
+4. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.
+5. **Análisis competitivo (opcional):** tabla de fuentes y diferencias comprobables, solo cuando se hayan aportado competidores y facilite la revisión.
 
 Mostrar además al usuario un **resumen ejecutivo de auditoría junto al enlace**, que indique qué se corrigió, qué sigue pendiente y qué no se pudo verificar. El documento sigue siendo totalmente editable por el usuario.
 
