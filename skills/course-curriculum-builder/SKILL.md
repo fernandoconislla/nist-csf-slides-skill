@@ -3,15 +3,37 @@ name: course-curriculum-builder
 description: Investigar y estructurar temarios de cursos en secciones, clases y puntos de contenido, con títulos claros, didácticos y orientados a conversión; entregar un Google Sheets editable.
 ---
 
-# Course Curriculum Builder — v0.2.0
+# Course Curriculum Builder — v0.3.0
 
 ## Objetivo
-Transformar un tema o fuentes de referencia en un temario de curso listo para revisión editorial y desarrollo posterior, sin perder fidelidad técnica. El resultado debe ser pedagógicamente progresivo y atractivo para estudiantes potenciales de Udemy.
+Transformar un tema o fuentes de referencia en un temario de curso listo para revisión editorial y desarrollo posterior. **Cuando el usuario aporta referencias como base curricular, el temario debe cubrir íntegramente su contenido formativo pertinente, sin resumirlo, descartar temas por extensión ni omitir detalles requeridos.** El resultado debe ser pedagógicamente progresivo y atractivo para estudiantes potenciales de Udemy.
 
 ## Entrada
 Basta con **una** entrada informativa suficiente: tema/título provisional, URL o documento de referencia, o temario existente. Opcionalmente: objetivos de aprendizaje, público, nivel, idioma, duración, enfoque teórico/práctico, herramientas/laboratorios, competencias previas, cursos competidores, contenidos obligatorios/excluidos y restricciones.
 
 No bloquear la generación porque falten entradas opcionales. Cuando existan referencias oficiales, contrastar versiones, identificar su alcance y diferenciar la fuente del diseño pedagógico propio. No inventar estadísticas de demanda o ventas.
+
+## Regla prioritaria: cobertura integral de las referencias (obligatoria)
+
+**Las referencias aportadas como base curricular son el alcance mínimo obligatorio del temario, no material opcional para resumir.** El temario debe representar todos los temas, subtemas, conceptos, procedimientos, prácticas, categorías, códigos y distinciones relevantes para aprender lo que la referencia enseña. No sintetizar varios temas independientes en una etiqueta genérica que oculte su contenido; cada elemento debe ser localizable en una sección, clase o **punto de contenido** explícito.
+
+### Procedimiento de cobertura
+1. **Inventario exhaustivo previo:** recorrer íntegramente cada fuente accesible, incluidos anexos, tablas, figuras, ejercicios y apartados pertinentes. Registrar el índice temático real a la granularidad mínima necesaria, no solo el índice visible del documento.
+2. **Clasificación del material:** distinguir contenido formativo (obligatorio), metadatos/editorial (p. ej., copyright, bibliografía, créditos), referencias auxiliares y material ilegible o inaccesible. No excluir contenido formativo por decisión unilateral.
+3. **Mapeo bidireccional:** asignar a cada unidad formativa un identificador de fuente (documento, versión, capítulo, página/sección) y uno o más identificadores curriculares (sección/clase/punto). Verificar también que cada punto del temario tenga fundamento o se marque como ampliación propuesta.
+4. **Desglose suficiente:** si una unidad de referencia contiene varios conceptos distintos, crear los puntos de contenido necesarios. Se permite agrupar o reordenar para mejorar didáctica, **sin perder componentes ni profundidad temática planificada**.
+5. **Escala antes que recorte:** si el material es extenso, aumentar número de secciones, clases y puntos y estimar la duración real. No reducir cobertura para alcanzar una duración deseada; señalar el conflicto y ofrecer una división en módulos, volúmenes o cursos, pero no eliminar temas sin aprobación expresa.
+6. **Referencias múltiples:** integrar contenidos superpuestos sin repetición innecesaria, manteniendo trazabilidad de todas las fuentes. Detectar versiones incompatibles o contradicciones y señalarlas, no escoger silenciosamente.
+7. **Validación final:** realizar una comparación completa inventario ↔ temario después de las correcciones editoriales. Una referencia no leída íntegramente, con páginas no accesibles o parcialmente extraída impide declarar «cobertura total verificada». Informar exactamente qué parte quedó sin comprobar.
+
+### Prohibiciones
+- No resumir una norma, libro, estándar, curso o documento extenso en unas pocas clases genéricas por conveniencia.
+- No omitir capítulos, subapartados, prácticas, tablas técnicas relevantes o temas de examen por ser difíciles, repetitivos, avanzados o extensos.
+- No confundir «mencionado en el título de una clase» con «cubierto con puntos de contenido específicos».
+- No declarar 100 % de cobertura si existen unidades sin asignar, material no revisado o brechas de acceso.
+- No convertir la obligación de cobertura en la reproducción literal del texto fuente: el entregable es un **temario original, reestructurado y trazable**, no una copia del documento.
+
+Si el usuario indica que una fuente es solo de inspiración o contraste y no parte del alcance obligatorio, registrar esa condición explícitamente. Toda exclusión curricular debe estar autorizada o identificada como pendiente, nunca ocultada.
 
 ## Estructura de salida
 Jerarquía estricta: **Sección → Clase → Punto de contenido**. Los puntos delimitan aquello que se enseñará; no son necesariamente diapositivas ni clases nuevas.
@@ -39,10 +61,10 @@ Preferir títulos orientados al concepto o habilidad específica. No añadir aut
 - **Punto de contenido:** descripción concreta del concepto, procedimiento o ejercicio dentro de esa clase; suficientemente explícita para guiar la producción sin convertirse en guion detallado.
 
 ## Flujo
-1. Interpretar entradas e investigar fuentes, con trazabilidad de referencias.
-2. Identificar objetivos, competencias y límites de alcance.
-3. Construir sección, clase y puntos de contenido.
-4. Auditar cobertura, redundancias, secuencia, carga de cada clase, precisión, valor práctico y títulos.
+1. Interpretar entradas, revisar íntegramente las referencias base y construir un inventario exhaustivo de unidades formativas.
+2. Identificar objetivos, competencias y alcance obligatorio de cada referencia; marcar lagunas de acceso.
+3. Construir sección, clase y puntos de contenido, y mapear cada unidad de referencia a su destino.
+4. Auditar cobertura unidad por unidad y después redundancias, secuencia, carga lectiva, precisión, valor práctico y títulos.
 5. Presentar propuesta editorial; permitir cambios.
 6. Generar un **Google Sheets nativo y editable por el usuario**.
 7. Considerar la hoja actualizada como fuente vigente. Para cambios posteriores, volver a leer la versión en vivo y conservar las ediciones realizadas por el usuario.
@@ -51,6 +73,7 @@ Preferir títulos orientados al concepto o habilidad específica. No añadir aut
 Dos vistas sugeridas:
 - **Temario:** secciones y clases para visión general.
 - **Puntos de contenido:** identificador de sección, de clase, de punto y descripción, con seguimiento cuando corresponda.
+- **Matriz de cobertura:** inventario exhaustivo de unidades formativas referenciadas, fuente y ubicación, punto(s) curricular(es) relacionados, estado de cobertura y observaciones. Cada fila debe poder auditarse y editarse.
 
 No sustituir títulos modificados manualmente por el usuario sin autorización. Mantener numeración coherente al insertar o eliminar elementos. No forzar aprobación de un título mediante una puntuación ficticia: justificar hallazgos de auditoría con ejemplos y correcciones concretas.
 
@@ -60,7 +83,7 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 
 ### Criterios independientes
 1. **Precisión técnica y vigencia:** comprobar versiones, términos, estándares y afirmaciones contra fuentes disponibles.
-2. **Cobertura y pertinencia:** identificar competencias esenciales omitidas, contenidos irrelevantes y adecuación al objetivo formativo.
+2. **Cobertura integral y pertinencia (bloqueante):** cotejar cada unidad de contenido de cada referencia obligatoria contra puntos curriculares explícitos; registrar cualquier omisión, generalización excesiva o sección inaccesible.
 3. **Progresión didáctica:** secuencia lógica, prerrequisitos, aumento gradual de dificultad y conexiones entre secciones.
 4. **Delimitación de clases:** evitar solapamientos, redundancia, fragmentación artificial y clases excesivamente amplias.
 5. **Calidad de puntos de contenido:** especificidad suficiente para desarrollar la clase sin confundirlos con diapositivas.
@@ -75,6 +98,8 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 
 ### Método de auditoría
 - Realizar una **auditoría preliminar** del borrador, corregir defectos concretos y luego auditar **la versión final realmente entregada**.
+- La auditoría de cobertura es **exhaustiva, por unidad de fuente**, no por muestreo. Registrar conteos comprobables de unidades identificadas, asignadas, pendientes y no verificables; no usar porcentajes si el inventario no está completo.
+- Toda unidad formativa obligatoria sin correspondencia curricular es un hallazgo **crítico**. No presentar el temario como final íntegro mientras exista tal omisión; reparar o indicar explícitamente la limitación.
 - En cada criterio emitir `Cumple`, `Requiere ajuste` o `No verificable`, con **evidencia específica** (sección, clase, punto o fuente), hallazgo, impacto y acción correctiva. Evitar puntuaciones arbitrarias sin rúbrica verificable.
 - Clasificar hallazgos como **Crítico**, **Mayor** o **Menor** según su impacto en precisión, aprendizaje y comercialización. Un error técnico material es crítico y requiere corrección antes de entrega.
 - Documentar `Antes → Después` cuando se cambien títulos, secuencia o cobertura; no realizar cambios invisibles.
@@ -84,9 +109,10 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 ### Entregable y pestañas de Google Sheets
 1. **Temario:** visión condensada de secciones y clases, con identificadores y seguimiento editable.
 2. **Puntos de contenido:** cada punto vinculado a su clase con numeración jerárquica y seguimiento opcional.
-3. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.
+3. **Matriz de cobertura:** identificador y ubicación de la referencia, unidad temática, punto(s) del temario, estado (Cubierto / Pendiente / No verificable) y comentario.
+4. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.
 
 Mostrar además al usuario un **resumen ejecutivo de auditoría junto al enlace**, que indique qué se corrigió, qué sigue pendiente y qué no se pudo verificar. El documento sigue siendo totalmente editable por el usuario.
 
 ## Entregable final
-Un Google Sheets nativo con las tres pestañas anteriores y una auditoría adjunta en la respuesta. El Google Sheets actualizado es fuente de verdad para las skills de guiones y diapositivas; releer antes de usar y preservar cambios manuales.
+Un Google Sheets nativo con las **cuatro pestañas** anteriores y una auditoría adjunta en la respuesta. La cobertura íntegra debe estar sustentada por la matriz; si existen limitaciones, declarar qué material no pudo revisarse. El Google Sheets actualizado es fuente de verdad para las skills de guiones y diapositivas; releer antes de usar y preservar cambios manuales.
