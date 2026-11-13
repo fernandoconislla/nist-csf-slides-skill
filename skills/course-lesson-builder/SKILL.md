@@ -1,12 +1,12 @@
 ---
 name: course-lesson-builder
-description: Desarrollar el contenido completo de una clase específica de un curso, a partir del temario vigente y referencias. Su primera capacidad es generar un guion de narración docente riguroso, natural y listo para grabar.
+description: Desarrollar el contenido completo de una clase específica de un curso, a partir del temario vigente y referencias. Genera contenido completo de una clase: primero narración que cubra todos sus puntos de contenido y después texto en pantalla íntegramente respaldado por esa narración.
 ---
 
-# Course Lesson Builder — v0.1.0
+# Course Lesson Builder — v0.2.0
 
 ## Misión y alcance
-Convertir **una clase concreta** del temario en contenido docente desarrollable y verificable. La primera salida implementada es **la narración íntegra de esa clase**, lista para ser leída o adaptada durante la grabación. Arquitectura extensible para futuras salidas: texto de pantalla, diapositivas, demostraciones, actividades y materiales descargables.
+Convertir **una clase concreta** del temario en contenido docente desarrollable y verificable. Las salidas iniciales obligatorias son **narración íntegra** y **propuesta de texto en pantalla derivada de esa narración**, ambas alineadas con todos los puntos curriculares. Arquitectura extensible para futuras salidas: diapositivas editables, demostraciones, actividades y materiales descargables.
 
 No crear ni alterar el temario global (responsabilidad de `course-curriculum-builder`) ni construir la plantilla (responsabilidad de `course-slide-template`). No asignar una diapositiva por punto de contenido ni producir imágenes sin solicitud explícita.
 
@@ -27,7 +27,7 @@ Si el temario está en Google Sheets, **leerlo en vivo** antes de generar, inclu
 ## Contrato de contenido
 1. Resolver el objetivo de aprendizaje de la clase en una frase comprobable.
 2. Preservar el título y los puntos de contenido aprobados y su alcance; no reescribir el temario por cuenta propia.
-3. Desarrollar todos los puntos con suficiente profundidad para que la explicación se sostenga por sí misma.
+3. **Cubrir exhaustivamente todos y cada uno de los puntos de contenido vigentes**, con profundidad adecuada para que la explicación se sostenga por sí misma. Un punto solo mencionado superficialmente no cuenta como cubierto.
 4. Evitar temas futuros, redundancias con clases anteriores y ejemplos prematuros que creen confusión.
 5. Introducir los conceptos antes de utilizar jerga no explicada. Mantener terminología consistente con el curso.
 6. Diferenciar definiciones oficiales, interpretaciones pedagógicas, ejemplos hipotéticos y opiniones.
@@ -35,50 +35,48 @@ Si el temario está en Google Sheets, **leerlo en vivo** antes de generar, inclu
 8. No forzar ejemplos, analogías o historias cuando no mejoren la comprensión.
 9. No inventar un tiempo exacto de narración: estimar con conteo de palabras y ritmo declarado, considerando pausas y demostraciones aparte.
 
-## Primera salida: narración de la clase
-Estructura editorial sugerida, adaptable al tipo de clase:
-- Identificación: curso, sección, clase, versión y fuentes principales.
-- Objetivo de aprendizaje.
-- **Guion narrado completo**:
-  - Apertura breve que sitúa el problema o resultado sin revelar innecesariamente temas futuros.
-  - Desarrollo continuo de los puntos de contenido, en orden pedagógico.
-  - Transiciones naturales y breves, sin frases de relleno ni repetir títulos literalmente.
-  - Cierre que sintetiza lo aprendido sin volver a desarrollar toda la clase.
-- Mapa de cobertura: punto de contenido → pasaje del guion.
-- Estimación de duración (palabras / rango de palabras por minuto, más tiempo de demostraciones si procede).
-- Fuentes y límites de verificación.
-- Auditoría y cambios aplicados.
+## Contrato de cobertura y secuencia de producción (prioridad máxima)
 
-La narración debe poder pronunciarse de forma natural: frases claras, ritmo oral, precisión técnica, sin párrafos acartonados, listados recitados ni énfasis grandilocuente. Evitar «En el mundo actual...», «Es importante destacar...», «A continuación veremos...» repetido y otros signos de texto prefabricado. Adoptar español profesional, accesible al público definido. El texto debe aportar valor frase por frase.
+**Orden obligatorio: Puntos del temario → Narración completa → Texto en pantalla.** Nunca comenzar seleccionando slides o redactando frases de pantalla para después acomodar la narración.
 
-### Relación con diapositivas futuras
-El guion es el contenido maestro de la clase, pero no presupone una diapositiva por párrafo. En futuras extensiones, separar **texto en pantalla**, **narración**, **apoyo gráfico** y **acciones del instructor** sin perder alineación. El texto visible podrá ser mucho más breve que la narración. Las diapositivas de desarrollo usarán la plantilla aprobada por separado.
+### 1. Cobertura exhaustiva de los puntos
+- Obtener la lista completa de puntos de contenido de la clase desde el Google Sheets actualizado; preservar identificadores, matices y alcance.
+- Construir una **matriz de cobertura**: ID y título de punto → objetivo/conceptos incluidos → segmento(s) de narración que los explican → estado.
+- Cada punto debe quedar desarrollado, no solo nombrado o insinuado. Cuando un punto incluya varias dimensiones técnicas o pedagógicas, asegurar que cada una se explique.
+- Si la profundidad necesaria supera la duración prevista, señalar el conflicto y proponer más tiempo o división aprobada; **nunca recortar puntos silenciosamente**.
+- Antes de redactar el texto visible, auditar que la narración cubre el 100 % de los puntos verificables. Una omisión se considera crítica y debe corregirse.
 
-## Generación y auditoría obligatoria
-Flujo: leer temario vigente → verificar referencias → delimitar objetivos y alcance → redactar → **auditar borrador** → corregir → **auditar salida final**.
+### 2. Narración docente (contenido maestro)
+Estructura editorial sugerida, adaptable a una clase teórica, práctica o mixta:
+- Identificación de curso, sección, clase, versión y referencias.
+- Objetivo de aprendizaje verificable.
+- **Guion narrado completo**: introducción breve, desarrollo de cada punto, transiciones naturales y cierre proporcionado.
+- Mapa de cobertura con pasajes identificables y fuentes.
+- Duración aproximada calculada por palabras y ritmo declarado; agregar demostraciones por separado si existen.
 
-Evaluar explícitamente:
-1. **Fidelidad al temario**: todos los puntos incluidos; ninguno reemplazado u omitido.
-2. **Precisión y actualidad técnica**: normas, versiones, términos y afirmaciones contrastados.
-3. **Profundidad adecuada**: suficiente para el nivel, sin simplificación incorrecta ni digresiones.
-4. **Progresión pedagógica**: prerrequisitos, orden y construcción de conceptos.
-5. **Delimitación curricular**: no anticipa clases siguientes ni repite innecesariamente anteriores.
-6. **Claridad de la explicación**: lenguaje directo, ejemplos útiles y comprensión autónoma.
-7. **Naturalidad oral / AI slop**: sin lenguaje robótico, muletillas, estructuras mecánicas o conectores artificiales.
-8. **Coherencia y continuidad**: transiciones y referencias internas consistentes.
-9. **Valor práctico**: aplicación cuando es pertinente, sin prácticas ficticias o forzadas.
-10. **Duración y densidad**: extensión consistente con el alcance y la modalidad.
-11. **Trazabilidad de las fuentes**: citas o referencias específicas y límites de verificación.
-12. **Grababilidad**: narración pronunciable, fragmentación manejable y sin instrucciones visuales recitadas.
-13. **Correspondencia objetivo–desarrollo–cierre**: la clase cumple lo prometido.
+La narración debe poder pronunciarse naturalmente: frases claras, ritmo oral, rigor técnico, sin listados recitados o conexiones artificiales. Evitar clichés como «En el mundo actual...» o «Es importante destacar...» y ejemplos forzados. Cada frase debe aportar valor.
 
-Para cada criterio usar `Cumple`, `Requiere ajuste` o `No verificable` con evidencia concreta. Clasificar problemas como crítico, mayor o menor. Corregir errores críticos antes de dar por aprobado el guion. Informar cambios significativos `Antes → Después`, pendientes y fuentes no verificadas. No inventar puntuaciones ni dar por aprobado lo que no fue comprobado.
+### 3. Texto en pantalla (derivado, no fuente)
+Una vez validada la narración, crear una propuesta de **texto en pantalla** por unidades visuales coherentes (no forzosamente una diapositiva por punto).
+- Seleccionar definiciones, diferencias, secuencias, principios, conclusiones o términos que realmente ayudan a seguir la exposición.
+- **Todo contenido semántico del texto en pantalla debe estar explicado íntegramente por la narración correspondiente**, ya sea literalmente o mediante una paráfrasis inequívoca y técnicamente equivalente.
+- El texto visible puede ser más breve, esquemático o selectivo. **No es obligatorio que la narración completa aparezca en pantalla**.
+- El texto visible **no puede introducir afirmaciones, ejemplos, cifras, requisitos, acrónimos, promesas, condiciones o matices que la narración no explique**. Tampoco debe cambiar el sentido mediante simplificación excesiva.
+- La narración no tiene que repetir palabra por palabra el texto visible, pero debe explicar la idea completa y cualquier matiz relevante de ese texto.
+- Evitar texto decorativo, párrafos extensos, listas redundantes, títulos vacíos y saturación. Mantener legibilidad móvil y jerarquía visual.
+- Separar por unidad: `Título de pantalla`, `Texto visible`, `Segmento de narración asociado`, `Puntos curriculares cubiertos`. No crear todavía un archivo Slides si no se solicita.
+- Una clase puede contener pasajes narrados sin texto visible equivalente; son válidos siempre que la narración cumpla el temario.
 
-## Entrega y revisión
-- Salida primaria: **guion completo de narración**, organizado para que el usuario pueda leerlo y editarlo, acompañado de mapa de cobertura y auditoría.
-- Si el usuario pide documento, generar un documento editable; si pide solo narración, no imponer un formato adicional.
-- No modificar Google Sheets ni registrar la narración en el temario salvo petición explícita.
-- En revisiones, conservar los puntos aprobados y cambiar solo el alcance solicitado; auditar la versión revisada.
+### Regla asimétrica explícita
+**Texto en pantalla ⊆ contenido explicado por la narración.**
 
-## Extensión
-Futuras capacidades independientes podrán generar planes de diapositivas, texto en pantalla, actividades y recursos. No habilitarlas de forma implícita en la primera versión.
+No se exige `narración ⊆ texto en pantalla`. La cobertura completa del temario se verifica **en la narración**, no contando viñetas visuales. Las dos obligaciones son independientes y acumulativas:
+1. `Puntos de contenido ⊆ narración desarrollada`.
+2. `Texto en pantalla ⊆ narración desarrollada`.
+
+## Entregable conjunto
+1. Guion narrado completo, organizado por segmentos y listo para revisión/grabación.
+2. Propuesta de textos en pantalla, agrupada en unidades visuales e identificada por título, texto visible y segmento narrado correspondiente.
+3. Matriz de cobertura por punto curricular y matriz de correspondencia de todas las frases y afirmaciones visibles con la narración.
+4. Estimación de duración, fuentes y auditoría obligatoria.
+
