@@ -12,6 +12,20 @@ Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El
 
 - [Course Image Style Builder](skills/course-image-style-builder/SKILL.md): analiza referencias visuales, adapta su composición y estilo a la paleta aprobada y produce un prompt gráfico maestro reutilizable por curso. Incluye [plantilla de salida](skills/course-image-style-builder/references/output-template.md) y [pruebas](skills/course-image-style-builder/tests/cases.md).
 
+- [Course Slide Builder](skills/course-slide-builder/SKILL.md): planifica unidades visuales desde la narración auditada, crea Google Slides editables con recursos gráficos y notas del presentador; incluye [plan de slides](skills/course-slide-builder/references/slide-plan-template.md) y [pruebas](skills/course-slide-builder/tests/cases.md).
+- [Course Class Producer](skills/course-class-producer/SKILL.md): orquesta desde el nombre/ID de una clase la lectura del Sheets vigente, narración, gráficos, Slides, notas y auditoría; incluye [manifiesto de ejecución](skills/course-class-producer/references/run-manifest.md) y [pruebas](skills/course-class-producer/tests/cases.md).
+
+## Flujo de producción de una clase
+1. Leer la clase y sus puntos de contenido desde Google Sheets vigente.
+2. Generar y auditar narración completa con `course-lesson-builder`.
+3. Derivar y validar texto en pantalla desde la narración.
+4. Reutilizar la plantilla y línea gráfica **aprobadas** para el curso.
+5. Planificar slides y seleccionar/generar gráficos con `course-slide-builder`.
+6. Construir Google Slides 16:9 editable con narración distribuida en notas.
+7. Auditar cobertura, correspondencia pantalla/narración, gráficos y presentación final.
+
+La orquestación corresponde a `course-class-producer`. El audio narrado reproducible requiere una fase distinta de inserción/sincronización; **notas del presentador no equivalen a audio**.
+
 ## Recursos legados y especializados
 - [SKILL.md](SKILL.md): instrucciones iniciales para NIST CSF 2.0.
 - [Prompt de ilustraciones](prompts/ilustracion-base.md): v0.1 reconstruido; pendiente de contrastar con el texto original.
