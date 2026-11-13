@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## Course Curriculum Builder 0.4.0 — 2026-11-13
+- Añadido análisis competitivo **opcional** a partir de enlaces de cursos de Udemy aportados por el usuario.
+- Matriz de evidencia pública, comparación curricular y oportunidades de diferenciación sin copiar temarios.
+- Jerarquía: fuente oficial obligatoria y decisiones aprobadas por el usuario prevalecen sobre la competencia.
+- Quinta pestaña opcional `Análisis competitivo`, manteniendo las cuatro pestañas base.
+- Nuevo criterio 14 de auditoría competitiva y enlaces iniciales de referencia para NIST CSF 2.0.
+
+
 ## Course Class Producer 0.1.0 — 2026-11-13
 - Creada la skill orquestadora `skills/course-class-producer/SKILL.md`.
 - Entrada mínima: clase por nombre/ID en el contexto de un curso existente.
