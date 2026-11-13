@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## Course Lesson Builder 0.1.0 — 2026-11-13
+- Nueva skill modular `skills/course-lesson-builder/SKILL.md`.
+- Entrada prioritaria: clase concreta, puntos de contenido y contexto actual del Google Sheets.
+- Primera salida: guion de narración docente completo, natural, riguroso y listo para revisión.
+- Mapa de cobertura, estimación de duración, fuentes y auditoría obligatoria con 13 criterios.
+- Extensible en el futuro a texto en pantalla, prácticas y recursos, sin generarlos por defecto.
+
+
 ## Course Curriculum Builder 0.2.0 — 2026-11-13
 - Auditoría obligatoria tanto de borrador como de entrega final.
 - 13 criterios independientes: técnica, cobertura, pedagogía, títulos, conversión, SEO, móvil, viabilidad y fuentes.
