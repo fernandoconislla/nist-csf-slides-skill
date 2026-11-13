@@ -1,5 +1,14 @@
 # Historial de cambios
 
+## Course Lesson Builder 0.2.0 — 2026-11-13
+- Cobertura completa y obligatoria de todos los puntos de contenido de la clase en la narración.
+- Orden obligatorio: puntos curriculares → narración auditada → texto en pantalla derivado de la narración.
+- El texto en pantalla queda íntegramente explicado por la narración, pero la narración no necesita figurar completa en pantalla.
+- Dos matrices: puntos → segmentos de narración y texto visible → segmentos de narración.
+- Auditoría obligatoria de cobertura, correspondencia semántica y calidad didáctica; hallazgos críticos bloquean aprobación.
+- Entregable conjunto: narración y propuesta de textos en pantalla, sin generar Google Slides por defecto.
+
+
 ## Course Curriculum Builder 0.3.0 — 2026-11-13
 - Cobertura integral obligatoria de todas las referencias utilizadas como base curricular: sin resúmenes sustitutivos ni omisiones.
 - Inventario exhaustivo de unidades formativas de las fuentes, incluidos apartados, tablas, figuras y prácticas pertinentes.
