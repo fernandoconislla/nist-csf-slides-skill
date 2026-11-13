@@ -80,3 +80,41 @@ No se exige `narración ⊆ texto en pantalla`. La cobertura completa del temari
 3. Matriz de cobertura por punto curricular y matriz de correspondencia de todas las frases y afirmaciones visibles con la narración.
 4. Estimación de duración, fuentes y auditoría obligatoria.
 
+## Generación y auditoría obligatoria
+Flujo: leer el temario vigente → inventariar **todos** los puntos → verificar referencias → redactar narración completa → auditar exhaustivamente la cobertura narrativa → corregir omisiones → derivar el texto en pantalla → auditar toda correspondencia pantalla–narración → corregir → auditar el entregable final.
+
+### Criterios de auditoría
+1. **Cobertura íntegra (bloqueante):** cada punto curricular y sus componentes está explicado con profundidad suficiente, no solo mencionado.
+2. **Precisión técnica y actualidad:** terminología, normas, versiones, cifras y afirmaciones verificadas.
+3. **Profundidad:** explicación adecuada al nivel y al objetivo de la clase.
+4. **Progresión pedagógica:** conceptos introducidos en orden comprensible y con prerrequisitos.
+5. **Delimitación:** no repetir innecesariamente otras clases ni anticipar su contenido.
+6. **Claridad:** exposición autónoma, precisa y con ejemplos cuando ayudan.
+7. **Naturalidad oral / AI slop:** frases pronunciables, sin tono robótico ni muletillas.
+8. **Coherencia:** continuidad, transiciones útiles y consistencia de ideas.
+9. **Aplicación:** valor práctico sin demostraciones inventadas o ejemplos forzados.
+10. **Duración y densidad:** estimación fundamentada, compatible con el alcance completo.
+11. **Trazabilidad:** fuentes y límites de verificación identificados.
+12. **Grababilidad:** segmentación y ritmo adecuados, sin recitar instrucciones editoriales.
+13. **Correspondencia objetivo–desarrollo–cierre:** la explicación cumple la competencia prevista.
+14. **Cobertura íntegra del texto visible por la narración (bloqueante):** cada afirmación, título, cifra, condición o matiz mostrado es explicado en la narración asociada, sin contradicción ni significados nuevos.
+15. **Economía de texto en pantalla:** síntesis selectiva, legibilidad y jerarquía, sin obligación de reflejar toda la narración.
+
+### Matrices de auditoría
+- **Puntos → Narración:** ID de punto, componentes a explicar, identificadores de segmentos, evidencia breve, estado y observaciones.
+- **Pantalla → Narración:** unidad visual, texto visible, segmentos narrados que lo explican, estado y observaciones.
+- Para cada criterio: `Cumple`, `Requiere ajuste` o `No verificable`, evidencia, gravedad (**Crítica**, **Mayor**, **Menor**) y corrección aplicada o pendiente.
+- Ningún punto sin explicación suficiente puede marcarse `Cumple`. Ningún texto visible con contenido nuevo o insuficientemente explicado puede aprobarse.
+- Las auditorías del borrador y de la versión final son independientes. Si hay fuentes inaccesibles, comunicarlo sin fingir cobertura verificada ni asignar puntuaciones arbitrarias.
+
+## Entrega y revisión
+Entregar por defecto:
+1. **Narración completa y editable**, desarrollada a partir de todos los puntos de contenido.
+2. **Propuesta de texto en pantalla**, alineada por unidades visuales y segmentos narrados.
+3. Matrices de cobertura y correspondencia.
+4. Estimación razonada de duración, fuentes y **resumen de auditoría** con correcciones y pendientes.
+
+Si se solicita únicamente narración, respetar ese alcance. Si se solicita un documento editable, generarlo sin alterar Google Sheets salvo pedido explícito. En revisiones, preservar elementos aprobados y auditar nuevamente el resultado.
+
+## Evolución
+La skill está dedicada al contenido de una clase. En futuras versiones podrá coordinar creación de diapositivas nativas, actividades y recursos descargables mediante habilidades específicas. La propuesta de texto en pantalla **ya es parte de la versión actual**, pero no implica generar Google Slides automáticamente.
