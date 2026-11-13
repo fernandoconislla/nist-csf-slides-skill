@@ -1,5 +1,14 @@
 # Historial de cambios
 
+## Course Curriculum Builder 0.3.0 — 2026-11-13
+- Cobertura integral obligatoria de todas las referencias utilizadas como base curricular: sin resúmenes sustitutivos ni omisiones.
+- Inventario exhaustivo de unidades formativas de las fuentes, incluidos apartados, tablas, figuras y prácticas pertinentes.
+- Nueva matriz bidireccional de trazabilidad fuente → sección/clase/punto de contenido.
+- Auditoría exhaustiva de cobertura, no por muestreo; omisiones críticas bloquean declarar el temario completo.
+- El temario puede ampliarse para sostener el alcance y debe informar restricciones de acceso o duración.
+- El Google Sheets pasa a cuatro pestañas: Temario, Puntos de contenido, Matriz de cobertura y Auditoría.
+
+
 ## Course Lesson Builder 0.1.0 — 2026-11-13
 - Nueva skill modular `skills/course-lesson-builder/SKILL.md`.
 - Entrada prioritaria: clase concreta, puntos de contenido y contexto actual del Google Sheets.
