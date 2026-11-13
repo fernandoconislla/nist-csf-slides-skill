@@ -1,5 +1,16 @@
 # Historial de cambios
 
+## Consolidación de clase aprobada 4.1 — 2026-11-13
+- Incorporado como caso de regresión el resultado aprobado de «Introducción al NIST CSF 2.0», sin alterar el Google Slides.
+- Identidad de portada del curso preservada; dos líneas semánticas, segunda completa en celeste, sin cortar «NIST CSF 2.0».
+- Paleta del deck maestro exacta: #102B46 / #00B8D9 / #FFFFFF; fuente Inter; elementos de desarrollo equilibrados y verificados.
+- Prioridad de recursos oficiales verificables en diapositivas específicas, con excepción expresa de la portada de clase.
+- Figuras técnicas no se adelantan si su significado corresponde a clases posteriores; evolución editable y propósitos sin falsa secuencia.
+- En cada regeneración, sustituir íntegramente las notas y realizar lectura de vuelta literal; bloquear aprobación si hay restos o duplicaciones.
+- Entrega en Google Slides nativo; no producir PDF/PPTX no solicitados. Respetar el estado de aprobación y las ediciones manuales.
+- Se incorporan pruebas de regresión y registro del feedback aprobado.
+
+
 ## Course Curriculum Builder 0.5.0 — 2026-11-13
 - Regla obligatoria de granularidad competitiva: en Udemy la estructura pública muestra secciones y clases; los puntos de contenido del sistema son internos.
 - Identificar brechas de visibilidad frente a las clases publicadas por la competencia cuando se proporcionen URLs.
