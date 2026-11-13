@@ -24,6 +24,13 @@ description: Orquesta desde el nombre o ID de una clase la lectura de su temario
 - Portada ≠ definición ≠ evolución ≠ propósito ≠ aplicación: cada unidad debe aportar información nueva y evitar repetición encubierta.
 - Orden de producción: **puntos vigentes → narración completa → auditoría y corrección → texto en pantalla → storyboard → auditoría de redundancia → presentación editable y verificación visual**. No crear diapositivas antes de comprobar cobertura narrativa.
 
+## Excepción de portada y prioridad de recursos visuales (obligatorio)
+
+- **Portada de clase:** prevalece la identidad visual maestra ya aprobada del curso (fondo, paleta, tipografía, layout y elemento gráfico protagonista). NO reemplazar automáticamente el gráfico de portada por el logotipo, la portada del documento o la figura oficial del tema específico tratado en esa clase. Solo variar título y componentes intercambiables previstos por la plantilla, sin rediseñarla.
+- **Diapositiva de desarrollo con elemento específico:** priorizar recurso institucional/oficial verificable (p. ej., logo NIST, portada de publicación NIST CSF 2.0 o figura normativa auténtica), frente a escudos genéricos, íconos inventados o ilustraciones IA que pretendan representarlo. Conservar colores, proporciones y relaciones oficiales; atribuir su procedencia.
+- **Diapositiva conceptual o de proceso:** utilizar iconos, diagramas nativos editables o ilustración cuando favorezca comprensión. No forzar una imagen oficial a una idea abstracta ni duplicar el mismo recurso institucional entre slides.
+- **Puerta de calidad:** antes de aprobar, contrastar por separado (a) fidelidad de la portada a la identidad del curso, (b) autenticidad de cada recurso específico en desarrollo y (c) legibilidad, centrado de las composiciones dentro del área de contenido, paleta y correspondencia con la narración. La falta de imágenes pertinentes o una portada alterada sin autorización bloquea la aprobación visual.
+
 ## Regla transversal obligatoria: honestidad, evaluación crítica y alertas graves
 
 - Priorizar **verdad, rigor técnico, trazabilidad y calidad** por encima de agradar, asentir o confirmar las propuestas del usuario. Nunca ser complaciente por defecto ni inventar elogios.
