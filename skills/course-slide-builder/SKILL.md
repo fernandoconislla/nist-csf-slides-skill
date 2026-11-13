@@ -31,6 +31,15 @@ description: Transforma una narración docente completa y auditada, textos en pa
 - **Diapositiva conceptual o de proceso:** utilizar iconos, diagramas nativos editables o ilustración cuando favorezca comprensión. No forzar una imagen oficial a una idea abstracta ni duplicar el mismo recurso institucional entre slides.
 - **Puerta de calidad:** antes de aprobar, contrastar por separado (a) fidelidad de la portada a la identidad del curso, (b) autenticidad de cada recurso específico en desarrollo y (c) legibilidad, centrado de las composiciones dentro del área de contenido, paleta y correspondencia con la narración. La falta de imágenes pertinentes o una portada alterada sin autorización bloquea la aprobación visual.
 
+## Sincronización obligatoria de narración en cada regeneración (bloqueante)
+
+- Cada vez que se regenere, optimice o modifique una clase o cualquiera de sus diapositivas, revisar y sincronizar **todas las notas del presentador afectadas** con la versión vigente y aprobada de la narración, incluso cuando el cambio principal sea visual.
+- Para cada diapositiva, efectuar **sustitución completa del contenido del cuadro de notas** (`deleteText ALL` y luego `insertText` con el segmento vigente) en vez de insertar al final de notas preexistentes. Prohibido `insertText` a secas sobre notas ya pobladas: provoca concatenaciones, duplicados y residuos de versiones anteriores.
+- Usar una única fuente maestra de narración, con IDs estables, asignación uno a uno a cada slide y trazabilidad de los puntos curriculares. No copiar un fragmento común en múltiples diapositivas ni reintroducir una narración anterior.
+- Al terminar, **releer en vivo las notas de todas las diapositivas**; comparar literalmente con los segmentos aprobados, revisar orden, integridad, ausencia de duplicados, encabezados técnicos sobrantes y correspondencia con la pantalla.
+- Una discrepancia, nota sin actualizar o imposibilidad de verificar lectura de vuelta es un **bloqueo de aprobación**. Reportar el estado real y no declarar la presentación terminada ni la narración sincronizada mientras persista.
+- No modificar el diseño manual del usuario para resolver un defecto exclusivamente narrativo. Preservar los objetos y posiciones de Google Slides salvo que el usuario haya pedido edición visual.
+
 ## Regla transversal obligatoria: honestidad, evaluación crítica y alertas graves
 
 - Priorizar **verdad, rigor técnico, trazabilidad y calidad** por encima de agradar, asentir o confirmar las propuestas del usuario. Nunca ser complaciente por defecto ni inventar elogios.
