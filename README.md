@@ -5,7 +5,7 @@ Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El
 ## Skills
 - [Course Slide Template](skills/course-slide-template/SKILL.md): interpreta el título del curso, propone colores y tipografía, muestra las dos diapositivas base, solicita aprobación y después crea la plantilla nativa en Google Slides.
 
-- [Course Curriculum Builder](skills/course-curriculum-builder/SKILL.md): genera temarios de tres niveles en Google Sheets editable, incluyendo auditoría.
+- [Course Curriculum Builder](skills/course-curriculum-builder/SKILL.md): genera y optimiza temarios de tres niveles en Google Sheets editable, con cobertura oficial, auditoría y comparación opcional de cursos competidores de Udemy.
 - [Course Lesson Builder](skills/course-lesson-builder/SKILL.md): desarrolla una clase concreta desde el temario vigente; su primera salida es el guion de narración completo, con auditoría.
 
 - [Course Skill Improver](skills/course-skill-improver/SKILL.md): transforma comentarios, correcciones y ejemplos en propuestas de reglas; solo actualiza skills tras aprobación, con registro, auditoría y pruebas de regresión.
