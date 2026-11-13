@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## Course Skill Improver 0.1.0 — 2026-11-13
+- Creada `skills/course-skill-improver/SKILL.md`, centrada en aprendizaje por feedback sin reentrenamiento.
+- Clasificación de cambios locales, preferencias contextuales y reglas permanentes.
+- Flujo: comparar → diagnosticar → proponer diff → aprobar → versionar → probar regresiones.
+- Archivos `FEEDBACK.md`, `references/feedback-record.md` y `tests/cases.md`.
+- Prohibición de modificar reglas permanentes sin aprobación explícita y protección de datos en repositorio público.
+
+
 ## Course Lesson Builder 0.2.0 — 2026-11-13
 - Cobertura completa y obligatoria de todos los puntos de contenido de la clase en la narración.
 - Orden obligatorio: puntos curriculares → narración auditada → texto en pantalla derivado de la narración.
