@@ -8,6 +8,8 @@ Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El
 - [Course Curriculum Builder](skills/course-curriculum-builder/SKILL.md): genera temarios de tres niveles en Google Sheets editable, incluyendo auditoría.
 - [Course Lesson Builder](skills/course-lesson-builder/SKILL.md): desarrolla una clase concreta desde el temario vigente; su primera salida es el guion de narración completo, con auditoría.
 
+- [Course Skill Improver](skills/course-skill-improver/SKILL.md): transforma comentarios, correcciones y ejemplos en propuestas de reglas; solo actualiza skills tras aprobación, con registro, auditoría y pruebas de regresión.
+
 ## Recursos legados y especializados
 - [SKILL.md](SKILL.md): instrucciones iniciales para NIST CSF 2.0.
 - [Prompt de ilustraciones](prompts/ilustracion-base.md): v0.1 reconstruido; pendiente de contrastar con el texto original.
