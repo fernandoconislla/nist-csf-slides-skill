@@ -24,6 +24,15 @@ description: Desarrollar el contenido completo de una clase específica de un cu
 - Portada ≠ definición ≠ evolución ≠ propósito ≠ aplicación: cada unidad debe aportar información nueva y evitar repetición encubierta.
 - Orden de producción: **puntos vigentes → narración completa → auditoría y corrección → texto en pantalla → storyboard → auditoría de redundancia → presentación editable y verificación visual**. No crear diapositivas antes de comprobar cobertura narrativa.
 
+## Sincronización obligatoria de narración en cada regeneración (bloqueante)
+
+- Cada vez que se regenere, optimice o modifique una clase o cualquiera de sus diapositivas, revisar y sincronizar **todas las notas del presentador afectadas** con la versión vigente y aprobada de la narración, incluso cuando el cambio principal sea visual.
+- Para cada diapositiva, efectuar **sustitución completa del contenido del cuadro de notas** (`deleteText ALL` y luego `insertText` con el segmento vigente) en vez de insertar al final de notas preexistentes. Prohibido `insertText` a secas sobre notas ya pobladas: provoca concatenaciones, duplicados y residuos de versiones anteriores.
+- Usar una única fuente maestra de narración, con IDs estables, asignación uno a uno a cada slide y trazabilidad de los puntos curriculares. No copiar un fragmento común en múltiples diapositivas ni reintroducir una narración anterior.
+- Al terminar, **releer en vivo las notas de todas las diapositivas**; comparar literalmente con los segmentos aprobados, revisar orden, integridad, ausencia de duplicados, encabezados técnicos sobrantes y correspondencia con la pantalla.
+- Una discrepancia, nota sin actualizar o imposibilidad de verificar lectura de vuelta es un **bloqueo de aprobación**. Reportar el estado real y no declarar la presentación terminada ni la narración sincronizada mientras persista.
+- No modificar el diseño manual del usuario para resolver un defecto exclusivamente narrativo. Preservar los objetos y posiciones de Google Slides salvo que el usuario haya pedido edición visual.
+
 ## Regla transversal obligatoria: honestidad, evaluación crítica y alertas graves
 
 - Priorizar **verdad, rigor técnico, trazabilidad y calidad** por encima de agradar, asentir o confirmar las propuestas del usuario. Nunca ser complaciente por defecto ni inventar elogios.
