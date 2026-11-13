@@ -3,7 +3,7 @@ name: course-curriculum-builder
 description: Investigar y estructurar temarios de cursos en secciones, clases y puntos de contenido, con títulos claros, didácticos y orientados a conversión; entregar un Google Sheets editable.
 ---
 
-# Course Curriculum Builder — v0.4.0
+# Course Curriculum Builder — v0.5.0
 
 ## Objetivo
 Transformar un tema o fuentes de referencia en un temario de curso listo para revisión editorial y desarrollo posterior. **Cuando el usuario aporta referencias como base curricular, el temario debe cubrir íntegramente su contenido formativo pertinente, sin resumirlo, descartar temas por extensión ni omitir detalles requeridos.** El resultado debe ser pedagógicamente progresivo y atractivo para estudiantes potenciales de Udemy.
@@ -74,6 +74,34 @@ Jerarquía estricta: **Sección → Clase → Punto de contenido**. Los puntos d
 
 Ejemplo de IDs: 03, 3.1 y 3.1.1. Evitar duplicaciones y vacíos de alcance entre clases.
 
+## Granularidad competitiva del temario público (obligatoria)
+
+**Udemy exhibe secciones y clases en el programa público; los puntos de contenido detallados del Google Sheets son una capa interna de producción.** Por tanto, cubrir un tema únicamente en un punto interno no garantiza que el alumno potencial perciba esa cobertura, profundidad y valor al comparar cursos.
+
+### Decisión editorial sobre cada tema
+1. Comparar la granularidad de las **clases públicamente visibles** de competidores cuando hayan sido proporcionados, frente a nuestras clases visibles y puntos internos. No inferir los puntos internos ni el desarrollo real del competidor.
+2. Detectar las **brechas de visibilidad**: tema relevante que el competidor expone como clase y el curso propio deja oculto dentro de una clase de alcance excesivo. Registrar título visible del competidor, ubicación propia y evidencia.
+3. Valorar promover un punto (o grupo coherente de puntos) a **clase independiente**, si reúne suficiente **autonomía didáctica**, profundidad real para desarrollar una narración útil, importancia para el estudiante, especificidad del resultado y capacidad de comunicar un beneficio o competencia de manera honesta.
+4. Desagregar clases excesivamente amplias aun cuando no exista competidor, siempre que se justifique pedagógicamente y aumente la **visibilidad del valor** del curso.
+5. Agrupar temas demasiado pequeños, dependientes o redundantes: **no multiplicar clases artificialmente ni crear microclases para aparentar extensión**. Ninguna clase se justifica solo porque un competidor la tenga.
+6. Redactar títulos visibles concretos, atractivos, móviles y precisos; conservar los códigos técnicos y detalles exhaustivos en puntos y matriz de cobertura cuando no convenga ponerlos en el título.
+7. Verificar que los nuevos títulos cumplen lo prometido con puntos específicos, narración plausible y ejercicios reales cuando se anuncien. No hacer promesas de talleres, auditorías o herramientas que no se desarrollarán.
+8. Presentar `Antes → Después`, motivos de promoción/división/agrupación, efecto en cantidad de clases y correspondencia curricular; solicitar aprobación antes de modificar el Google Sheets original.
+
+### Regla de equilibrio
+La granularidad es una decisión de **diseño instruccional y percepción de valor** al mismo tiempo. Ni maximizar el número de clases ni minimizarlas por conveniencia. El criterio prioritario es: **hacer visible una unidad de aprendizaje suficientemente sustantiva sin fragmentar artificialmente conocimientos inseparables**.
+
+### Auditoría específica
+Comprobar:
+- Cobertura visible de competencias y conceptos diferenciadores en títulos de clases.
+- Brechas de visibilidad frente a competidores observables, cuando se hayan aportado URLs.
+- Justificación para convertir puntos internos en clases independientes.
+- Ausencia de microclases, relleno y redundancia introducidos por exposición comercial.
+- Preservación de la trazabilidad fuente → clase → puntos y de la cobertura obligatoria.
+- Alineación entre títulos/promesas públicas y contenidos internos efectivamente planificados.
+
+Registrar hallazgos en `Auditoría` y, si existe, `Análisis competitivo`. No afirmar un aumento de conversiones sin datos medidos.
+
 ## Nombres editoriales: regla obligatoria
 Los títulos de sección, clase y punto de contenido deben optimizarse para:
 1. **Claridad inmediata:** entender de qué trata sin releerlo.
@@ -131,6 +159,7 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 12. **Consistencia curricular:** numeración, convenciones de títulos, terminología y ausencia de saltos o duplicados.
 13. **Fidelidad y trazabilidad de referencias:** distinguir fuente oficial, interpretación docente y contenido añadido; señalar lagunas de verificación.
 14. **Análisis competitivo (condicional):** cuando se aporten URLs de competencia, verificar la información pública, originalidad y diferenciación pedagógica; si no se proporcionan, indicar `No aplica`, no penalizar el temario.
+15. **Granularidad pública y valor visible:** verificar que temas sustantivos aparecen con nivel adecuado en títulos de clase y que los puntos internos no oculten valor comparativo; evitar la fragmentación artificial.
 
 ### Método de auditoría
 - Realizar una **auditoría preliminar** del borrador, corregir defectos concretos y luego auditar **la versión final realmente entregada**.
