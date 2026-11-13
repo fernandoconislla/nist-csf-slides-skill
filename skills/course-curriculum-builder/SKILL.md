@@ -3,7 +3,7 @@ name: course-curriculum-builder
 description: Investigar y estructurar temarios de cursos en secciones, clases y puntos de contenido, con títulos claros, didácticos y orientados a conversión; entregar un Google Sheets editable.
 ---
 
-# Course Curriculum Builder — v0.3.0
+# Course Curriculum Builder — v0.4.0
 
 ## Objetivo
 Transformar un tema o fuentes de referencia en un temario de curso listo para revisión editorial y desarrollo posterior. **Cuando el usuario aporta referencias como base curricular, el temario debe cubrir íntegramente su contenido formativo pertinente, sin resumirlo, descartar temas por extensión ni omitir detalles requeridos.** El resultado debe ser pedagógicamente progresivo y atractivo para estudiantes potenciales de Udemy.
@@ -11,7 +11,7 @@ Transformar un tema o fuentes de referencia en un temario de curso listo para re
 ## Entrada
 Basta con **una** entrada informativa suficiente: tema/título provisional, URL o documento de referencia, o temario existente. Opcionalmente: objetivos de aprendizaje, público, nivel, idioma, duración, enfoque teórico/práctico, herramientas/laboratorios, competencias previas, cursos competidores, contenidos obligatorios/excluidos y restricciones.
 
-No bloquear la generación porque falten entradas opcionales. Cuando existan referencias oficiales, contrastar versiones, identificar su alcance y diferenciar la fuente del diseño pedagógico propio. No inventar estadísticas de demanda o ventas.
+Los **enlaces a cursos competidores de Udemy son una entrada explícitamente opcional**: si existen, analizarlos; si no existen, producir el curso normalmente. No exigirlos ni inventar equivalentes.\n\nNo bloquear la generación porque falten entradas opcionales. Cuando existan referencias oficiales, contrastar versiones, identificar su alcance y diferenciar la fuente del diseño pedagógico propio. No inventar estadísticas de demanda o ventas.
 
 ## Regla prioritaria: cobertura integral de las referencias (obligatoria)
 
@@ -34,6 +34,38 @@ No bloquear la generación porque falten entradas opcionales. Cuando existan ref
 - No convertir la obligación de cobertura en la reproducción literal del texto fuente: el entregable es un **temario original, reestructurado y trazable**, no una copia del documento.
 
 Si el usuario indica que una fuente es solo de inspiración o contraste y no parte del alcance obligatorio, registrar esa condición explícitamente. Toda exclusión curricular debe estar autorizada o identificada como pendiente, nunca ocultada.
+
+## Análisis competitivo opcional de Udemy
+
+### Activación
+Ejecutar este módulo **solo cuando el usuario facilite enlaces de cursos competidores, solicite investigar la competencia o autorice expresamente esa comparación**. Se aceptan varios enlaces. No aplicar automáticamente una estrategia comercial de otro curso.
+
+### Procedimiento
+1. Abrir cada enlace original y comprobar que corresponde al curso esperado; conservar la URL canónica y la fecha de consulta. Ignorar los parámetros de cupón para el análisis curricular.
+2. Recopilar **solo información pública verificable**: título, subtítulo, objetivos declarados, público, nivel, requisitos, secciones, clases visibles, duración publicada, prácticas/plantillas anunciadas, actualización y reseñas cuando puedan comprobarse. Diferenciar anuncio comercial de contenido demostrado.
+3. Crear una **matriz comparativa normalizada** de bloques de aprendizaje, progresión, granularidad, terminología, formatos de práctica y propuesta de valor. Registrar «No visible» donde Udemy o el acceso no muestren información; no imaginar puntos internos de las clases.
+4. Comparar contra el inventario **obligatorio** de fuentes técnicas oficiales y el temario del usuario. Identificar: temas compartidos, oportunidades formativas válidas, lagunas de los competidores solo cuando observables, redundancias, alternativas de secuenciación y diferenciadores pedagógicos justificados.
+5. Utilizar el análisis para **proponer** organización en secciones, clases, puntos de contenido, títulos y actividades; no tratar duración de los competidores como duración objetivo ni igualar su número de clases por conveniencia.
+6. Diseñar una diferenciación **demostrable** en el temario, por ejemplo una evidencia o entregable práctico específico que el curso realmente desarrollará. No proclamar superioridad, ventas esperadas, rankings ni mayor profundidad sin respaldo.
+7. Si la propuesta altera un temario existente, presentar `Antes → Después`, justificación y efecto sobre el mapeo de fuentes. No sobrescribir el Google Sheets vigente ni ediciones manuales sin aprobación del cambio.
+
+### Jerarquía y restricciones
+**Referencia técnica obligatoria > decisiones curriculares aprobadas por el usuario > hallazgos de competidores como inspiración editorial**. El contenido técnico relevante de la fuente obligatoria no puede omitirse aunque los competidores no lo enseñen. Una clase de un competidor no se convierte en contenido obligatorio solo por existir. No copiar literalmente descripciones extensas, guiones o temarios; crear estructura original. Evitar inferir ventas a partir de ratings, número de alumnos o duración.
+
+### Salida verificable
+Si hay competidores, incluir en la propuesta:
+- Tabla **Competidor → evidencia y fecha → patrón curricular → implicación para nuestro curso**.
+- Matriz de correspondencia `fuente oficial → tema propio → tratamiento observable en competidor` para contrastar la diferenciación sin confundir las fuentes.
+- Recomendaciones editoriales y pedagógicas priorizadas con beneficios y riesgos.
+- **Auditoría competitiva independiente**: veracidad de datos, cobertura observable vs. no observable, originalidad, diferenciación comprobable, compatibilidad técnica y ausencia de imitación artificial.
+
+Las **cuatro pestañas originales siguen siendo obligatorias**. Cuando exista análisis de competencia, registrar las conclusiones en `Auditoría` y, si aporta claridad, añadir una **quinta pestaña opcional `Análisis competitivo`** con fuentes, evidencia y decisiones. No añadirla cuando no se haya solicitado competencia.
+
+### Ejemplo de entradas del proyecto NIST CSF 2.0
+- https://www.udemy.com/course/nist-csf-20-fundamentos-e-implementacion-practica/
+- https://www.udemy.com/course/gestion-de-ciberseguridad-nist-csf-20-marco-actualizado/
+
+Estas URLs son **referencias competitivas opcionales, no fuentes normativas obligatorias**. Se deben volver a consultar en ejecuciones futuras para evitar datos desactualizados.
 
 ## Estructura de salida
 Jerarquía estricta: **Sección → Clase → Punto de contenido**. Los puntos delimitan aquello que se enseñará; no son necesariamente diapositivas ni clases nuevas.
@@ -63,7 +95,7 @@ Preferir títulos orientados al concepto o habilidad específica. No añadir aut
 ## Flujo
 1. Interpretar entradas, revisar íntegramente las referencias base y construir un inventario exhaustivo de unidades formativas.
 2. Identificar objetivos, competencias y alcance obligatorio de cada referencia; marcar lagunas de acceso.
-3. Construir sección, clase y puntos de contenido, y mapear cada unidad de referencia a su destino.
+3. Si hay competidores proporcionados, realizar el análisis competitivo opcional y registrar sus implicaciones sin sustituir la cobertura oficial.\n4. Construir sección, clase y puntos de contenido, y mapear cada unidad de referencia a su destino.
 4. Auditar cobertura unidad por unidad y después redundancias, secuencia, carga lectiva, precisión, valor práctico y títulos.
 5. Presentar propuesta editorial; permitir cambios.
 6. Generar un **Google Sheets nativo y editable por el usuario**.
@@ -94,7 +126,7 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 10. **Equilibrio entre teoría y práctica:** ejercicios, casos o laboratorios cuando el objetivo y los recursos lo justifiquen.
 11. **Viabilidad y carga lectiva:** alcance realista para duración, nivel, materiales y recursos disponibles.
 12. **Consistencia curricular:** numeración, convenciones de títulos, terminología y ausencia de saltos o duplicados.
-13. **Fidelidad y trazabilidad de referencias:** distinguir fuente oficial, interpretación docente y contenido añadido; señalar lagunas de verificación.
+13. **Fidelidad y trazabilidad de referencias:** distinguir fuente oficial, interpretación docente y contenido añadido; señalar lagunas de verificación.\n14. **Análisis competitivo (condicional):** cuando se aporten URLs de competencia, verificar la información pública, originalidad y diferenciación pedagógica; si no se proporcionan, indicar `No aplica`, no penalizar el temario.
 
 ### Método de auditoría
 - Realizar una **auditoría preliminar** del borrador, corregir defectos concretos y luego auditar **la versión final realmente entregada**.
@@ -110,7 +142,7 @@ No sustituir títulos modificados manualmente por el usuario sin autorización. 
 1. **Temario:** visión condensada de secciones y clases, con identificadores y seguimiento editable.
 2. **Puntos de contenido:** cada punto vinculado a su clase con numeración jerárquica y seguimiento opcional.
 3. **Matriz de cobertura:** identificador y ubicación de la referencia, unidad temática, punto(s) del temario, estado (Cubierto / Pendiente / No verificable) y comentario.
-4. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.
+4. **Auditoría:** criterio, estado, severidad, evidencia/ubicación, hallazgo, ajuste aplicado o pendiente y fuente si procede.\n5. **Análisis competitivo (opcional):** tabla de fuentes y diferencias comprobables, solo cuando se hayan aportado competidores y facilite la revisión.
 
 Mostrar además al usuario un **resumen ejecutivo de auditoría junto al enlace**, que indique qué se corrigió, qué sigue pendiente y qué no se pudo verificar. El documento sigue siendo totalmente editable por el usuario.
 
