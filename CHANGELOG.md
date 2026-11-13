@@ -1,5 +1,14 @@
 # Historial de cambios
 
+## Course Image Style Builder 0.1.0 — 2026-11-13
+- Nueva skill `skills/course-image-style-builder/SKILL.md`.
+- Análisis exhaustivo de referencias visuales: composición, geometría, perspectiva, profundidad, iluminación, materiales, iconografía y espacios negativos.
+- Integración de la paleta aprobada con precedencia sobre los colores de la imagen de referencia.
+- Salida: `course-image-style.md` por curso con prompt maestro y reglas de aplicación para cada recurso.
+- Aprobación obligatoria del sistema visual y verificación con dos conceptos distintos cuando exista generador disponible.
+- Plantilla de salida `references/output-template.md` y seis casos de prueba definidos en `tests/cases.md`.
+
+
 ## Course Skill Improver 0.1.0 — 2026-11-13
 - Creada `skills/course-skill-improver/SKILL.md`, centrada en aprendizaje por feedback sin reentrenamiento.
 - Clasificación de cambios locales, preferencias contextuales y reglas permanentes.
