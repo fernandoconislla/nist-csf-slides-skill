@@ -5,6 +5,9 @@ Repositorio en evolución para crear materiales y plantillas de cursos Udemy. El
 ## Skills
 - [Course Slide Template](skills/course-slide-template/SKILL.md): interpreta el título del curso, propone colores y tipografía, muestra las dos diapositivas base, solicita aprobación y después crea la plantilla nativa en Google Slides.
 
+- [Course Curriculum Builder](skills/course-curriculum-builder/SKILL.md): genera temarios de tres niveles en Google Sheets editable, incluyendo auditoría.
+- [Course Lesson Builder](skills/course-lesson-builder/SKILL.md): desarrolla una clase concreta desde el temario vigente; su primera salida es el guion de narración completo, con auditoría.
+
 ## Recursos legados y especializados
 - [SKILL.md](SKILL.md): instrucciones iniciales para NIST CSF 2.0.
 - [Prompt de ilustraciones](prompts/ilustracion-base.md): v0.1 reconstruido; pendiente de contrastar con el texto original.
