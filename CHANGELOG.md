@@ -1,5 +1,15 @@
 # Historial de cambios
 
+## Course Curriculum Builder 0.2.0 — 2026-11-13
+- Auditoría obligatoria tanto de borrador como de entrega final.
+- 13 criterios independientes: técnica, cobertura, pedagogía, títulos, conversión, SEO, móvil, viabilidad y fuentes.
+- Nueva pestaña `Auditoría` en Google Sheets, con hallazgos, evidencia, severidad y ajustes.
+- Resumen de auditoría incluido siempre en la respuesta; sin puntuaciones inventadas.
+
+## Course Curriculum Builder 0.1.0 — 2026-11-13
+- Nueva skill `skills/course-curriculum-builder/SKILL.md` para temarios editables de tres niveles.
+- Criterios editoriales para títulos claros, didácticos y orientados a conversión honesta.
+
 ## 0.2.0 — 2026-11-13
 - Nueva skill modular `skills/course-slide-template/SKILL.md` para futuros cursos Udemy.
 - Interpretación del tema como paso obligatorio antes de recomendar identidad visual.
