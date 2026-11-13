@@ -1,5 +1,22 @@
 # Historial de cambios
 
+## Course Class Producer 0.1.0 — 2026-11-13
+- Creada la skill orquestadora `skills/course-class-producer/SKILL.md`.
+- Entrada mínima: clase por nombre/ID en el contexto de un curso existente.
+- Fuente de verdad: Google Sheets vigente, incluidos cambios del usuario; secuencia obligatoria hasta Slides final.
+- Puertas de control para narración completa, paleta/template/estilo aprobados, storyboard, gráficos, notas y auditoría.
+- Manifiesto de estados `references/run-manifest.md` y 10 casos de prueba.
+- Prohibido declarar producción completa cuando no se haya verificado la incorporación real de notas.
+
+## Course Slide Builder 0.1.0 — 2026-11-13
+- Creada `skills/course-slide-builder/SKILL.md` para transformar guion auditado en diapositivas Google Slides 16:9 editables.
+- Planificador de unidades visuales: sin imponer una slide por punto curricular.
+- Correspondencia obligatoria Puntos → Narración → Slides y Pantalla → Narración.
+- Integración de plantillas y estilo de ilustración aprobados; uso fiel de recursos oficiales.
+- Narración por diapositiva en notas del presentador, con verificación; audio reproducible es fase independiente.
+- Plantilla `references/slide-plan-template.md`, ocho pruebas de regresión y auditoría integral.
+
+
 ## Course Image Style Builder 0.1.0 — 2026-11-13
 - Nueva skill `skills/course-image-style-builder/SKILL.md`.
 - Análisis exhaustivo de referencias visuales: composición, geometría, perspectiva, profundidad, iluminación, materiales, iconografía y espacios negativos.
