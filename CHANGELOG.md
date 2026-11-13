@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## Course Curriculum Builder 0.5.0 — 2026-11-13
+- Regla obligatoria de granularidad competitiva: en Udemy la estructura pública muestra secciones y clases; los puntos de contenido del sistema son internos.
+- Identificar brechas de visibilidad frente a las clases publicadas por la competencia cuando se proporcionen URLs.
+- Evaluar la promoción de puntos a clases por autonomía didáctica, profundidad, interés y valor visible; sin microclases ni copia mecánica.
+- Mantener trazabilidad normativa, promesa educativa y auditoría con nuevo criterio 15.
+- No modificar temarios existentes sin aprobación de los cambios propuestos.
+
+
 ## Course Curriculum Builder 0.4.0 — 2026-11-13
 - Añadido análisis competitivo **opcional** a partir de enlaces de cursos de Udemy aportados por el usuario.
 - Matriz de evidencia pública, comparación curricular y oportunidades de diferenciación sin copiar temarios.
