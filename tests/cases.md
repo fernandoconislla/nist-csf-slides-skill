@@ -77,3 +77,7 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 - **STATE-02:** chat y Google Sheets discrepan: reportar y sincronizar solo mediante cambio autorizado y lectura de vuelta.
 
 **Estado: definidos, NO EJECUTADOS.** Ninguna de las nuevas reglas ha sido validada mediante construcción y verificación visual real de la clase 4.4.
+
+## OFF — Miniaturas oficiales y portada
+
+**OFF-01:** maqueta 4.4 slide 02 usa círculos con números en lugar de tres imágenes oficiales disponibles → fallo. **OFF-02:** rueda, plantilla NIST Perfiles y figura Tiers pequeñas pero deformadas, recortadas arbitrariamente o ilegibles → fallo. **OFF-03:** portada aprobada sustituida por figura oficial → fallo. **OFF-04:** activos oficiales pequeños, nítidos, proporciones intactas, centrados con etiqueta/función y fuente documentada → conforme solo tras inspección real. **Casos definidos, NO ejecutados.**
