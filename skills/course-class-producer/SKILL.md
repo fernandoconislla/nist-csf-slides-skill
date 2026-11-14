@@ -191,3 +191,9 @@ No realizar promesas de actividad en segundo plano. Ejecutar lo viable en el tur
 - Escalera: corregir JSON/campos → partir batch o cambiar método nativo → usar activo local original y otra vía compatible; detener solo ante bloqueo comprobado o riesgo de integridad. Registrar razones y evidencias.
 - Incluir en auditoría `Fuerza del foco visual` con evidencia de imágenes renderizadas, junto a `Ausencia de redundancia`. Un marco técnicamente existente, pero visualmente débil, **NO** supera auditoría.
 - Mantener aprobaciones separadas: generado ≠ auditado ≠ aprobado ≠ grabado. Releer deck y notas, hacer render, registrar IDs exactos y no alterar clases aprobadas.
+
+## Cierre integral tras aprobación 4.7 — 2026-11-14
+- «Aprobado»: localizar fila exacta por ID en Sheets, revisar validación, actualizar solo Aprobada=TRUE, conservar Grabada, releer. No inferir estados de otras clases desde memorias.
+- «Actualiza skills con pendientes»: revisar raíz, productor, lecciones, builder, estilo, plantilla, temario, improver, referencias, tests, estado y changelog; deduplicar reglas ya adoptadas y verificar lecturas de GitHub.
+- Prioridad: fidelidad del original > legibilidad > foco correctamente localizado > estética. «Fidelidad» no significa insertar texto del PDF como imagen protagonista cuando un diagrama pedagógico representa mejor la relación, indicando su fuente.
+- Al aprobar una clase editada, conservar la presentación como fue aceptada; sincronizar estado sin alterar slides por iniciativa propia. Si falla una operación, inspeccionar cambios parciales antes de reintentar.
