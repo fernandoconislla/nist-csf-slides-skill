@@ -116,3 +116,7 @@ Esta skill crea la identidad visual y los dos layouts. No redacta el temario, ge
 
 ## Registro
 Cada nueva regla aprobada debe registrarse y versionarse en GitHub. Distinguir explícitamente propuestas pendientes de aprobación de decisiones ya aprobadas.
+
+## Serie de diapositivas y plantilla — 2026-11-14
+- Preservar portada original e identidad blanco/marino/cian; desarrollo con título marino y subrayado cian. En serie Tiers, repetir composición de figura oficial izquierda y dos paneles editables derecha, con foco e información específicos por nivel. Corregir desbordamientos localmente sin reducir toda la tipografía.
+- La plantilla maestra no cambia por ajustes de una clase; editar solo deck acumulativo. En Perfiles, diagramas comparativos nativos, no capturas de párrafos normativos como figura principal.
