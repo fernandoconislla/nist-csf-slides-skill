@@ -115,3 +115,20 @@ Las mejoras de skills requieren evidencia, propuesta/diff, aprobación y pruebas
 **Pendientes bloqueantes para aprobación:** 1) conseguir figuras auténticas exactas de Perfiles y Tiers en formato insertable; 2) sustituir marcadores y verificar correspondencia/relevancia, tamaños y legibilidad; 3) verificar fidelidad de diapositiva Núcleo (rueda oficial no sustituye figura 1 completa); 4) revisar todos los renders reales (las miniaturas se solicitaron, pero sus píxeles no se inspeccionaron efectivamente); 5) auditoría completa de posiciones, transformación, densidad y regresión; 6) obtener aceptación visual final del usuario. Mantener G14 `Aprobada=false`, H14 `Grabada=false` hasta confirmación.
 
 **Auditoría estructural realizada:** lectura del deck verifica 16 slides con 4.4 en posiciones 12–16, notas no vacías y al menos rueda institucional insertada en las diapositivas 13 y 14. Esta evidencia **no** equivale a aprobación visual final.
+
+## 10. Corrección visual de las cinco diapositivas 4.4 — 2026-11-14
+
+Tras petición expresa «corrige», se corrigieron **en el deck acumulativo existente** las diapositivas 12–16, preservando IDs/posición de las 11 aprobadas y la plantilla maestra. **Presentación:** https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit. **Revisión verificada:** `yyp4h8D3Sb3XqA`; **16 slides**.
+
+**Cambios efectivamente aplicados:**
+1. Slide 12: portada con imagen protagonista original preservada; título «Componentes / del Marco».
+2. Slide 13: **tres imágenes auténticas pequeñas** (rueda de funciones NIST, recorte de captura real de plantilla Current/Target y figura 4 Tiers), tres nombres y descripciones, sin círculos de números ni placeholders. El recorte proviene de la captura de un libro de trabajo NIST mostrada por un tercero; conservar esta procedencia y no presentarlo como un archivo gráfico publicado directamente por NIST.
+3. Slide 14: figura 1 auténtica **CSF Core structure** con funciones, categorías y subcategorías; retiradas la rueda (representación incompleta) y la enumeración extra redundante. Etiquetas de la figura en inglés; la narración permanece en español.
+4. Slide 15: captura real de plantilla de Perfiles con Actual/Objetivo y rótulo separado de Perfil Comunitario; sin placeholder.
+5. Slide 16: figura 4 auténtica de cuatro Tiers en escalera, proporción respetada y cierre narrado; etiquetas de la figura en inglés.
+
+**Procedencia de figuras**: el contenido de la figura 1 y 4 se comprobó en el PDF oficial NIST CSWP 29 (español), pero los bytes insertados son reproducciones fieles alojadas por terceros: `csf.tools/wp-content/uploads/2024/03/csf-core-1024x604.png`, `ajcs01.github.io/CRM_Lec_L7/figures/nisttiers.png`; la rueda de NIST directamente de `nist.gov/sites/default/files/images/2024/04/15/CSF-wheel-revamp-v5-transparent_Op%203.png`. Captura de plantilla de Profiles originalmente desde artículo UpGuard basado en la plantilla NIST; en slide 13 se utilizó un recorte fiel de la misma, sin IA ni redibujado. Pueden sustituirse más adelante por extracciones de la publicación oficial en español si el usuario exige etiqueta en español.
+
+**QA realizado:** exportación PDF nativa de **16 páginas**, renderización de las páginas **12–16**, inspección visual efectiva de las cinco diapositivas (composición, márgenes, legibilidad, sin marcadores); lectura nativa de slides y notas. Imágenes por página 12–16 = `1, 3, 1, 1, 1`; longitudes de notas = `199, 447, 702, 711, 793` caracteres; **0** marcadores «PENDIENTE». Comprobación geométrica básica de límites. Archivos visuales de QA guardados solo en entorno de trabajo; no son aprobación del usuario.
+
+**Resultado interno:** errores de generación señalados previamente corregidos en el deck. **Estado formal: PENDIENTE de aceptación visual expresa del usuario** y prueba de regresión visual comparativa de las once previas (solo comprobados ID/orden, no se modificaron). **NO** marcar Aprobada o Grabada sin confirmación. Ante correcciones futuras, editar exclusivamente 12–16.
