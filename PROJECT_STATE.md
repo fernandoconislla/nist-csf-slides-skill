@@ -1,0 +1,88 @@
+# PROJECT_STATE — NIST CSF 2.0
+
+> Punto de reanudación del proyecto. Verificado el **14 de noviembre de 2026** (hora de Perú).
+> **Este archivo no sustituye las fuentes vivas.** En cada nueva sesión, comprobar el estado actual de GitHub, Google Sheets y Google Slides antes de trabajar. No inferir que una propuesta está aprobada.
+
+## 1. Enlaces y jerarquía de fuentes
+
+| Recurso | Uso | URL |
+|---|---|---|
+| Repositorio de skills | Reglas y pruebas; rama `main` | https://github.com/fernandoconislla/nist-csf-slides-skill |
+| Skill principal | Puertas y orden de trabajo | https://github.com/fernandoconislla/nist-csf-slides-skill/blob/main/SKILL.md |
+| Visual composition | Diseño preventivo y criterios VIS | https://github.com/fernandoconislla/nist-csf-slides-skill/blob/main/references/visual-composition.md |
+| Temario maestro | IDs, clases, puntos, cobertura, auditoría, aprobada/grabada | https://docs.google.com/spreadsheets/d/19KQpeCfZpkNPC9m0zAbRGGh-E0p7vdMNL0aiwiiIk1Y/edit |
+| Plantilla maestra | **Solo lectura**; estilos, portada y desarrollo | https://docs.google.com/presentation/d/1LuxRkFk9y4Bb4dDNLOP0gZWYXc90A8TFcxFi4ER-F6A/edit |
+| Presentación acumulativa | **Destino editable** de clases nuevas tras aprobación editorial | https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit |
+| Fuente oficial | NIST CSWP 29 en español | https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.spa.pdf |
+
+**Regla de fuente de verdad:** GitHub dicta el proceso; Sheets dicta el temario y estado de clases; la presentación acumulativa dicta el contenido materialmente producido; la plantilla dicta la identidad visual. Las notas de presentador deben cotejarse con la narración aprobada. Resolver diferencias a partir de lecturas actuales, no de recuerdos.
+
+## 2. Estado verificable al cierre de esta actualización
+
+- Curso: **NIST CSF 2.0 — Implementación y Auditoría de Ciberseguridad**.
+- Temario: **16 módulos, 68 clases**; pestañas `Temario`, `Puntos de contenido`, `Matriz de cobertura`, `Auditoría`, `Análisis competitivo`, además de cuatro respaldos ocultos de 2026-11-13.
+- `Temario` contiene casillas **Aprobada** (G) y **Grabada** (H). `Estado` (F) es distinto: no interpretarlo como seguimiento de aprobación visual.
+- **Aprobadas por el usuario:** 4.1, 4.2, 4.3 (casillas G activas). **Grabadas:** ninguna confirmada (H desmarcadas). Marcar `Grabada` solamente cuando el usuario lo confirme.
+- Presentación acumulativa: **11 diapositivas**: 4.1 ocupa 1–4, 4.2 ocupa 5–7 y 4.3 ocupa 8–11. Las 11 tienen notas de presentador en el recurso Google Slides consultado anteriormente. Se recuperó texto/estructura, pero **no se ha completado en esta recuperación una inspección visual de todas las diapositivas**.
+- Plantilla maestra: presentación separada con **2 diapositivas**; sus masters/layouts y render final deben analizarse antes de una nueva construcción.
+- Identidad NIST aprobada: 16:9, Inter, azul marino `#102B46`, celeste `#00B8D9`, blanco `#FFFFFF`. Las figuras oficiales no se recolorean ni deforman.
+- La copia independiente de la clase 4.2, `1WKV9iJHHn1E47Ubn9c6-GRBa-Zbx1gcHIVIrCo_ydJQ`, **no** es el destino ni una fuente aprobada.
+- GitHub `main` antes de añadir este archivo: commit `6d0d528acf3e1b24463cc9bdcc5f355c6b3daca0`. Leer el nuevo HEAD en sesiones posteriores.
+
+## 3. Clase activa — 4.4 «Componentes del Marco»
+
+**Estado:** propuesta editorial en elaboración; **NO aprobada**, **NO grabada**, **NO construida**.
+
+**Duración objetivo:** ~3–5 minutos. Alcance: panorama suficiente para comprender qué existe y para qué sirve, sin desarrollar temas de las clases posteriores.
+
+**Decisiones y requisitos expresos del usuario:**
+1. Presentar los tres componentes: **Núcleo del CSF**, **Perfiles Organizacionales** y **Niveles del CSF (Tiers)**.
+2. Dar una explicación breve, clara y suficiente del propósito de cada componente.
+3. Mencionar la organización del Núcleo por **funciones, categorías y subcategorías**.
+4. **Enumerar**, sin definir una por una, las seis funciones: **Gobernar, Identificar, Proteger, Detectar, Responder y Recuperar**.
+5. Explicar brevemente cómo se complementan los tres componentes.
+6. Evitar anticipar los desarrollos específicos: 4.5 (funciones), 4.6 (categorías/subcategorías), 4.7 (perfiles/tiers), secciones posteriores de aplicación.
+7. **Gráficos oficiales** para temas específicos de NIST. Verificar en la publicación original la figura precisa de Núcleo, funciones, Perfiles y Tiers, sus etiquetas, alcance y correspondencia narrativa. No reemplazar un gráfico oficial por iconos genéricos ni presentar un esquema docente como oficial. La portada mantiene la identidad visual del curso.
+
+**Diferencia pendiente entre conversación y fuente viva:** el Google Sheet vigente tiene **dos** puntos, `4.4.1` (visión general de los tres componentes) y `4.4.2` (cómo se complementan). La propuesta editorial más reciente sugirió **tres** apartados, separando una vista rápida de la estructura del Núcleo y la enumeración de seis funciones. Esta propuesta **aún no ha sido incorporada al Sheet ni aprobada como contenido final**. Antes de editar los puntos, contrastar con el usuario o elaborar la propuesta con trazabilidad conservando IDs y cobertura. No declarar sincronización inexistente.
+
+**Storyboard provisional:** propuesta de seis diapositivas (portada, tres componentes, Núcleo/jerarquía, seis funciones, Perfiles, Tiers). **No aprobado.** Se planteó antes de redactar narración completa y sin inspección integral de la plantilla; volver a determinar cantidad y composición siguiendo el orden obligatorio, sin convertir seis en una cuota fija.
+
+**Próximo trabajo específico:** recuperar estructura visual real de la plantilla y de las 11 diapositivas vigentes; leer puntos 4.4 y clases vecinas; preparar narración íntegra de 3–5 minutos, auditarla; derivar texto visible, matriz de trazabilidad, activos oficiales y storyboard; obtener **aprobación editorial explícita** antes de escribir en Slides.
+
+## 4. Proceso obligatorio — tres puertas
+
+**Fase A: editorial, sin escritura de Slides**
+1. Leer skill raíz, referencias visuales, `course-class-producer` y subskills; reconsultar Sheets.
+2. Verificar fuentes normativas, cobertura y límite entre clases.
+3. Elaborar **narración completa por segmento/slide**, evaluar redundancia, exactitud y duración; optimizar.
+4. Derivar texto **en pantalla** exclusivamente de la narración; mapa `punto → narración → slide` y `slide → pantalla → narración`.
+5. Analizar masters/layouts/ejemplares de plantilla, elementos editables, geometrías y renders; seleccionar figuras auténticas.
+6. Proponer storyboard detallado, especificación de activos y disposición, auditar preventivamente la composición y **solicitar aprobación expresa**.
+
+**Fase B: construcción**
+7. Solo tras aprobación, **añadir** nuevas diapositivas al **final de la presentación acumulativa**, conservando plantilla y clases previas. No generar un deck por clase.
+8. Usar textos y formas nativas editables; conservar relaciones, colores, dimensiones y proporciones de figuras oficiales.
+9. Insertar notas íntegras en cada slide; sustituir notas anteriores por `deleteText ALL` + `insertText` si se regeneran, nunca concatenar.
+
+**Fase C: QA y aceptación**
+10. Releer literalmente notas, verificar su correspondencia con pantalla y puntos.
+11. Inspeccionar el render real, geometrías, legibilidad, densidad, contrastes y errores, reequilibrar si procede.
+12. Ejecutar regresión sobre clases anteriores y tests `NIST41` y `VIS-01…VIS-09`; distinguir casos escritos de **pruebas efectivamente ejecutadas**.
+13. Entregar enlace al deck acumulativo para aceptación visual. **Solo marcar Aprobada en Sheets tras confirmación del usuario**. **Solo marcar Grabada cuando confirme la grabación**.
+
+Las mejoras de skills requieren evidencia, propuesta/diff, aprobación y pruebas. Evitar commits silenciosos con alteraciones de reglas.
+
+## 5. Pendientes y riesgos abiertos
+
+- **P0 operativo:** reconciliar la propuesta de 4.4 con los dos puntos vigentes del Sheet y fijar alcance antes de narrar.
+- **P1:** analizar/revisar realmente los renders de plantilla y diapositivas 1–11; la lectura de objeto/texto no equivale a auditoría visual.
+- **P1:** validar imágenes oficiales contra NIST CSWP 29; las imágenes encontradas por búsqueda son referencias, no activos verificados automáticamente.
+- **P1:** no confundir el proceso de cinco pasos para **crear y utilizar Perfiles Organizacionales** de NIST SP 1301 con un procedimiento universal de implementación del marco.
+- **P1:** pestaña `Auditoría` documenta límites por verificar (paráfrasis oficiales, material comercial ISACA, entregables efectivos). Distinguir cumplimiento estructural de calidad del desarrollo.
+- **P1:** pruebas VIS registradas en GitHub pero la ejecución de regresión de una nueva clase permanecía pendiente durante la recuperación.
+- **P2:** mantener este archivo actualizado cuando el usuario apruebe clases, confirme grabaciones, cambie el temario o se complete un hito técnico. Siempre indicar fecha y evidencias, sin suplantar a Sheets.
+
+## 6. Arranque rápido para una nueva conversación
+
+> «Recupera el estado real de mi curso NIST CSF 2.0. Conecta GitHub y Google Drive. Lee primero `PROJECT_STATE.md` y `SKILL.md` en `fernandoconislla/nist-csf-slides-skill`, además de `references/visual-composition.md`, el temario maestro y las presentaciones enlazadas. Comprueba el estado vivo (no confíes ciegamente en el resumen). Sigue `course-class-producer` y sus puertas de aprobación. Retoma la clase 4.4 «Componentes del Marco»: panorámica de 3–5 min, tres componentes, enumerar las seis funciones sin explicarlas, mencionar categorías/subcategorías y usar figuras oficiales. Primero presenta narración y storyboard auditados; no escribas Google Slides antes de mi aprobación.»
