@@ -185,3 +185,10 @@ Estados: `Cumple`, `Requiere ajuste`, `No verificable`; severidad Crítico/Mayor
 
 ## Control editorial
 No modificar la narración o el temario aprobado silenciosamente para acomodarlo a una slide; devolver necesidades de corrección a `course-lesson-builder` o proponer redistribución. Si el contenido exige más espacio, crear más slides. Las modificaciones de reglas globales pasan por `course-skill-improver`.
+
+## Foco fuerte en recortes oficiales y reintentos (2026-11-14)
+1. Si la enseñanza exige señalar una celda/fila/código en una imagen auténtica, **no usar solo un trazo cian fino**: en fondos de documento densos implementar doble borde (marino exterior, cian interior) y chip cian de texto explícito. Referencia validada en clase 4.6: borde marino 6,5 pt + cian 3 pt como capas nativas; adaptar medidas al tamaño del objetivo, sin cubrir letras.
+2. Chip/píldora editables fuera del recorte legible; texto directo «Categoría: GV.RM», «Subcategoría: GV.RM-01», «Salto intencional: 02 → 10». Si hay un espacio libre, usarlo; jamás tapar una palabra oficial. Preservar autoría y colores de NIST y guardar procedencia (página PDF).
+3. Revisar el resultado al tamaño en que se proyectará, **no únicamente el zoom de edición**. Contact sheet útil para detectar coherencia, slide individual para examinar milimétricamente solapamientos. Corrección que aumenta el marco puede requerir desplazar pie/notas o rótulos; volver a renderizar.
+4. API de Slides: para borde se usa `shapeProperties.outline.outlineFill.solidFill` y `weight` (NO `outline.solidFill`). Ante INVALID_ARGUMENT, reparar payload y reintentar; ante revisión obsoleta refrescar antes de reescribir. No escribir por duplicado sin inspección de IDs. Trazar tres vías seguras con decisión de escalada.
+5. Auditoría dura **Fuerza de foco visual**: el estudiante debe localizar en menos de 1 s el elemento explicado. Si no, `Requiere ajuste` aunque la geometría/API sea válida. Foco/etiqueta deben apuntar a la misma entrada real, no a una columna vecina.
