@@ -5,6 +5,10 @@ description: Desarrollar el contenido completo de una clase específica de un cu
 
 # Course Lesson Builder — v0.2.0
 
+## Narración de apertura e imágenes oficiales (2026-11-14)
+
+Una diapositiva de apertura de componentes puede nombrar y resumir su finalidad mientras muestra **figuras oficiales pequeñas** sin entrar en las propiedades detalladas de cada una. Mantener correspondencia entre etiqueta de cada imagen, explicación audible y tema específico. No recortar automáticamente la narración panorámica por repetición cuando la profundización posterior cumple otra función. Ejemplo documentado: `../../proposals/class-4.4-componentes-del-marco-v4.md`.
+
 ## Narración panorámica y maquetas (2026-11-14)
 
 Leer `../../references/editorial-redundancy-svg.md`. La apertura puede identificar y **resumir la finalidad** de los elementos que se explicarán individualmente después. Documentar propósito de cada segmento (orientar, explicar, aplicar, integrar); auditar 1–10 con ejemplos concretos, no por mera repetición léxica. Secuencia: puntos → narración íntegra → auditoría → pantalla exacta → storyboard → maquetas SVG visibles → aprobación editorial → Slides. No adelantar detalle reservado para otras clases.
