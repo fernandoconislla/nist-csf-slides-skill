@@ -6,6 +6,10 @@ description: Diseñar y auditar diapositivas del curso NIST CSF 2.0 siguiendo un
 # NIST CSF 2.0 — Skill de diapositivas
 
 
+## Regla obligatoria: diseño preventivo antes de construir (2026-11-14)
+
+Leer `references/visual-composition.md` antes de diseñar cada clase. Aplicar tres puertas, en este orden: **A) planificación preventiva** con función de cada elemento, jerarquía, layout y geometría; **B) construcción controlada** con comprobación de transformaciones y reequilibrio tras cambios; **C) auditoría estructural y visual real + regresión**. La inspección posterior no sustituye el diseño preventivo. No crear ni modificar Google Slides antes de la aprobación editorial explícita de la clase; una corrección autorizada se limita a su alcance.
+
 ## Ciclo obligatorio de optimización y auditoría (regla transversal)
 
 - No limitarse a detectar defectos: ejecutar **inspección → optimización efectiva → auditoría → corrección → auditoría de regresión**, iterando mientras existan problemas materiales solucionables.
