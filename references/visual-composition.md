@@ -1,5 +1,9 @@
 # Composición visual preventiva y validación — NIST CSF 2.0
 
+## Puerta SVG visible y fidelidad de figuras (2026-11-14)
+
+Después de narración completa auditada y storyboard, mostrar **maquetas SVG 16:9 visibles**. Deben revelar composición, centrado óptico, tamaños, densidad, márgenes y lugar de los activos auténticos. Los placeholders no deben aparentar ser diagramas oficiales. Una figura que explica un procedimiento no sustituye a una presentación conceptual de un componente. Inspeccionar primero la plantilla nativa y render cuando sea accesible. Leer `editorial-redundancy-svg.md`; aprobación editorial y aprobación visual final son puertas separadas.
+
 ## Alcance y precedencia
 Referencia operativa para `course-slide-template`, `course-lesson-builder`, `course-slide-builder` y `course-class-producer`. Complementa la identidad aprobada y las restricciones de cada clase. No reemplaza el temario ni autoriza crear una presentación sin aprobación explícita.
 
