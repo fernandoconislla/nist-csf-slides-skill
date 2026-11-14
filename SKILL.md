@@ -5,6 +5,10 @@ description: Diseñar y auditar diapositivas del curso NIST CSF 2.0 siguiendo un
 
 # NIST CSF 2.0 — Skill de diapositivas
 
+## Regla de imágenes oficiales en panoramas de componentes (2026-11-14)
+
+Cuando una slide panorámica presenta **componentes identificables de un marco oficial** y existen representaciones oficiales pertinentes, debe incluir una imagen institucional auténtica de **cada componente**, incluso en formato pequeño. No sustituir recursos reales por numeraciones circulares, iconos genéricos o dibujos IA por comodidad de maquetación. Aplicar las mismas exigencias de origen, proporción, etiquetas, color, espacio útil y legibilidad que a las figuras grandes. La apertura puede sumar nombre y propósito breve de cada componente. En NIST 4.4, la slide 02 exige tres imágenes oficiales pequeñas (Núcleo, Perfiles, Tiers); ver `proposals/class-4.4-componentes-del-marco-v4.md`. Esta regla no desplaza la imagen propia de la portada ni fuerza tres recursos cuando no existe imagen oficial auténtica adecuada.
+
 ## Regla transversal 2026-11-14
 
 Leer `references/editorial-redundancy-svg.md` junto con `references/visual-composition.md`. Una apertura panorámica puede resumir finalidad de conceptos desarrollados después: es repetición pedagógica funcional, no defecto automático. Auditar solapamientos con evidencia y alcance interclases. Tras narración auditada, texto en pantalla y storyboard, mostrar **maquetas SVG 16:9 visibles** antes de aprobación editorial y construcción de Slides. Las maquetas no equivalen a figuras oficiales ni a aprobación visual final; contrastar en vivo `PROJECT_STATE.md`, Sheets y Slides.
