@@ -5,6 +5,10 @@ description: Desarrollar el contenido completo de una clase específica de un cu
 
 # Course Lesson Builder — v0.2.0
 
+## Narración panorámica y maquetas (2026-11-14)
+
+Leer `../../references/editorial-redundancy-svg.md`. La apertura puede identificar y **resumir la finalidad** de los elementos que se explicarán individualmente después. Documentar propósito de cada segmento (orientar, explicar, aplicar, integrar); auditar 1–10 con ejemplos concretos, no por mera repetición léxica. Secuencia: puntos → narración íntegra → auditoría → pantalla exacta → storyboard → maquetas SVG visibles → aprobación editorial → Slides. No adelantar detalle reservado para otras clases.
+
 
 ## Control preventivo del storyboard (antes de construcción)
 
