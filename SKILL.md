@@ -5,6 +5,10 @@ description: Diseñar y auditar diapositivas del curso NIST CSF 2.0 siguiendo un
 
 # NIST CSF 2.0 — Skill de diapositivas
 
+## Regla transversal 2026-11-14
+
+Leer `references/editorial-redundancy-svg.md` junto con `references/visual-composition.md`. Una apertura panorámica puede resumir finalidad de conceptos desarrollados después: es repetición pedagógica funcional, no defecto automático. Auditar solapamientos con evidencia y alcance interclases. Tras narración auditada, texto en pantalla y storyboard, mostrar **maquetas SVG 16:9 visibles** antes de aprobación editorial y construcción de Slides. Las maquetas no equivalen a figuras oficiales ni a aprobación visual final; contrastar en vivo `PROJECT_STATE.md`, Sheets y Slides.
+
 
 ## Regla obligatoria: diseño preventivo antes de construir (2026-11-14)
 
