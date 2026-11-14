@@ -146,3 +146,8 @@
 - Incorporada regla de reintentos seguros (hasta 3 rutas técnicas distintas con detección de efectos parciales, sin mutaciones ciegas) en raíz, builder, producer, improver y referencia visual.
 - Añadidos casos RETRY/FOCUS y criterio auditor independiente «Fuerza del foco visual».
 - **No marcar clase 4.6 aprobada ni grabada sin aceptación expresa.**
+
+## 2026-11-14 — Corregida oclusión de focos fuertes en 4.6
+- Slides 29–31: reemplazados 4 pares de marcos marino/cian por 4 pares de marcadores laterales editables, sin invadir códigos NIST. Se preservan chips y notas.
+- Se ejecutó el protocolo de reintento tras revisión de Slides desactualizada: lectura de nuevo revisionId y segunda escritura exitosa.
+- Render PDF actualizado inspeccionado; añadida regla de área tipográfica libre y pruebas OCC-01..03 / RETRY-04. Estado no aprobado.
