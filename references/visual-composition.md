@@ -1,5 +1,9 @@
 # Composición visual preventiva y validación — NIST CSF 2.0
 
+## Panorama de componentes con activos oficiales pequeños (2026-11-14)
+
+Una visión general de un marco reconocido **no está exenta de la regla de recursos oficiales** por ser introductoria. Si se presentan tres componentes NIST y existe representación oficial adecuada de cada uno, el storyboard debe reservar tres imágenes oficiales auténticas **pequeñas** de función identificativa. Las imágenes van con nombre y descripción breve, con marco visual comparable sin alterar proporciones (contain), alineación de centros, igual altura óptica y suficiente nitidez/legibilidad; evitar números decorativos o iconos genéricos como sustitutos. En SVG, representar espacios reservados claramente rotulados, no recrear el documento original. Si un recurso oficial pequeño resulta ilegible, buscar recorte auténtico o redistribución; no sustituir por un icono IA. Ejemplo: clase 4.4 slide 02: rueda CSF 2.0, recorte NIST Profiles, figura NIST Tiers. No imponer el requisito sobre la portada ya aprobada ni usar figuras sin pertinencia.
+
 ## Puerta SVG visible y fidelidad de figuras (2026-11-14)
 
 Después de narración completa auditada y storyboard, mostrar **maquetas SVG 16:9 visibles**. Deben revelar composición, centrado óptico, tamaños, densidad, márgenes y lugar de los activos auténticos. Los placeholders no deben aparentar ser diagramas oficiales. Una figura que explica un procedimiento no sustituye a una presentación conceptual de un componente. Inspeccionar primero la plantilla nativa y render cuando sea accesible. Leer `editorial-redundancy-svg.md`; aprobación editorial y aprobación visual final son puertas separadas.
