@@ -138,3 +138,20 @@ Tras petición expresa «corrige», se corrigieron **en el deck acumulativo exis
 **Aprobación expresa:** el usuario escribió «aprobado y propon siguiente». Se marcó **4.4 como Aprobada=TRUE** en Google Sheets maestro: pestaña `Temario`, celda `G14`. Lectura posterior confirmó `Temario!C14:H14` con `G14=TRUE` y `H14=FALSE`. **No grabada.** Presentación acumulativa sigue con 16 diapositivas, clase 4.4 posiciones 12–16. No editar 4.4 salvo petición posterior.
 
 **Siguiente clase:** **4.5 — Núcleo del Marco: Las seis funciones**, todavía **NO aprobada ni generada**. Puntos de Sheets `4.5.1–4.5.7`: Gobernar, Identificar, Proteger, Detectar, Responder, Recuperar, interdependencia y operación continua. Para propuesta nueva, basarse en §2 y figura 2 de NIST CSWP 29 oficial, en español, y preservar 4.6 para categorías/subcategorías. Usuario exige que toda solicitud «propón» **incluya auditoría** y maquetas SVG visibles antes de construir. En curso de propuesta editorial; no crear diapositivas 17+ sin aprobación expresa.
+
+## 12. Clase 4.5 construida — 2026-11-14
+
+**Pedido del usuario:** «genera» tras aprobar editorialmente la estructura de **9 diapositivas**, una por cada función. Clase: **4.5 — Núcleo del Marco: Las seis funciones**.
+
+**Generación verificada:** presentación acumulativa https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit, revisión `qVmNsVAyjDJE0Q`. Se añadieron **9 diapositivas (17–25)** con IDs:
+`csf45_cover`, `csf45_overview`, `csf45_gv`, `csf45_id`, `csf45_pr`, `csf45_de`, `csf45_rs`, `csf45_rc`, `csf45_integration`.
+
+**Formato y recursos:** portada duplicada de 4.4 con imagen original y título «Núcleo del Marco / Las seis funciones»; rueda oficial NIST CSF 2.0 insertada en slide 18 y cada una de 19–24, sin repintarla ni deformarla. Seis slides individuales comparten figura izquierda, propósito/ámbitos derecha y rótulo «Función en foco: [nombre]» debajo. Slide 25 usa dos paneles para actividad continua (GV/ID/PR/DE) y preparación permanente (RS/RC). Paleta azul marino #102B46, cian #00B8D9, fondo blanco e Inter.
+
+**Narración:** notas completas insertadas y leídas de vuelta en 9 slides (longitud en caracteres: 358, 541, 759, 700, 822, 697, 662, 744, 710). Todas las notas están presentes. Sin desarrollo de categorías/subcategorías de clase 4.6. Cumple el esquema 4.5.1–4.5.7.
+
+**Control de alcance:** 25 slides en total; la comparación nativa de IDs confirma **las primeras 16 preservadas en sus posiciones**. Nueve nuevas en posiciones 17–25 sin omisiones ni cambios de orden. Inspección geométrica nativa de las nueve: ningún objeto sale de los límites. Se exportó el deck a PDF y se renderizaron/inspeccionaron las nueve páginas 17–25, incluidas comparativa de todas las composiciones.
+
+**Estado:** clase **GENERADA, PENDIENTE DE APROBACIÓN VISUAL DEL USUARIO, NO GRABADA**. No marcar `Aprobada` ni `Grabada` hasta confirmación. La comprobación visual confirma ausencia de desbordes visibles, pero el rótulo «Función en foco» no es un indicador conectado a un sector: si el usuario exige una flecha/callout específico hacia cada función, añadirlo a demanda sin deformar la figura original.
+
+**Próxima clase** tras aprobación expresa: 4.6 Núcleo del Marco: Categorías y Subcategorías. Seguir propuestas y auditorías antes de producir.
