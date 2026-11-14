@@ -151,3 +151,9 @@
 - Slides 29–31: reemplazados 4 pares de marcos marino/cian por 4 pares de marcadores laterales editables, sin invadir códigos NIST. Se preservan chips y notas.
 - Se ejecutó el protocolo de reintento tras revisión de Slides desactualizada: lectura de nuevo revisionId y segunda escritura exitosa.
 - Render PDF actualizado inspeccionado; añadida regla de área tipográfica libre y pruebas OCC-01..03 / RETRY-04. Estado no aprobado.
+
+## 2026-11-14 — Aprobación clase 4.7 y consolidación de skills
+- **Google Sheets Temario G17=TRUE; H17=FALSE**, comprobado por lectura de vuelta tras aceptación expresa. La clase 4.7 queda aprobada y no grabada.
+- Presentación nativa conservada con **40 diapositivas**, 4.7 en páginas 32–40, nueve narraciones; revisión verificada del deck antes de cerrar: VnwO_6-31Cb71Q.
+- Consolidación de 8 skills especializadas y raíz: diferencia entre figura oficial y recorte de texto, Perfil Comunitario independiente, panorama vs una slide por Tier, tabla 2 gobernanza+gestión, foco sin ocultar letras, no-duplicidad de contenidos, matriz de estado aprobado/grabado y protocolo de reintento.
+- Regresión 4.7 documentada y readback de GitHub requerido; ningún cambio adicional en el deck a raíz de aprobación.
