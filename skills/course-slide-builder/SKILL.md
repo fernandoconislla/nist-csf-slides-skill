@@ -6,6 +6,14 @@ description: Transforma una narración docente completa y auditada, textos en pa
 # Course Slide Builder — v0.1.0
 
 
+## Tres puertas de calidad visual (regla bloqueante)
+
+Antes de invocar la API de Google Slides, leer `references/visual-composition.md` y completar una **auditoría preventiva** por diapositiva: propósito, función de cada línea/barra, jerarquía, esquema de alineación, proporciones, margen, uso semántico del color y contenido dentro de 16:9. No construir un layout con decoración redundante, jerarquía indefinida o geometría no planificada.
+
+Durante la construcción, validar tamaños efectivos, transformaciones `scaleX/scaleY`, orientación y puntas de conectores, cierre de contornos, cajas nativas y coherencia entre columnas. Preferir rectángulos completos nativos sobre cuatro líneas; una flecha vertical no debe resultar achatada por una dimensión o matriz de transformación incorrecta. Tras eliminar elementos, **recalcular y aplicar** posiciones del conjunto; no mantener huecos residuales.
+
+Después, auditar estructura, notas, integridad de otras diapositivas y **renderizado realmente inspeccionado**; obtener la miniatura por sí solo no equivale a inspeccionarla. Si no hay inspección visual, indicar «Pendiente de validación visual». Una corrección geométrica no es prueba automática de acabado premium. Estos controles complementan, sin reemplazar, la aprobación de propuesta y la preservación del deck acumulativo.
+
 ## Ciclo obligatorio de optimización y auditoría (regla transversal)
 
 - No limitarse a detectar defectos: ejecutar **inspección → optimización efectiva → auditoría → corrección → auditoría de regresión**, iterando mientras existan problemas materiales solucionables.
