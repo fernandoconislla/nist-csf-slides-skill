@@ -134,3 +134,9 @@
 - Estructura inicial de la skill NIST CSF.
 - Prompt de ilustración reconstruido, pendiente de validación literal.
 - Reglas de composición, precisión NIST y auditoría; enlaces de referencia.
+## Figuras oficiales pequeñas en introducción panorámica — 2026-11-14
+
+- Corregida la slide 02 de clase 4.4: tres imágenes oficiales pequeñas (Núcleo, Perfiles y Tiers), no números decorativos.
+- Creada propuesta V4 en `proposals/class-4.4-componentes-del-marco-v4.md`.
+- Actualizados skill principal, subskills pertinentes, referencias editoriales/visuales, feedback y estado; agregados casos de prueba OFF-01–04.
+- Norma y propuesta escritas, **pruebas visuales/activos definitivos/maquetas SVG y aprobación editorial pendientes**. No se modificaron Google Slides ni casillas de Sheets.
