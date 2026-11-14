@@ -5,6 +5,10 @@ description: Orquesta desde el nombre o ID de una clase la lectura de su temario
 
 # Course Class Producer — v0.1.0
 
+## Puerta SVG y estados de aprobación (2026-11-14)
+
+Orquestar `../../references/editorial-redundancy-svg.md`: narración completa auditada → pantalla → storyboard → **maquetas SVG visibles** → optimización editorial → aprobación explícita → construcción nativa → QA estructural/visual → aprobación final del usuario. La introducción panorámica puede resumir propósitos antes de desarrollarlos, sin considerarse redundancia automática. Registrar estado y limitaciones verificadas. Marcar `Aprobada` en Sheets solo tras confirmación final de diapositivas producidas; `Grabada` solo tras confirmación de grabación.
+
 
 ## Puertas de producción de composición visual (obligatorias)
 
