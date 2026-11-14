@@ -86,3 +86,14 @@ Las mejoras de skills requieren evidencia, propuesta/diff, aprobación y pruebas
 ## 6. Arranque rápido para una nueva conversación
 
 > «Recupera el estado real de mi curso NIST CSF 2.0. Conecta GitHub y Google Drive. Lee primero `PROJECT_STATE.md` y `SKILL.md` en `fernandoconislla/nist-csf-slides-skill`, además de `references/visual-composition.md`, el temario maestro y las presentaciones enlazadas. Comprueba el estado vivo (no confíes ciegamente en el resumen). Sigue `course-class-producer` y sus puertas de aprobación. Retoma la clase 4.4 «Componentes del Marco»: panorámica de 3–5 min, tres componentes, enumerar las seis funciones sin explicarlas, mencionar categorías/subcategorías y usar figuras oficiales. Primero presenta narración y storyboard auditados; no escribas Google Slides antes de mi aprobación.»
+
+## 7. Actualización de reglas — 2026-11-14 (feedback clase 4.4)
+
+- La apertura panorámica puede explicar **brevemente para qué sirve cada componente**, aunque las siguientes diapositivas amplíen esas finalidades. Es repetición pedagógica funcional, **no redundancia perjudicial automática**; las duplicaciones reales siguen auditándose con evidencias.
+- Reintroducida como puerta editorial obligatoria la **maqueta SVG 16:9 visible en conversación** por diapositiva: tras guion completo auditado, texto exacto y storyboard; antes de aprobar y producir Slides.
+- Referencia compartida: `references/editorial-redundancy-svg.md`; siete skills especializadas, raíz y composición visual actualizadas. Casos RED/SVG/STATE **definidos pero todavía NO ejecutados**.
+- **Estado de 4.4 sin cambios:** propuesta editorial de cinco diapositivas **no aprobada**, ninguna diapositiva añadida en este ciclo. La maquetación SVG previa fue preliminar, con placeholders. Revisar si los recursos oficiales encajan tras seleccionar activos auténticos.
+- **Pendiente:** comparar las dos filas vigentes 4.4.1/4.4.2 de Sheets con el desglose en tres temas propuesto por conversación; no afirmar que tres puntos se guardaron. Mantener los IDs hasta nueva autorización.
+- **Pendiente:** hacer inspección **real** de renders de la plantilla y de las nuevas slides; comprobación nativa de masters/layouts por sí sola no es QA visual.
+- **Pendiente:** confirmar figuras oficiales exactas Núcleo/Perfiles/Tiers y relación con el guion; evitar figura de procedimiento de perfiles cuando no se narran sus pasos.
+- **Pendiente:** narración, textos en pantalla y maquetas finales auditados, aprobación editorial, construcción en deck acumulativo, notas íntegras, QA y aprobación visual final de 4.4.
