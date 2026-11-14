@@ -120,3 +120,8 @@ Estados: `Cumple`, `Requiere ajuste`, `No verificable`. Identificar gravedad y a
 
 ## Modo de funcionamiento
 Esta skill **no vigila Google Sheets ni GitHub en segundo plano**. Se ejecuta al solicitar comparación, revisión, aprendizaje o actualización. Si se desea detectar ediciones nuevas automáticamente, se necesita un flujo de automatización explícito y autorizado. Cambiar el contenido de una skill no garantiza por sí solo que el modelo mejore: se debe cargar la nueva versión al ejecutarla y comprobar resultados.
+
+## Aprobación explícita de reglas y cierre de feedback (2026-11-14)
+- El usuario autorizó la actualización permanente de skills y la **regla de reintentos operativos**. Convertir cada fallo repetido en caso de regresión, con herramienta, síntoma, corrección del esquema, retry seguro y lectura de vuelta.
+- Definir máximo de 3 estrategias técnicas diferenciadas y seguras antes de declarar bloqueo; NO ejecutar a ciegas 3 mutaciones si una pudo funcionar parcialmente. Diferenciar pérdida real de conexión, falta de permisos y JSON mal formado.
+- Enseñanza visual sobre recursos oficiales: contraste alto, doble contorno cian/marino, chip explícito, inspección de render y criterio independiente `Fuerza del foco visual`. Registrar resultados y restricciones no verificadas.
