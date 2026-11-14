@@ -5,6 +5,10 @@ description: Orquesta desde el nombre o ID de una clase la lectura de su temario
 
 # Course Class Producer — v0.1.0
 
+## Control de figuras oficiales pequeñas en aperturas (2026-11-14)
+
+No basta con verificar que las slides de desarrollo tengan gráficos NIST: auditar **también** la panorámica de componentes. Si existe una representación institucional pertinente de Núcleo, Perfiles y Tiers, exigir las **tres imágenes auténticas pequeñas** en la slide 02 de la clase 4.4, sin reemplazarlas por círculos con números. Comprobar fuente, recorte, proporción, legibilidad y correspondencia con el guion antes de aceptar maquetas SVG y antes de escribir Slides. Revisar `../../proposals/class-4.4-componentes-del-marco-v4.md`; la corrección editorial no supone aceptación visual final.
+
 ## Puerta SVG y estados de aprobación (2026-11-14)
 
 Orquestar `../../references/editorial-redundancy-svg.md`: narración completa auditada → pantalla → storyboard → **maquetas SVG visibles** → optimización editorial → aprobación explícita → construcción nativa → QA estructural/visual → aprobación final del usuario. La introducción panorámica puede resumir propósitos antes de desarrollarlos, sin considerarse redundancia automática. Registrar estado y limitaciones verificadas. Marcar `Aprobada` en Sheets solo tras confirmación final de diapositivas producidas; `Grabada` solo tras confirmación de grabación.
