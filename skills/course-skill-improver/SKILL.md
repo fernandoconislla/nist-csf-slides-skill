@@ -125,3 +125,8 @@ Esta skill **no vigila Google Sheets ni GitHub en segundo plano**. Se ejecuta al
 - El usuario autorizó la actualización permanente de skills y la **regla de reintentos operativos**. Convertir cada fallo repetido en caso de regresión, con herramienta, síntoma, corrección del esquema, retry seguro y lectura de vuelta.
 - Definir máximo de 3 estrategias técnicas diferenciadas y seguras antes de declarar bloqueo; NO ejecutar a ciegas 3 mutaciones si una pudo funcionar parcialmente. Diferenciar pérdida real de conexión, falta de permisos y JSON mal formado.
 - Enseñanza visual sobre recursos oficiales: contraste alto, doble contorno cian/marino, chip explícito, inspección de render y criterio independiente `Fuerza del foco visual`. Registrar resultados y restricciones no verificadas.
+
+## Cierre de pendientes y validación — 2026-11-14
+- Tras «actualiza todos los pendientes», leer skills existentes y evitar duplicar reglas; añadir solo las faltantes y verificar lectura posterior de cada archivo. Registrar evolución del caso 4.7 y aprobación en Sheet/PROJECT_STATE/CHANGELOG/FEEDBACK.
+- Diferenciar casos de regresión definidos, comprobaciones estructurales realizadas y QA visual realmente ejecutado. No inventar porcentajes ni ejecución de tests. Dar prioridad a la regla posterior de no oclusión sobre precedentes de bordes gruesos.
+- Una skill solo influye si se vuelve a leer y ejecutar; un commit no acredita su cumplimiento.
