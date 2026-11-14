@@ -96,3 +96,11 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 - **OCC-02**: contornos de `PR.DS-02` y `PR.DS-10` intersectan la tinta del código o texto del resultado → **NO conforme**.
 - **OCC-03**: barras laterales marino/cian externas a la línea + chip fuerte, texto original sin oclusión en render exportado → **Conforme en slides 29–31, 2026-11-14**.
 - **RETRY-04**: requiredRevisionId obsoleto causa error de API y ninguna mutación → refrescar revisión, comprobar inexistencia de efectos parciales, repetir solicitud segura. **Ejecutado y superado 2026-11-14:** revisión desactualizada `QtyPp6rt-svPiQ`; relectura `JAyvmxVwXNw1Vw`; actualización correcta `IF8N21sT4INjEw`.
+
+## DIAGRAM / TIERS — regresión clase 4.7 (2026-11-14)
+- **GRAPH-01**: slide Perfil Actual/Objetivo protagonizada solo por párrafo NIST recortado → falla; diagrama comparativo editable → conforme.
+- **GRAPH-02**: slide Perfil Comunitario como recorte teórico sin representación de línea base → falla; diagrama comunitario con casos reales verificados en NIST y distinción con Perfil Objetivo → conforme.
+- **TIER-01**: panorama de 4 Tiers define individualmente todas sus características y otra slide repite las mismas → redundancia, falla.
+- **TIER-02**: panorama con figura 4 íntegra; 4 slides con figura 4 íntegra y foco externo diferente, dos dimensiones normativas de cada Tier → conforme en 4.7 V3.
+- **TIER-03**: marcador gráfico cubre texto NIST, interpreta la barra como nivel de certificación u obliga llegar a Nivel 4 → falla.
+- **TIER-04**: panel de descripción recorta las últimas líneas a zoom final → falla; reajustar panel, volver a exportar y revisar. Se ejecutó ajuste en slides 36–39 V3.
