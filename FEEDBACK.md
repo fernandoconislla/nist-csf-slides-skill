@@ -16,3 +16,16 @@
 **Referencia del caso aprobado:** «Clase 4.1 · Introducción al NIST CSF 2.0», cuatro diapositivas, aprobada explícitamente por el usuario el 2026-11-13. Enlace a Google Slides disponible en el contexto de producción; no publicarlo en este archivo sin confirmar su configuración de acceso.
 
 **Prueba:** ver `tests/cases.md`. Cambios de instrucciones verificados en GitHub; las reglas se evaluarán en próximas regeneraciones reales. No asumir mejora ejecutiva probada solo por cambio textual.
+
+## 2026-11-14 · Refinamiento visual NIST CSF 2.0 (diapositivas 7, 9, 10 y 11)
+
+**Solicitud aprobada:** actualizar skills pertinentes para aplicar criterios **antes, durante y después** de generar, no solo como corrección posterior.
+
+**Observaciones:** (a) separadores adicionales sin función en las diapositivas 9 y 10; (b) eliminación posterior dejó huecos que exigieron redistribuir contenido; (c) rectángulos de diapositiva 11 incompletos y flecha deformada por transformaciones; (d) color funcional de ⇄ celeste y rótulo azul marino; (e) miniaturas generadas pero inspección visual no acreditada.
+
+**Causa probable:** contrato preventivo insuficiente y comprobaciones geométricas incompletas; no confundir con causa demostrada. Los desplazamientos exactos fueron correcciones locales.
+
+**Alcance:** principios reutilizables a `references/visual-composition.md`; instrucciones breves en template, lesson, builder, producer y root; regla de aprendizaje en improver; pruebas VIS-01 a VIS-09. Conservar decisiones editoriales y notas aprobadas, sin modificar presentación.
+
+**Validación:** lecturas GitHub y pruebas estáticas de presencia/consistencia; reejecución visual con nueva clase **pendiente**.
+
