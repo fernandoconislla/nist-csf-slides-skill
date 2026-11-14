@@ -32,3 +32,33 @@ Usuario pide Google Slides. Esperado: archivo nativo editable con enlace verific
 Registrar cobertura curricular, correspondencia pantalla↔narración, notas, exactitud, redundancia independiente 1–10, identidad, legibilidad, imágenes y limitaciones, con evidencia; no otorgar 10/10 sobre aspectos no comprobados.
 
 Estado al 2026-11-13: **casos registrados**. Las pruebas sobre una regeneración futura aún no se han ejecutado; no presentarlas como aprobadas automáticamente.
+
+## VIS-01 — Economía visual antes de construir
+**Entrada:** storyboard con tres grupos de icono+título+descripción y una barra superior por grupo, además de línea de título. **Esperado:** detectar barras sin función antes de crear Google Slides; entregar storyboard sin decoración redundante y con distribución rehecha. **Falla:** limitarse a borrarlas después de generar.
+
+## VIS-02 — Reequilibrio al simplificar
+**Entrada:** se elimina una barra inferior de una diapositiva de dos columnas o las tres barras superiores de una de tres columnas. **Esperado:** recalcular posición de iconos, rótulos y cierre, márgenes arriba/abajo y centro óptico. **Falla:** conservar coordenadas dejando vacíos evidentes.
+
+## VIS-03 — Tres columnas
+**Entrada:** equipos técnicos, responsables y dirección. **Esperado:** iconos centrados por columna, títulos con línea base equivalente, rótulos legibles y espacio entre elementos consistente; sin barras decorativas.
+
+## VIS-04 — Flecha bidireccional
+**Entrada:** dos cajas apiladas con conexión vertical. **Esperado:** flecha nativa editable vertical, dos puntas visibles, proporciones equilibradas y alineación entre cajas; inspección de `scaleX`, `scaleY` y tamaño efectivo. **Falla:** flecha achatada aunque su centro numérico sea correcto.
+
+## VIS-05 — Contornos editables
+**Entrada:** dos recuadros de riesgo. **Esperado:** rectángulos nativos cerrados, grosores coherentes, contenido dentro y márgenes adecuados. **Falla:** contornos abiertos o cuatro piezas desalineadas.
+
+## VIS-06 — Color semántico
+**Entrada:** etiqueta «⇄ Comunicación bidireccional». **Esperado para este curso:** ⇄ celeste `#00B8D9`, texto azul marino `#102B46`; verificar que los estilos de texto no se sobrescriban mutuamente. No imponer esta combinación a figuras oficiales.
+
+## VIS-07 — Regresión y alcance
+**Entrada:** corrección visual solo en diapositivas 9–11. **Esperado:** diapositivas 1–8, guiones y contenido aprobados intactos; verificar posiciones, IDs y contenido de notas aplicable.
+
+## VIS-08 — Comprobación visual honesta
+**Entrada:** API devuelve miniatura pero nadie inspeccionó sus píxeles. **Esperado:** estado `Pendiente de validación visual`, nunca `Aprobado visualmente`. Si inspección visual disponible, revisar proporción, contraste, densidad, recortes y acabado antes de aprobar.
+
+## VIS-09 — Puerta preventiva previa a la API
+**Entrada:** propuesta aún no aprobada con alineaciones o función de un elemento sin definir. **Esperado:** bloquear construcción; completar storyboard y aprobación antes de llamar a Google Slides. **Falla:** generar primero y diseñar después.
+
+**Estado 2026-11-14:** pruebas definidas y revisión estática de reglas; **ejecución contra nuevas diapositivas todavía pendiente**. No se consideran superadas por haber escrito estos casos.
+
