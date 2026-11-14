@@ -132,3 +132,9 @@ Tras petición expresa «corrige», se corrigieron **en el deck acumulativo exis
 **QA realizado:** exportación PDF nativa de **16 páginas**, renderización de las páginas **12–16**, inspección visual efectiva de las cinco diapositivas (composición, márgenes, legibilidad, sin marcadores); lectura nativa de slides y notas. Imágenes por página 12–16 = `1, 3, 1, 1, 1`; longitudes de notas = `199, 447, 702, 711, 793` caracteres; **0** marcadores «PENDIENTE». Comprobación geométrica básica de límites. Archivos visuales de QA guardados solo en entorno de trabajo; no son aprobación del usuario.
 
 **Resultado interno:** errores de generación señalados previamente corregidos en el deck. **Estado formal: PENDIENTE de aceptación visual expresa del usuario** y prueba de regresión visual comparativa de las once previas (solo comprobados ID/orden, no se modificaron). **NO** marcar Aprobada o Grabada sin confirmación. Ante correcciones futuras, editar exclusivamente 12–16.
+
+## 11. Aprobación de 4.4 y apertura de 4.5 — 2026-11-14
+
+**Aprobación expresa:** el usuario escribió «aprobado y propon siguiente». Se marcó **4.4 como Aprobada=TRUE** en Google Sheets maestro: pestaña `Temario`, celda `G14`. Lectura posterior confirmó `Temario!C14:H14` con `G14=TRUE` y `H14=FALSE`. **No grabada.** Presentación acumulativa sigue con 16 diapositivas, clase 4.4 posiciones 12–16. No editar 4.4 salvo petición posterior.
+
+**Siguiente clase:** **4.5 — Núcleo del Marco: Las seis funciones**, todavía **NO aprobada ni generada**. Puntos de Sheets `4.5.1–4.5.7`: Gobernar, Identificar, Proteger, Detectar, Responder, Recuperar, interdependencia y operación continua. Para propuesta nueva, basarse en §2 y figura 2 de NIST CSWP 29 oficial, en español, y preservar 4.6 para categorías/subcategorías. Usuario exige que toda solicitud «propón» **incluya auditoría** y maquetas SVG visibles antes de construir. En curso de propuesta editorial; no crear diapositivas 17+ sin aprobación expresa.
