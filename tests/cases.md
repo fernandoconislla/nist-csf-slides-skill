@@ -104,3 +104,12 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 - **TIER-02**: panorama con figura 4 íntegra; 4 slides con figura 4 íntegra y foco externo diferente, dos dimensiones normativas de cada Tier → conforme en 4.7 V3.
 - **TIER-03**: marcador gráfico cubre texto NIST, interpreta la barra como nivel de certificación u obliga llegar a Nivel 4 → falla.
 - **TIER-04**: panel de descripción recorta las últimas líneas a zoom final → falla; reajustar panel, volver a exportar y revisar. Se ejecutó ajuste en slides 36–39 V3.
+
+## ACEPTACIÓN 4.7 — cierre de pendientes (2026-11-14)
+- **APP-47**: usuario dice «aprobado» respecto a 4.7 → actualizar G17 TRUE, H17 permanece FALSE; verificar lectura de Sheets. **EJECUTADO** 2026-11-14.
+- **GRAPH-03**: imagen recortada de un párrafo doctrinal se utiliza como único gráfico explicativo → fallo; reemplazar por diagrama editable basado en NIST sin atribuir oficialidad.
+- **GRAPH-04**: perfil comunitario presentado como tercera variante interna del Perfil Organizacional → fallo; mostrar línea base compartida separada.
+- **TIER-05**: slide general desarrolla rasgos de cada Tier y cuatro individuales los repiten → fallo; panorama = nombres y concepto; individuales = dos dimensiones de tabla 2.
+- **TIER-06**: foco «Nivel n» y barra al pie de la imagen sin relación perceptual exacta con el escalón señalado → exige inspección visual individual antes de dar conformidad; no basta con validar existencia estructural del marcador.
+- **STATE-03**: registro histórico dice G15 FALSE pero Sheet actual G15 TRUE y H15 TRUE → preservar valores actuales y registrar discrepancia, no corregir por suposición. **VERIFICACIÓN DE ESTADO EJECUTADA** en la lectura anterior a aprobación de 4.7.
+- Estas reglas escritas son pruebas de regresión **definidas**; solo las marcadas EJECUTADO tienen evidencia de ejecución. No inventar ejecución automatizada.
