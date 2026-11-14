@@ -1,5 +1,9 @@
 # Reglas editoriales y maquetas SVG — aprendizaje de la clase 4.4 (2026-11-14)
 
+## Aprendizaje adicional: imagen oficial también en panorámica (2026-11-14)
+
+La apertura de la clase 4.4 no usa tres números circulares; contiene tres **imágenes institucionales pequeñas** de Núcleo, Perfiles Organizacionales y Niveles (Tiers), con nombre y finalidad breve. El criterio institucional vale para introducciones y desarrollos: no relegar figuras NIST a las slides posteriores. Verificar de forma individual cada activo y su legibilidad a escala reducida; hacer recorte fiel cuando proceda, respetar proporciones/colores y no simular autenticidad con SVG. La portada conserva su propia gráfica. En `proposals/class-4.4-componentes-del-marco-v4.md` está la propuesta actualizada y todavía no aprobada. Añadir regresión **OFF-01**: apertura de tres componentes sustituye las imágenes disponibles por iconos/números → fallo. **OFF-02**: tres imágenes oficiales pero una ilegible o estirada → fallo. **OFF-03**: portada pierde gráfica aprobada al forzar rueda oficial → fallo.
+
 ## Precedencia y alcance
 Referencia operativa para `course-curriculum-builder`, `course-lesson-builder`, `course-slide-builder`, `course-class-producer`, `course-slide-template` y `course-skill-improver`. Complementa `references/visual-composition.md` y el flujo de aprobaciones de `SKILL.md`. **No** autoriza editar por sí sola Google Sheets ni Google Slides. Las particularidades de 4.4 son un caso de prueba, no una plantilla universal.
 
