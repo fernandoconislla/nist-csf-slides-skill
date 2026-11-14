@@ -6,6 +6,10 @@ description: Desarrollar el contenido completo de una clase específica de un cu
 # Course Lesson Builder — v0.2.0
 
 
+## Control preventivo del storyboard (antes de construcción)
+
+Para cada diapositiva, la propuesta debe aportar: objetivo distinto, narración completa, texto visible, inventario de objetos y **función comunicativa de cada objeto**, distribución prevista y relación entre iconos, rótulos, divisores y cierre. Aplicar los criterios de `references/visual-composition.md` antes de aprobar el storyboard. No sugerir separadores puramente decorativos ni tres barras sobre tres iconos sin relación conceptual. Evitar calcular elementos visuales a partir de una plantilla saturada y simplificarlos después. Si el layout no es viable, reorganizar o dividir la diapositiva antes de producirla. La aprobación editorial sigue siendo obligatoria.
+
 ## Ciclo obligatorio de optimización y auditoría (regla transversal)
 
 - No limitarse a detectar defectos: ejecutar **inspección → optimización efectiva → auditoría → corrección → auditoría de regresión**, iterando mientras existan problemas materiales solucionables.
