@@ -195,3 +195,9 @@ Si se solicita únicamente narración, respetar ese alcance. Si se solicita un d
 
 ## Evolución
 La skill está dedicada al contenido de una clase. En futuras versiones podrá coordinar creación de diapositivas nativas, actividades y recursos descargables mediante habilidades específicas. La propuesta de texto en pantalla **ya es parte de la versión actual**, pero no implica generar Google Slides automáticamente.
+
+## Arquitectura introducción vs desarrollo — aprobado 4.7 (2026-11-14)
+- Presentar un conjunto definiendo qué es y cuáles son sus miembros sin adelantar detalles de cada uno; dedicar una slide por componente solo cuando exista distinción sustantiva. Cuatro Tiers: panorámica figura 4, una slide por Tier con diferencias de Gobernanza y Gestión de riesgos documentadas en apéndice B tabla 2, luego integración.
+- Auditar redundancia dentro de la clase y entre clases: introducción breve en 4.4 y desarrollo en 4.7 es repetición funcional. Repetir todas las características en panorama y desarrollo es solapamiento dañino.
+- Alinear la narración con el diagrama realmente mostrado: perfiles Actual/Objetivo comparativos; Comunitario como referencia independiente y base para objetivo propio; Tiers con figura original y foco por escalón. No narrar cinco pasos cuando no se enseñan; no afirmar Tier 4 obligatorio.
+- Al cambiar el gráfico, revisar texto en pantalla y narración completa de todas las diapositivas afectadas, no solo reemplazar una imagen.
