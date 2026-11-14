@@ -185,3 +185,9 @@ No realizar promesas de actividad en segundo plano. Ejecutar lo viable en el tur
 
 ## Relación entre skills
 `course-curriculum-builder` (prepara fuente inicial en Sheets) → `course-lesson-builder` (narración completa + pantalla) → `course-slide-builder` (storyboard + assets + deck + notas); en paralelo, una sola vez por curso, `course-slide-template` y `course-image-style-builder`. `course-class-producer` coordina, valida y entrega. `course-skill-improver` gestiona mejoras permanentes.
+
+## Recuperación de ejecución y QA del foco (2026-11-14)
+- El orquestador no transforma «hazlo» o «corrige» en una propuesta futura; intenta realmente la escritura autorizada. **Primero detectar conector disponible y lectura de estado.** Ante error: hasta tres enfoques técnicos distintos seguros, comprobar cambios parciales y revisión antes de reintentar, no duplicar slides/assets.
+- Escalera: corregir JSON/campos → partir batch o cambiar método nativo → usar activo local original y otra vía compatible; detener solo ante bloqueo comprobado o riesgo de integridad. Registrar razones y evidencias.
+- Incluir en auditoría `Fuerza del foco visual` con evidencia de imágenes renderizadas, junto a `Ausencia de redundancia`. Un marco técnicamente existente, pero visualmente débil, **NO** supera auditoría.
+- Mantener aprobaciones separadas: generado ≠ auditado ≠ aprobado ≠ grabado. Releer deck y notas, hacer render, registrar IDs exactos y no alterar clases aprobadas.
