@@ -6,6 +6,10 @@ description: Proponer y, tras aprobación explícita, crear una plantilla Google
 # Course Slide Template — v0.2.0
 
 
+## Composición preventiva: contrato de plantilla
+
+Consultar `references/visual-composition.md` (ruta desde raíz del repositorio) antes de proponer layouts. La propuesta debe fijar jerarquía, área útil, ritmo vertical, centro óptico, economía de acentos y función de cada separador. Mantener la línea celeste de título del layout aprobado; **no añadir barras secundarias predeterminadas**. Paleta NIST: texto principal `#102B46`, relaciones/acento `#00B8D9`, fondo `#FFFFFF` (con excepciones para figuras oficiales). Validar variantes con 2 y 3 columnas, mensaje inferior y dos bloques conectados; nunca reutilizar posiciones sin evaluar el conjunto. Esta etapa define un estándar; no autoriza a editar el deck sin aprobación.
+
 ## Excepción de portada y prioridad de recursos visuales (obligatorio)
 
 - **Portada de clase:** prevalece la identidad visual maestra ya aprobada del curso (fondo, paleta, tipografía, layout y elemento gráfico protagonista). NO reemplazar automáticamente el gráfico de portada por el logotipo, la portada del documento o la figura oficial del tema específico tratado en esa clase. Solo variar título y componentes intercambiables previstos por la plantilla, sin rediseñarla.
