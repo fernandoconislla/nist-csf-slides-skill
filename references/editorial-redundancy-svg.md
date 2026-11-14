@@ -53,3 +53,11 @@ Referencia operativa para `course-curriculum-builder`, `course-lesson-builder`, 
 - **STATE-02**: resumen de conversación discrepa de Sheet. Resultado: reportar diferencia, conservar IDs y no afirmar sincronización inexistente.
 
 **Estado:** son pruebas **definidas**; cualquier ejecución necesita evidencia y registro del resultado. No declararlas «aprobadas» solo por escribir las reglas.
+
+## Regresión pedagógica 4.7 — aprobación 2026-11-14
+- **RED-04:** una slide inicial de «Niveles del Marco» explica nombres y definición; la siguiente reproduce detalladamente las mismas cuatro características → solapamiento real, RECHAZAR. Si las siguientes son una por Tier y la primera solo es panorámica, ACEPTAR.
+- **RED-05:** clase 4.4 nombra Perfiles y Niveles, mientras 4.7 los desarrolla → repetición funcional permitida; no penalizar coincidencia terminológica.
+- **VIS-04:** un recorte de definición NIST como imagen protagonista cuando la clase pide entender una relación → RECHAZAR, sustituir por comparación/diagrama editable con fuente.
+- **VIS-05:** Perfil Comunitario retratado como tercero igual al Actual y Objetivo → RECHAZAR; usar base común independiente y Perfil Objetivo personalizado.
+- **VIS-06:** figura oficial de los cuatro Tiers reemplazada por iconos artificiales diferentes en cuatro slides → RECHAZAR; reutilizar figura auténtica, señalizar elemento sin oclusión y explicar las dos dimensiones normativas.
+- **QA-04:** puntuación de «Fuerza del foco visual» sin revisar render al tamaño de presentación → insuficiente; visualización comprobable es requisito de auditoría.
