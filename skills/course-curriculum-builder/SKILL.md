@@ -217,3 +217,7 @@ Mostrar además al usuario un **resumen ejecutivo de auditoría junto al enlace*
 
 ## Entregable final
 Un Google Sheets nativo con las **cuatro pestañas** anteriores y una auditoría adjunta en la respuesta. La cobertura íntegra debe estar sustentada por la matriz; si existen limitaciones, declarar qué material no pudo revisarse. El Google Sheets actualizado es fuente de verdad para las skills de guiones y diapositivas; releer antes de usar y preservar cambios manuales.
+
+## Seguimiento curricular y aprobación — 2026-11-14
+- Google Sheets maestro vivo es autoridad para aprobado/grabado; no resúmenes de memoria. Aprobación explícita de una clase cambia exclusivamente su casilla Aprobada; grabación requiere confirmación independiente. Verificar ID, encabezados, regla de validación y resultado; preservar estados de otras filas.
+- Nueve diapositivas en 4.7 no crean nuevos puntos curriculares: 4.7.1 Perfiles y 4.7.2 Niveles son las unidades vigentes. No editar matriz de cobertura, títulos de clases ni numeración estructural sin petición específica.
