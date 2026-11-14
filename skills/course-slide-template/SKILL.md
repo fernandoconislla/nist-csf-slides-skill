@@ -5,6 +5,10 @@ description: Proponer y, tras aprobación explícita, crear una plantilla Google
 
 # Course Slide Template — v0.2.0
 
+## Inspección de plantilla antes de maquetas (2026-11-14)
+
+Aplicar `../../references/editorial-redundancy-svg.md`. Inspeccionar realmente masters, layouts, objetos nativos, geometría, colores, tipografía y, cuando sea posible, renders de la plantilla antes de maquetar. Una miniatura solicitada pero no vista no acredita inspección visual. Las maquetas SVG visibles deben heredar la identidad del deck, usar marcadores de imágenes oficiales verificables y preservar portada aprobada; nunca modificar original.
+
 
 ## Composición preventiva: contrato de plantilla
 
