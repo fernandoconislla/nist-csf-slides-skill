@@ -14,3 +14,11 @@ No ejecutadas inicialmente. Ejecutar con un curso real y registrar evidencia.
 10. **Cambios de reglas:** no alterar las skills globales a partir de comentarios locales sin aprobación.
 
 Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada`.
+
+
+11. **Puerta SVG obligatoria:** antes de Slides comprobar vista previa SVG 16:9 visible, guion íntegro, pantalla, geometría y aprobación editorial explícita.
+12. **Estado Aprobada:** maqueta editorial aceptada o Slides creadas sin aceptación final no pueden activar la casilla de clase aprobada.
+13. **Redundancia contextual:** una apertura que enumera componentes y su finalidad no se considera automáticamente un duplicado del desarrollo.
+14. **Clase 4.4:** pantalla incluye seis funciones solo enumeradas; no anticipar 4.5–4.7 ni confundir figura oficial de perfiles con proceso de cinco pasos.
+
+**Nuevos casos registrados el 2026-11-14: no ejecutados.**
