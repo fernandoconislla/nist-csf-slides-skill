@@ -57,3 +57,7 @@
 - Inspección visual de cada imagen a escala de proyección, de la plantilla y del deck final: **pendiente**.
 - Regresión y aprobación: **no ejecutada**, no marcar clase Aprobada ni Grabada.
 **Veredicto:** corrección editorial integrada; no aprobado para entrega o construcción mientras falte puerta editorial SVG y autorización del usuario.
+
+## Corrección ejecutada — 2026-11-14
+
+El estado histórico de «figuras oficiales pendientes» indicado al inicio de este documento ha quedado **superado** por la corrección del deck registrada en `PROJECT_STATE.md` §10. Las **cinco diapositivas 12–16** ahora tienen imágenes reales de NIST o capturas fieles de sus recursos, incluidas las tres de la diapositiva 02; el Núcleo muestra figura 1 completa; Perfiles captura de plantilla; Tiers figura 4. **Se realizó render PDF (16 páginas) e inspección visual efectiva de las cinco nuevas slides**, además de readback de notas y elementos: no quedan placeholders. Fuentes de reproducción para figura 1 y 4 y screenshot de Profiles son secundarias, reconocidas como tales; etiquetas visuales inglesas conservadas del original. **Pendiente aceptación visual expresa del usuario**. La clase sigue **NO APROBADA, NO GRABADA** en Sheets. No afirmar edición de master o de clases 4.1–4.3.
