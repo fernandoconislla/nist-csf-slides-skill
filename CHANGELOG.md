@@ -1,5 +1,12 @@
 # Historial de cambios
 
+## Diseño preventivo y QA geométrico — 2026-11-14
+
+- Añadida `references/visual-composition.md` con puertas obligatorias **prevención → construcción controlada → QA visual/estructural y regresión**.
+- Actualizadas las skills raíz, plantilla, lección, construcción, producción y mejora para evitar decoración gratuita, planificar distribución antes de construir y revisar transformaciones de flechas/contornos.
+- Nuevos casos de regresión `VIS-01`–`VIS-09`: economía visual, recálculo de espacios, columnas, conectores, contornos, color, preservación de notas y verificación visual.
+- Registrada evidencia de las diapositivas 7, 9, 10 y 11 en `FEEDBACK.md`. Las pruebas de regeneración futura no se declaran ejecutadas.
+
 ## Corrección del flujo de clases — 2026-11-13
 - Requisito de aprobación previa: **propuesta completa (narración + pantalla + diseño) → auditoría → revisión y aprobación del usuario → construcción**.
 - Tras aprobación, añadir las diapositivas al **Google Slides acumulativo existente** del curso NIST CSF 2.0, no crear un deck nuevo por clase.
