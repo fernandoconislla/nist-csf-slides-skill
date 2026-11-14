@@ -190,3 +190,21 @@ Usuario solicitó directamente reforzar los resaltados (27–31) y actualizar la
 **Corrección solicitada:** slides **29, 30 y 31** tenían 4 focos de doble marco grueso que tapaban parcialmente `GV.RM-01`, `PR.DS-02` y `PR.DS-10`. **Se retiraron los 8 objetos de marco originales + interiores** y se crearon 8 indicadores laterales marino/cian (dos por objetivo), sin tapar glifos, manteniendo los chips cian y el contenido oficial NIST. No se tocaron otras diapositivas, notas ni recortes.
 **Reintento real:** primera escritura falló por `requiredRevisionId` obsoleto `QtyPp6rt-svPiQ`; lectura nueva confirmó `JAyvmxVwXNw1Vw` y ausencia de nuevos objetos, por lo que se repitió la misma mutación sin riesgo de duplicado; escritura correcta con revisión `IF8N21sT4INjEw` y 24 operaciones aceptadas. Deck contiene 31 diapositivas.
 **QA:** exportación actualizada a PDF y render de páginas 29–31: `/mnt/data/csf46_focus_safe_qa/contact.png`. Se inspeccionó el contacto tras corregir: los códigos completos se leen con indicadores a la izquierda, sin contornos sobre caracteres. **Clase 4.6 sigue pendiente de aprobación visual expresa**.
+
+## 17. Clase 4.7 producida en Google Slides — 2026-11-14
+
+**Solicitud:** usuario aprobó editorialmente V2 «Perfiles y Niveles del Marco» y pidió **«genera»**. Se construyó la clase como **seis slides nativas y editables**, posiciones **32–37**, en el deck acumulativo https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit. Revisión verificada `hVD8OPGTjRXlcA`; **37 slides** totales. Las primeras 31 conservan su posición e IDs.
+
+**Slides:**
+- 32 `csf47_cover`: portada institucional original con «Perfiles y Niveles / del Marco».
+- 33 `csf47_profiles`: recorte auténtico de sección 3.1 (Perfil Actual y Objetivo) **corregido para eliminar una línea superior cortada**; dos bloques editables de síntesis.
+- 34 `csf47_community`: pasaje real del Perfil Comunitario sección 3.1 y síntesis editorial editable.
+- 35 `csf47_tiers_intro`: **«Niveles del Marco»**, figura 4 oficial de los cuatro Tiers, sin anticipar características individuales.
+- 36 `csf47_tiers_features`: características resumidas por cada Nivel (1 Parcial, 2 Riesgo informado, 3 Repetible, 4 Adaptativo), cuadro editable y fuente apéndice B tabla 2.
+- 37 `csf47_integration`: Perfiles y Niveles en dos paneles independientes, conexión bidireccional y síntesis.
+
+**Narración:** íntegra de la propuesta V2 en notas de los seis slides; lectura de vuelta confirmó longitudes 470, 853, 753, 672, 1278 y 728 caracteres. Fondo blanco de desarrollo, Inter, paleta marino #102B46 y cian #00B8D9. Las imágenes derivan de recortes reales del PDF oficial en español, no gráficos inventados. Se añadieron créditos discretos en páginas 33–36.
+
+**QA:** exportada presentación acumulativa de 37 páginas a PDF y render de páginas 32–37, inspeccionadas visualmente; contacto en `/mnt/data/csf47_render_final/contact.png`. Corrección ejecutada tras detectar el comienzo de línea cortado en captura del Perfil Organizacional; nuevo recorte muestra solo las definiciones completas. No se observan desbordamientos en las seis vistas. Lectura estructural confirmó orden, notas y recortes. Hubo un fallo interno transitorio de lectura y otro de escritura compuesta; ambos se recuperaron con lectura fresca y escritura dividida, sin duplicar objetos.
+
+**Estado:** clase **4.7 GENERADA, PENDIENTE APROBACIÓN VISUAL DEL USUARIO, NO GRABADA**. No marcar como aprobada o grabada en Sheets sin confirmación explícita; preservar clases anteriores. La clase 4.6 está aprobada en Sheets G16; 4.5 continúa G15=false según última lectura.
