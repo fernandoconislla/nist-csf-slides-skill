@@ -163,3 +163,21 @@ Tras petición expresa «corrige», se corrigieron **en el deck acumulativo exis
 **QA:** lectura estructural confirma las 6 imágenes de resaltado y **25 diapositivas**, revisión de Drive `te7zJSHfXZf2Tg`. Exportación PDF de 25 páginas y renderizado de páginas 19–24; inspección visual efectiva de los seis focos confirma contorno alineado con cada sector, etiquetas legibles, paleta azul marino/cian y sin obstrucción de la narración en pantalla. Contact sheet de QA en ruta de trabajo `/mnt/data/csf45_highlight_qa/contact.png`.
 
 **Estado:** corrección **implementada**, clase 4.5 **pendiente de aprobación expresa del usuario**; `Aprobada=false`, `Grabada=false` todavía. No modificar clase 4.4 ni módulos previos. Preservar regla: figura oficial intacta + enfoque editorial selectivo en capas separadas cuando el mismo recurso NIST aparece reiterado para subcomponentes.
+
+## 14. Clase 4.6 generada con recortes originales (2026-11-14)
+
+**Solicitud:** usuario subió el PDF `NIST.CSWP.29.spa.pdf` y pidió «continúa», autorizando la construcción visual de la clase 4.6 conforme a la propuesta de seis slides. Se tomó el PDF oficial español original y se extrajeron cinco **recortes reales en PNG** con PyMuPDF a 3x, recortando texto NIST sin reescritura dentro de las imágenes. Los recortes fuente se conservan en el entorno de trabajo `/mnt/data/nist_crops_46_final/`; no presuponer que esas rutas están disponibles en otras sesiones.
+
+**Presentación Google Slides acumulativa:** https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit. **31 slides**, clase 4.6 en **26–31**, ids: `csf46_cover`, `csf46_category`, `csf46_category_code`, `csf46_subcategory`, `csf46_numbering`, `csf46_exercise`. Revisión actual verificada `qLS2mXoLyU04pw`. El resto 1–25 permanece antes de 4.6; no se editaron las clases previas.
+
+**Mapa visual confirmado**:
+- 26 portada duplicada de familia gráfica de 4.5, título «Núcleo del Marco / Categorías y / Subcategorías».
+- 27 tabla 1 p.16 del texto original de NIST (página PDF 22), con bloque de seis categorías de Gobernar enmarcado en cian.
+- 28 fila `GV.RM` de tabla 1 con marco cian ajustado a la fila, sin reescribir el texto original.
+- 29 bloque `GV.RM` y `GV.RM-01` de la página impresa 17 (página PDF 23), marco cian solo sobre identificador.
+- 30 bloque original `PR.DS` de página impresa 21 (página PDF 27), incluidos `PR.DS-01, -02, -10, -11`, dos marcos cian sobre `PR.DS-02` y `PR.DS-10`, para explicar salto intencional de numeración.
+- 31 bloque original `GV.RM-01`, código señalado, más descomposición editable `GV` / `RM` / `01` en tres paneles.
+
+Todos los cuadros de enfoque son formas nativas editables, con imagen oficial como elemento independiente y proporciones preservadas. Notas narradas insertadas y verificadas, recuentos en caracteres: `370,626,602,694,734,776`. QA: exportación nativa a PDF con **31 páginas**, render final de 26–31 y contacto `/mnt/data/csf46_render_final/contact.png`; 2 rondas de revisión y corrección de contornos para no abarcar la línea inferior o tapar resultados. Verificado que no existen elementos fuera de página en ninguna de las 6. Las primeras 25 se conservaron como previo. Sección de numeración fiel a nota del apéndice A sobre huecos de categorías trasladadas de CSF 1.1.
+
+**Estado editorial:** clase 4.6 **GENERADA, PENDIENTE DE APROBACIÓN VISUAL EXPRESA DEL USUARIO**, no marcar como grabada ni aprobada; la generación no acredita revisión ni aprobación del usuario. No modificar 4.5 ni 4.4 por implicación. Si se solicita ajuste, se pueden editar exclusivamente slides 26–31.
