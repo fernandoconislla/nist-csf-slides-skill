@@ -1,5 +1,9 @@
 # Registro de decisiones de producción
 
+## 2026-11-14 · Imágenes oficiales pequeñas en introducciones
+
+**Retroalimentación:** la diapositiva panorámica 02 de 4.4 se desvió al presentar círculos numerados en lugar de imágenes oficiales. Corrección de criterio: cada componente reconocible debe tener una **representación institucional auténtica pequeña**, en este caso Núcleo, Perfiles y Tiers, incluso durante la apertura. No sustituir por números o iconos genéricos. Mantener proporcionalidad, legibilidad, y correspondencia con nombre/finalidad. Respetar la portada original. **Aplicado** a skills, referencia visual y propuesta V4. **Pendiente** obtener activos definitivos, rendir la maqueta SVG y ejecutar regresión visual. No declarar aprobada 4.4.
+
 ## 2026-11-13 · Clase 4.1 NIST CSF 2.0 (aprobada por el usuario)
 
 **Alcance:** reglas reutilizables de Google Slides para las skills de plantilla, narración, slides y producción; decisiones de color y portada específicas del curso NIST CSF.
