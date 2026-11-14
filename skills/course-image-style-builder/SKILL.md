@@ -116,3 +116,8 @@ Estados: `Cumple`, `Requiere ajuste` o `No verificable`, con hallazgo, evidencia
 - Planificador y generador de diapositivas (futuros): determinan el objetivo visual de cada recurso.
 - Esta skill: **únicamente** define y conserva el lenguaje gráfico maestro de las ilustraciones.
 - `course-skill-improver`: incorpora feedback aprobado al comportamiento global de la skill; no confundir reglas generales con parámetros propios de un curso.
+
+## Fidelidad de medios gráficos — 4.7 aprobada (2026-11-14)
+- No generar ilustraciones para reemplazar la figura oficial de exactamente el mismo objeto. Preservar figura institucional intacta e incorporar foco externo editable. Cuando solo hay definiciones, construir diagrama conceptual simple editable, explicitando que es elaboración pedagógica basada en NIST, no una figura oficial.
+- Una etiqueta vistosa no compensa un señalador mal situado; precisión del foco y ausencia de oclusión son bloqueantes. Los recortes textuales son respaldo documental, no ilustración protagonista.
+- Mantener diseño blanco, marino #102B46, cian #00B8D9, Inter, con composición homogénea en series de cuatro niveles.
