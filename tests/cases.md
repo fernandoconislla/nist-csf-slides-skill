@@ -62,3 +62,18 @@ Estado al 2026-11-13: **casos registrados**. Las pruebas sobre una regeneración
 
 **Estado 2026-11-14:** pruebas definidas y revisión estática de reglas; **ejecución contra nuevas diapositivas todavía pendiente**. No se consideran superadas por haber escrito estos casos.
 
+
+
+## Nuevos casos — 2026-11-14: redundancia, SVG y estados
+
+Ver `references/editorial-redundancy-svg.md` para contratos y criterios completos.
+- **RED-01:** apertura panorámica presenta brevemente finalidades y el desarrollo las amplía: repetición funcional válida.
+- **RED-02:** apertura y desarrollo duplican definiciones y ejemplos sustanciales: detectar y corregir.
+- **RED-03:** la clase 4.4 anticipa explicación detallada de funciones/categorías/perfiles/tiers: bloquear exceso de alcance.
+- **SVG-01:** storyboard sin maqueta SVG visible: no superar puerta editorial visual.
+- **SVG-02:** pseudofigura NIST en SVG en lugar de placeholder: corregir con fuente oficial auténtica.
+- **SVG-03:** procedimiento oficial de perfiles utilizado sin ser explicado: desajuste gráfico-narración.
+- **STATE-01:** solo maquetas aprobadas o slides creadas sin confirmación final: `Aprobada=false`; grabación sin confirmar `Grabada=false`.
+- **STATE-02:** chat y Google Sheets discrepan: reportar y sincronizar solo mediante cambio autorizado y lectura de vuelta.
+
+**Estado: definidos, NO EJECUTADOS.** Ninguna de las nuevas reglas ha sido validada mediante construcción y verificación visual real de la clase 4.4.
