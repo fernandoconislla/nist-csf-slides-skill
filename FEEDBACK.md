@@ -29,3 +29,16 @@
 
 **Validación:** lecturas GitHub y pruebas estáticas de presencia/consistencia; reejecución visual con nueva clase **pendiente**.
 
+
+
+## 2026-11-14 · Redundancia funcional y restauración de maquetas SVG — clase 4.4
+
+**Retroalimentación aprobada:** la diapositiva de apertura puede resumir qué es y para qué sirve cada uno de los tres componentes del NIST CSF 2.0, aunque luego las siguientes amplíen la explicación. La repetición es una **orientación pedagógica intencional**, no un defecto sustantivo automáticamente. El usuario recordó el proceso previo de mostrar **maquetas SVG visibles** antes de generar Google Slides.
+
+**Corrección de criterio:** diferenciar repetición léxica, repetición conceptual sin aporte, repetición funcional y anticipación indebida del temario de clases siguientes. Las notas de redundancia antes expuestas (7,1/10 y 8,8/10) fueron juicios editoriales provisionales, no resultados de pruebas ni puntuaciones universales.
+
+**Cambios de reglas:** referencia `references/editorial-redundancy-svg.md`; instrucciones coherentes en la skill raíz, las siete skills especializadas y `references/visual-composition.md`; casos RED/SVG/STATE. Maquetas: narración auditada → texto visible → storyboard → SVG 16:9 visible → aprobación editorial → Google Slides editable → QA renderizado y aceptación visual final.
+
+**Clase 4.4:** propuesta de cinco diapositivas, panorámica de 3–5 minutos, todavía **NO APROBADA / NO GRABADA**. Respetar seis funciones enumeradas y categorías/subcategorías mencionadas sin desarrollarlas. Evitar explicación de tipos de perfiles y tiers reservada a 4.7. Priorizar figuras NIST reales y oportunas.
+
+**Validación:** cambios de GitHub verificables con lectura de vuelta; pruebas estáticas definidas, regresión editorial y visual de la clase 4.4 **pendiente de ejecución**. No se ha modificado el deck acumulativo ni marcado la casilla de aprobación.
