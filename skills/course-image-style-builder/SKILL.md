@@ -5,6 +5,10 @@ description: Analiza una imagen visual de referencia y el tema de un curso; inte
 
 # Course Image Style Builder — v0.1.0
 
+## Figuras oficiales frente a ilustraciones (2026-11-14)
+
+Aplicar `../../references/editorial-redundancy-svg.md`. Diagramas, logos, ruedas, imágenes institucionales y plantillas NIST deben obtenerse de fuentes oficiales verificables, no regenerarse o estilizarse con IA. En las maquetas SVG 16:9 usar marcador inequívoco para sus dimensiones, no una copia falsa o inventada. Ilustraciones generadas solo para conceptos abstractos que lo justifiquen y con estilo aprobado.
+
 
 ## Regla transversal obligatoria: honestidad, evaluación crítica y alertas graves
 
