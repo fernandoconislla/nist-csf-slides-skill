@@ -90,3 +90,9 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 - **FOCUS-02**: objetivo oficial sin alterar, doble marco marino+cian, chip descriptivo sin tapar letras, verificado en PDF final → **superado para clase 4.6 slides 27–31, 2026-11-14**.
 - **FOCUS-03**: chip o contorno se sobrepone a contenido esencial o apunta a otra fila → **fallo**.
 - **FOCUS-04**: resumen de contacto parece válido pero ampliación individual detecta mala alineación → corregir y renderizar otra vez. **Regla**, no una prueba ejecutada en todos los casos.
+
+## OCCLUSION — regresión de oclusión de códigos (2026-11-14)
+- **OCC-01**: marco marino/cian de alto contraste intersecta cualquier carácter de `GV.RM-01` aunque se vea moderno → **NO conforme**.
+- **OCC-02**: contornos de `PR.DS-02` y `PR.DS-10` intersectan la tinta del código o texto del resultado → **NO conforme**.
+- **OCC-03**: barras laterales marino/cian externas a la línea + chip fuerte, texto original sin oclusión en render exportado → **Conforme en slides 29–31, 2026-11-14**.
+- **RETRY-04**: requiredRevisionId obsoleto causa error de API y ninguna mutación → refrescar revisión, comprobar inexistencia de efectos parciales, repetir solicitud segura. **Ejecutado y superado 2026-11-14:** revisión desactualizada `QtyPp6rt-svPiQ`; relectura `JAyvmxVwXNw1Vw`; actualización correcta `IF8N21sT4INjEw`.
