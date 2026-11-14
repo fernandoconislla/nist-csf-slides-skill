@@ -39,3 +39,9 @@ Para cada diapositiva crear un storyboard con: propósito pedagógico único, te
 - Diapositiva 10: tres barras superiores y barra inferior redundantes; se retiraron, después fue necesario subir las tres columnas y el cierre. Diferenciar color de flecha y rótulo.
 - Diapositiva 11: cajas abiertas construidas por segmentos y flecha de escala incorrecta; corregidas mediante rectángulos nativos y revisión de transformaciones.
 Estos ejemplos son **casos de prueba y preferencias del curso**, no dimensiones universales ni aprobación visual automática.
+
+## Foco documental de alta visibilidad y recuperación (2026-11-14)
+- Para recortes NIST de tablas y resultados con mucho texto, usar una **jerarquía triple**: (a) recorte oficial íntegro; (b) contorno de alto contraste, preferentemente marino exterior + cian interior como formas editables superpuestas; (c) etiqueta cian nítida que nombre código o relación, fuera de texto sustantivo. Evitar halos sutiles que desaparezcan en zoom de proyección.
+- La legibilidad se audita sobre el PNG o PDF renderizado de la diapositiva final, tanto en contacto como individual. Medir precisión de foco, visibilidad, contraste con amarillo/blanco, distancia al código, recorte, solape. Reubicar la fuente y bloques auxiliares si se añade chip; después volver a renderizar.
+- Caso clase 4.6: diapositivas 27–31, bloques Gobernar, GV.RM, GV.RM-01, PR.DS-02→10, lectura GV/RM/01. Mejora aplicada: navy 6.5 pt + cyan interior 3 pt + chip cian 14 pt. Números son precedente, no valores absolutos universales.
+- Si un editor o conector falla: ejecutar diagnóstico, alternativa estructural y segundo método seguro con comprobaciones en vivo antes de declarar imposibilidad. Distinguir error de parámetro de falta de permisos o conexión.
