@@ -1,5 +1,5 @@
 # Clase 4.4 — Componentes del Marco · propuesta editorial V4
-**Estado:** propuesta pendiente de aprobación editorial y visual. **NO** construir Google Slides con este documento sin autorización explícita.
+**Actualización de ejecución 2026-11-14:** se han generado las 5 diapositivas (12–16) en el deck acumulativo, con notas y rueda NIST oficial, PERO FALTAN figuras oficiales de Perfiles y Tiers y el QA visual. Por tanto **BORRADOR CON BLOQUEOS; NO APROBADA**. Ver `PROJECT_STATE.md` §9.\n\n**Estado:** propuesta pendiente de aprobación editorial y visual. **NO** construir Google Slides con este documento sin autorización explícita.
 **Fecha:** 2026-11-14. **Duración:** 3–5 min. **Temario vigente:** 4.4.1 panorámica de Núcleo/Perfiles/Niveles y 4.4.2 relación entre componentes.
 **Plantilla oficial del curso (inmutable):** https://docs.google.com/presentation/d/1LuxRkFk9y4Bb4dDNLOP0gZWYXc90A8TFcxFi4ER-F6A/edit
 **Destino acumulativo:** https://docs.google.com/presentation/d/1h8BqC56ud8_4xKm_Aco9V-XcMdfVlaLwNedodUMgOvE/edit
