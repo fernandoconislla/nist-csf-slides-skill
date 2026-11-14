@@ -140,3 +140,9 @@
 - Creada propuesta V4 en `proposals/class-4.4-componentes-del-marco-v4.md`.
 - Actualizados skill principal, subskills pertinentes, referencias editoriales/visuales, feedback y estado; agregados casos de prueba OFF-01–04.
 - Norma y propuesta escritas, **pruebas visuales/activos definitivos/maquetas SVG y aprobación editorial pendientes**. No se modificaron Google Slides ni casillas de Sheets.
+
+## 2026-11-14 — Resiliencia operativa y foco documental fuerte
+- Ejecutada corrección sobre slides 27–31 de 4.6 en el deck nativo: doble contorno marino (6,5 pt) + cian (3 pt) y chips cian explicativos. La fuente NIST auténtica y notas se preservan. Revisión Slides `QtyPp6rt-svPiQ`; export PDF de 31 páginas, inspección visual de cinco páginas y contacto.
+- Incorporada regla de reintentos seguros (hasta 3 rutas técnicas distintas con detección de efectos parciales, sin mutaciones ciegas) en raíz, builder, producer, improver y referencia visual.
+- Añadidos casos RETRY/FOCUS y criterio auditor independiente «Fuerza del foco visual».
+- **No marcar clase 4.6 aprobada ni grabada sin aceptación expresa.**
