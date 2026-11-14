@@ -5,6 +5,10 @@ description: Transforma una narración docente completa y auditada, textos en pa
 
 # Course Slide Builder — v0.1.0
 
+## Miniaturas oficiales en diapositivas panorámicas (2026-11-14)
+
+Para una introducción a elementos institucionales concretos, seleccionar y verificar **un activo oficial auténtico por elemento** también cuando la vista sea de tres columnas con imágenes pequeñas. En NIST 4.4 slide 02: rueda oficial Núcleo, recorte auténtico de plantilla de Perfiles, figura oficial Tiers; imagen arriba, título y finalidad breve debajo. Prohibidos numerales decorativos, escudos genéricos o diagramas inventados en lugar de figuras disponibles. Conservar proporción vía contain; marcos iguales no implican deformar imágenes. Auditar nitidez a escala de proyección, recorte significativo, contraste, consistencia de alturas ópticas y legibilidad. La maqueta SVG debe reservar visiblemente tres imágenes pequeñas reales como placeholders, sin fingir ser la figura original; solo construir tras aprobación editorial. Fuente de caso: `../../proposals/class-4.4-componentes-del-marco-v4.md`.
+
 ## Maquetas SVG visibles como puerta editorial (2026-11-14)
 
 Antes de escribir Slides aplicar `../../references/editorial-redundancy-svg.md` y `../../references/visual-composition.md`: mostrar **maquetas SVG 16:9 visibles** que permitan inspeccionar título, contenido, jerarquía, densidad, centro óptico, márgenes, zona y proporción de activos. Marcar inequívocamente las figuras institucionales como placeholders; nunca dibujar una pseudofigura NIST como si fuera oficial. Validar correspondencia figura–narración y legibilidad. Una maqueta aprobada habilita construcción de la propuesta concreta, no aprobación visual final del deck.
