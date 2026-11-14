@@ -6,6 +6,10 @@ description: Orquesta desde el nombre o ID de una clase la lectura de su temario
 # Course Class Producer — v0.1.0
 
 
+## Puertas de producción de composición visual (obligatorias)
+
+Exigir a `course-lesson-builder` y `course-slide-builder` el contrato de `references/visual-composition.md`: **Puerta A preventiva** (storyboard auditado, economía visual, balance, geometría); **Puerta B de construcción** (objeto editado vs plan, transformaciones, alineación, reequilibrio); **Puerta C final** (QA estructural, inspección visual real y regresión). Rechazar transición a «Terminada y verificada» si falta una puerta o la inspección renderizada no es posible. Preservar aprobación editorial previa al primer cambio del deck. Correcciones autorizadas sobre diapositivas existentes no permiten alteración silenciosa de guiones ni slides ajenas.
+
 ## Ciclo obligatorio de optimización y auditoría (regla transversal)
 
 - No limitarse a detectar defectos: ejecutar **inspección → optimización efectiva → auditoría → corrección → auditoría de regresión**, iterando mientras existan problemas materiales solucionables.
