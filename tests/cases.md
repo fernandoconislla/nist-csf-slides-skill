@@ -81,3 +81,12 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 ## OFF — Miniaturas oficiales y portada
 
 **OFF-01:** maqueta 4.4 slide 02 usa círculos con números en lugar de tres imágenes oficiales disponibles → fallo. **OFF-02:** rueda, plantilla NIST Perfiles y figura Tiers pequeñas pero deformadas, recortadas arbitrariamente o ilegibles → fallo. **OFF-03:** portada aprobada sustituida por figura oficial → fallo. **OFF-04:** activos oficiales pequeños, nítidos, proporciones intactas, centrados con etiqueta/función y fuente documentada → conforme solo tras inspección real. **Casos definidos, NO ejecutados.**
+
+## RETRY + FOCUS — 2026-11-14
+- **RETRY-01**: conector funciona pero solicitud read falla por máscara de campos inválida → corregir campo y continuar, no declarar desconexión. **Ejecutado y superado 2026-11-14**: error `slides.pageElements.shape.text` corregido con lectura completa de presentación, revisión disponible.
+- **RETRY-02**: batch Slides falla por `outline.solidFill` desconocido → cambiar a `outline.outlineFill.solidFill`, refrescar revisión, verificar sin duplicados. **Precedente ejecutado en 4.6**.
+- **RETRY-03**: escritura tuvo éxito pero respuesta falla/desaparece → leer IDs/revisión antes de reintentar; falla si duplica objeto.
+- **FOCUS-01**: contorno fino cian en cuadro amarillo y sin etiqueta → **fallo** de foco visual a zoom de presentación.
+- **FOCUS-02**: objetivo oficial sin alterar, doble marco marino+cian, chip descriptivo sin tapar letras, verificado en PDF final → **superado para clase 4.6 slides 27–31, 2026-11-14**.
+- **FOCUS-03**: chip o contorno se sobrepone a contenido esencial o apunta a otra fila → **fallo**.
+- **FOCUS-04**: resumen de contacto parece válido pero ampliación individual detecta mala alineación → corregir y renderizar otra vez. **Regla**, no una prueba ejecutada en todos los casos.
