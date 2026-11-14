@@ -5,6 +5,10 @@ description: Analizar retroalimentación y correcciones del usuario sobre result
 
 # Course Skill Improver — v0.1.0
 
+## Aprendizaje de redundancia justificada (2026-11-14)
+
+Aplicar `../../references/editorial-redundancy-svg.md`. El comentario aprobado del usuario sobre 4.4 corrige un falso positivo: la apertura puede presentar propósitos generales aunque luego se desarrollen. Registrar la distinción como regla reutilizable; no usarla para excusar duplicaciones reales. Exigir maquetas SVG visibles y pruebas RED/SVG/STATE; distinguir pruebas escritas de ejecutadas. No convertir el valor editorial 8,8/10 en una validación universal ni afirmar QA visual sin imágenes observadas.
+
 
 ## Aprendizaje preventivo a partir de retroalimentación visual
 
