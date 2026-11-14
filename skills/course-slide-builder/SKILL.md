@@ -5,6 +5,10 @@ description: Transforma una narración docente completa y auditada, textos en pa
 
 # Course Slide Builder — v0.1.0
 
+## Maquetas SVG visibles como puerta editorial (2026-11-14)
+
+Antes de escribir Slides aplicar `../../references/editorial-redundancy-svg.md` y `../../references/visual-composition.md`: mostrar **maquetas SVG 16:9 visibles** que permitan inspeccionar título, contenido, jerarquía, densidad, centro óptico, márgenes, zona y proporción de activos. Marcar inequívocamente las figuras institucionales como placeholders; nunca dibujar una pseudofigura NIST como si fuera oficial. Validar correspondencia figura–narración y legibilidad. Una maqueta aprobada habilita construcción de la propuesta concreta, no aprobación visual final del deck.
+
 
 ## Tres puertas de calidad visual (regla bloqueante)
 
