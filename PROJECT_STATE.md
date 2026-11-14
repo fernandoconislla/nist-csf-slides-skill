@@ -1,5 +1,9 @@
 # PROJECT_STATE — NIST CSF 2.0
 
+## 8. Corrección de activos en la diapositiva 02 — 2026-11-14
+
+El usuario detectó una desviación de la regla de imágenes oficiales: la apertura panorámica de la clase 4.4 había mostrado círculos con números. **Corrección aprobada a nivel de criterio visual:** miniaturas oficiales reales de Núcleo, Perfiles y Tiers con nombre y finalidad breve, tres columnas equilibradas y legibles. Reglas actualizadas en skills y referencias. Propuesta editorial conservada en `proposals/class-4.4-componentes-del-marco-v4.md` (**NO aprobada como clase**). Queda **pendiente** rehacer y presentar maqueta SVG de slide 02 con los tres espacios de imágenes, obtener imágenes auténticas y probar legibilidad real, auditar storyboard global y solicitar aprobación editorial; no modificar Slides acumulativo ni marcar casillas.
+
 > Punto de reanudación del proyecto. Verificado el **14 de noviembre de 2026** (hora de Perú).
 > **Este archivo no sustituye las fuentes vivas.** En cada nueva sesión, comprobar el estado actual de GitHub, Google Sheets y Google Slides antes de trabajar. No inferir que una propuesta está aprobada.
 
