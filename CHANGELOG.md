@@ -1,5 +1,14 @@
 # Historial de cambios
 
+## Maquetas SVG visibles y redundancia funcional — 2026-11-14
+
+- Creada `references/editorial-redundancy-svg.md` con la decisión aprobada de no penalizar automáticamente la apertura panorámica cuando cumple una función didáctica distinta del desarrollo.
+- Incorporadas instrucciones a `SKILL.md`, las siete skills especializadas y `references/visual-composition.md`: narración completa auditada → pantalla → storyboard → maquetas SVG 16:9 **visibles** → aprobación editorial → construcción nativa → QA y aceptación visual.
+- Precisado uso de figuras institucionales auténticas y pertinencia visual (imagen de procedimiento solo cuando se explica el procedimiento). Las maquetas muestran marcadores de activos, no pseudofiguras NIST.
+- Añadidos casos RED-01–03, SVG-01–03 y STATE-01–02 en tests; registro en `FEEDBACK.md`.
+- **Estado:** actualización documental completada. Pruebas contra la clase 4.4 y render visual final aún pendientes. Ningún cambio a Google Sheets o Slides en esta operación.
+
+
 ## Diseño preventivo y QA geométrico — 2026-11-14
 
 - Añadida `references/visual-composition.md` con puertas obligatorias **prevención → construcción controlada → QA visual/estructural y regresión**.
