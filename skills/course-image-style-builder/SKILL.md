@@ -5,6 +5,10 @@ description: Analiza una imagen visual de referencia y el tema de un curso; inte
 
 # Course Image Style Builder — v0.1.0
 
+## No generar iconos sustitutos en panorámicas NIST (2026-11-14)
+
+Las ilustraciones generadas no sustituyen ilustraciones oficiales auténticas **aunque se usen como miniaturas** en una vista panorámica. Cuando tres componentes NIST aparecen en tres columnas, utilizar una imagen oficial pequeña por componente y una leyenda legible. Preparar recortes fieles, o colocar marcadores SVG inequívocos antes de disponer de los activos; nunca suplantarlos por iconos IA, números decorativos o diagramas creados ad hoc. Mantener fuente, color y proporción de cada activo. Excepción: portada de identidad visual del curso.
+
 ## Figuras oficiales frente a ilustraciones (2026-11-14)
 
 Aplicar `../../references/editorial-redundancy-svg.md`. Diagramas, logos, ruedas, imágenes institucionales y plantillas NIST deben obtenerse de fuentes oficiales verificables, no regenerarse o estilizarse con IA. En las maquetas SVG 16:9 usar marcador inequívoco para sus dimensiones, no una copia falsa o inventada. Ilustraciones generadas solo para conceptos abstractos que lo justifiquen y con estilo aprobado.
