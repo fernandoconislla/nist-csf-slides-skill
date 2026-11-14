@@ -46,3 +46,8 @@
 **Clase 4.4:** propuesta de cinco diapositivas, panorámica de 3–5 minutos, todavía **NO APROBADA / NO GRABADA**. Respetar seis funciones enumeradas y categorías/subcategorías mencionadas sin desarrollarlas. Evitar explicación de tipos de perfiles y tiers reservada a 4.7. Priorizar figuras NIST reales y oportunas.
 
 **Validación:** cambios de GitHub verificables con lectura de vuelta; pruebas estáticas definidas, regresión editorial y visual de la clase 4.4 **pendiente de ejecución**. No se ha modificado el deck acumulativo ni marcado la casilla de aprobación.
+
+## 2026-11-14 — Resaltados insuficientes y resiliencia
+**Feedback usuario:** «el resaltado no es lo suficientemente fuerte»; posteriormente «tú tienes que hacer el trabajo, aplica una regla de reintentos ... y actualiza las skills», confirmado con «hazlo».
+**Causa:** cuadros cian finos pierden contraste sobre el amarillo y tipografía pequeña de recortes oficiales; respuestas anteriores declararon conector inaccesible sin diagnóstico o propusieron trabajo pendiente en vez de ejecutarlo.
+**Acción real:** cinco slides 27–31 corregidas con doble contorno marino/cian y chip cian de alta legibilidad; assets originales NIST preservados y notas intactas; render PDF inspeccionado. Skills de raíz, builder, producer, improver y referencia visual actualizadas, además de casos de prueba. Práctica futura: **leer estado → ejecutar → diagnosticar/variar método si falla (hasta 3 vías seguras) → comprobar escritura → render → auditar foco → registrar**. No confundir fallo de JSON con pérdida de conexión.
