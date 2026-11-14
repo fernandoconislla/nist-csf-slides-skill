@@ -101,3 +101,17 @@ Las mejoras de skills requieren evidencia, propuesta/diff, aprobación y pruebas
 - **Pendiente:** hacer inspección **real** de renders de la plantilla y de las nuevas slides; comprobación nativa de masters/layouts por sí sola no es QA visual.
 - **Pendiente:** confirmar figuras oficiales exactas Núcleo/Perfiles/Tiers y relación con el guion; evitar figura de procedimiento de perfiles cuando no se narran sus pasos.
 - **Pendiente:** narración, textos en pantalla y maquetas finales auditados, aprobación editorial, construcción en deck acumulativo, notas íntegras, QA y aprobación visual final de 4.4.
+
+## 9. Construcción parcial verificable de clase 4.4 — 2026-11-14
+
+**Cambios reales en el deck acumulativo:** el usuario solicitó «genera clase» y se insertaron **5 diapositivas nativas editables en posiciones 12–16** (IDs `csf44_cover`, `csf44_overview`, `csf44_core`, `csf44_profiles`, `csf44_tiers`). Total del deck: **16 diapositivas**. Las once anteriores permanecen en posiciones 1–11. Plantilla maestra **sin editar**.
+
+**Nota importante:** Cualquier apartado anterior de este archivo que diga «4.4 no construida» se refiere al punto histórico antes de esta actualización y está superado por este registro.
+
+**Narración:** se rellenaron las notas de los cinco slides, se leyeron de vuelta y se comprobó que no están vacías. La portada hereda su imagen original; dos diapositivas llevan la **rueda oficial NIST CSF 2.0** desde NIST https://www.nist.gov/sites/default/files/images/2024/04/15/CSF-wheel-revamp-v5-transparent_Op%203.png. La rueda corresponde a **funciones**, NO a toda la jerarquía de categorías/subcategorías.
+
+**Estado real:** **PRODUCCIÓN PARCIAL — NO APROBADA, NO GRABADA**. La diapositiva 02 tiene imágenes oficiales de Perfiles y Tiers **pendientes de inserción**, la diapositiva 04 pendiente de captura NIST de Perfiles y la diapositiva 05 pendiente de la figura 4 del documento CSWP 29. Se utilizaron rótulos visibles de «PENDIENTE DE INSERCIÓN», nunca recreaciones pretendidamente oficiales. **No declarar que ha cumplido la regla de tres figuras oficiales pequeñas.**
+
+**Pendientes bloqueantes para aprobación:** 1) conseguir figuras auténticas exactas de Perfiles y Tiers en formato insertable; 2) sustituir marcadores y verificar correspondencia/relevancia, tamaños y legibilidad; 3) verificar fidelidad de diapositiva Núcleo (rueda oficial no sustituye figura 1 completa); 4) revisar todos los renders reales (las miniaturas se solicitaron, pero sus píxeles no se inspeccionaron efectivamente); 5) auditoría completa de posiciones, transformación, densidad y regresión; 6) obtener aceptación visual final del usuario. Mantener G14 `Aprobada=false`, H14 `Grabada=false` hasta confirmación.
+
+**Auditoría estructural realizada:** lectura del deck verifica 16 slides con 4.4 en posiciones 12–16, notas no vacías y al menos rueda institucional insertada en las diapositivas 13 y 14. Esta evidencia **no** equivale a aprobación visual final.
