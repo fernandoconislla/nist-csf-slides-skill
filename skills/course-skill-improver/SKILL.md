@@ -6,6 +6,10 @@ description: Analizar retroalimentación y correcciones del usuario sobre result
 # Course Skill Improver — v0.1.0
 
 
+## Aprendizaje preventivo a partir de retroalimentación visual
+
+Al estudiar un fallo corregido, distinguir: **(a)** error evitable en storyboard, **(b)** error de construcción/transformación, **(c)** fallo de auditoría y **(d)** preferencia local. Priorizar convertir (a) y (b) en criterios de **preconstrucción verificables**, no únicamente pasos correctivos. Guardar ejemplos locales en `references/visual-composition.md` y casos negativos/positivos en `tests/cases.md`; evitar elevar desplazamientos numéricos de una diapositiva a reglas universales. Verificar que las reglas no repitan instrucciones contradictorias entre skills y que el origen y alcance sigan explícitos.
+
 ## Criterios de aceptación derivados de la clase 4.1 aprobada (2026-11-13)
 
 Esta clase es un **caso de regresión aprobado**, no una plantilla universal de contenido. Distinguir reglas reutilizables de decisiones visuales locales:
