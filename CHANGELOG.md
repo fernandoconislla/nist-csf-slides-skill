@@ -176,3 +176,10 @@
 - Registrados riesgos de margen nominal vs. desbordamiento tipográfico después de reducir el ancho de la caja de definición; relaciones de partes interesadas e inclusión de privacidad; y preferencia por conectores nativos con comprobación real de puntos extremos y semántica de flechas.
 - Actualizados `SKILL.md`, `course-slide-builder`, `course-class-producer`, `references/visual-composition.md`; añadidos casos de regresión HIER/MANUAL/TEXT/CONNECT/INCLUDE/QA 24–30.
 - Evidencia: últimas reparaciones de Google Slides guardadas y releídas con notas preservadas; **render actual no validado visualmente**, casos añadidos pero no ejecutados. La clase 5.2 sigue pendiente de aprobación explícita.
+
+## 2026-11-15 — Modelo de diseño preventivo para TODOS los criterios refinados
+- Política transversal: no esperar a la auditoría para detectar problemas visuales. Criterios obligatorios desde **planificación previa**, con invariantes verificables **durante implementación**, y revisión integral **durante auditoría**.
+- Actualizada `references/visual-composition.md` con protocolo A/B/C, matriz de 10 familias de criterios y pruebas del contexto global: un gráfico aislado puede estar bien pero mal alineado con el panel izquierdo.
+- `course-slide-builder`, `course-class-producer`, raíz y `course-skill-improver` reciben reglas de control geométrico y semántico, prioridad de modificaciones manuales y separación de evidencia API/render.
+- Regresión específica de GV.OC-02: cuatro líneas desiguales (27 arriba/45 abajo) → 36/36 al mover 9 unidades el nodo central. Regresión GV.OC-05: composición derecha centrada verticalmente frente al cuadro izquierdo, además de simetría interna.
+- Añadidos escenarios PRE-DESIGN/IMPLEMENT/FULL-COMPOSITION/IDENTITY/WRAP/CONNECT/CATEGORY/QA/MANUAL 31–39. **Casos escritos, no ejecutados como batería automatizada.** No se modificaron slides ni el estado de aprobación al actualizar las skills.
