@@ -157,3 +157,10 @@
 - Presentación nativa conservada con **40 diapositivas**, 4.7 en páginas 32–40, nueve narraciones; revisión verificada del deck antes de cerrar: VnwO_6-31Cb71Q.
 - Consolidación de 8 skills especializadas y raíz: diferencia entre figura oficial y recorte de texto, Perfil Comunitario independiente, panorama vs una slide por Tier, tabla 2 gobernanza+gestión, foco sin ocultar letras, no-duplicidad de contenidos, matriz de estado aprobado/grabado y protocolo de reintento.
 - Regresión 4.7 documentada y readback de GitHub requerido; ningún cambio adicional en el deck a raíz de aprobación.
+
+
+## 2026-11-14 — Actualización de skills: aprobación de clase y foco visual de referencia
+
+- Regla explícita y accionable de **cierre tras aprobación de clase** añadida en `SKILL.md` y `course-class-producer`: sincronización de `Aprobada` en Sheets, preservación de `Grabada`, registro en `PROJECT_STATE.md`, lectura de vuelta, estado parcial ante errores y ninguna producción automática de la clase siguiente.
+- `course-skill-improver` registra el aprendizaje de la aprobación 5.1 y la corrección de alineación del foco 19→42 sobre imágenes base con geometrías diferentes.
+- Casos de regresión STATE-APPROVE-01…03 y VIS-REFERENCE-01 añadidos como **definidos, no ejecutados**. El cierre 5.1 fue comprobado antes de esta actualización.
