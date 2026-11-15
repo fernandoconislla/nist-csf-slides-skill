@@ -46,3 +46,14 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 29. **CONNECT-GVOC-02 — dependencia doble:** en GV.OC-05, existen dos conectores nativos editables con puntas orientadas hacia Organización y terminaciones perceptibles en los nodos correctos; no aceptar solo glifos de flecha ni líneas desconectadas.
 30. **QA-EVIDENCE-01 — clases de evidencia:** guardar y releer propiedades/nota acredita mutación estructural; sin render actual realmente inspeccionado, el estado es `pendiente de validación visual`, no `aprobada`.
 **Casos 24–30 documentados el 2026-11-15; pendientes de ejecución como batería automatizada.**
+
+31. **PRE-DESIGN-01 — problema anticipado:** el storyboard de GV.OC-02 propone líneas de 27 arriba y 45 abajo sin justificación. La puerta A lo rechaza antes de Slides; incluir eje y longitud prevista.
+32. **IMPLEMENT-INVARIANT-01 — modificación de nodo:** al mover «ORGANIZACIÓN», recalcular simultáneamente las cuatro líneas y verificar `longitud superior = longitud inferior` (ejemplo 36/36). Rechazar correcciones aisladas.
+33. **FULL-COMPOSITION-01 — gráfico aislado vs diapositiva:** GV.OC-05 tiene nodos correctamente equilibrados entre sí, pero su centro total no coincide con el cuadro descriptivo izquierdo; detectar en fase A, corregir conjunto en fase B y verificar ambas alineaciones en fase C.
+34. **IDENTITY-3PHASE-01 — nodos hermanos:** Tecnología y Proveedores difieren de color de borde; prevenir en maqueta, igualar en Slides, contrastar estilos y render.
+35. **WRAP-3PHASE-01 — etiqueta larga:** «ORGANIZACIÓN» desborda en dos líneas; bloquear diseño por ancho útil insuficiente, evitar al implementar y detectar en render sin confundir caja centrada con texto legible.
+36. **CONNECT-3PHASE-01 — longitud y destino:** hay cuatro líneas con igual color pero extremos y longitudes desiguales o flotantes; validar cálculo, API y render en las tres puertas.
+37. **CATEGORY-3PHASE-01 — jerarquía NIST:** categoría y cinco subcategorías visualmente idénticas; impedir en storyboard, usar padre amarillo suave/borde más grueso e hijos blancos/borde amarillo, comprobar que los cinco hijos siguen equivalentes.
+38. **QA-GATES-01 — trazabilidad:** cada criterio tiene evidencia de plan previo, lectura nativa después de implementación e inspección del render; si falta evidencia de una fase, no declarar las tres completadas.
+39. **MANUAL-3PHASE-01 — preservar decisión del usuario:** nueva corrección no restaura etiquetas/acento eliminados manualmente; verificar estado vivo en las tres fases.
+**Casos 31–39 documentados como regresión el 2026-11-15; NO constituyen una batería de pruebas ejecutada.**
