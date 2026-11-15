@@ -37,3 +37,12 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 21. **ALIGN-CONTAINER-03 — preservación de texto compuesto:** un cuadro contiene título y subtítulo en zonas superior/inferior: no exigir que ambos tengan el mismo centro que la caja principal; auditar el conjunto y su centro óptico en render.
 22. **ALIGN-CONTAINER-04 — escala y regresión:** texto con tamaño intrínseco 3.000.000 EMU y `scaleY=0,1736`; al trasladar con ABSOLUTE, conservar `scaleX/scaleY` y verificar que no crece ni invade otros bloques.
 23. **ALIGN-CONTAINER-05 — revisión de clase completa:** tras corregir una etiqueta, auditar pares texto/contenedor de todas las slides de la clase activa y comprobar que notas y diapositivas anteriores permanecen sin cambios. Casos 19–23 definidos, NO ejecutados como batería automatizada.
+
+24. **HIER-GVOC-01 — categoría/subcategorías:** la panorámica GV.OC diferencia el cuadro principal por área, amarillo tenue y borde más grueso, mientras GV.OC-01…05 mantienen exactamente fondo blanco, borde amarillo y peso visual homogéneo. Rechazar jerarquía ambigua o destacado arbitrario.
+25. **MANUAL-EDIT-01 — versión manual vigente:** tras una edición del usuario en la slide 45, regenerar o corregir no reintroduce el acento interior ni el rótulo que quitó; partir siempre del estado vivo.
+26. **TEXT-MARGIN-01 — margen vs. wrapping:** al aumentar márgenes laterales reduciendo ancho útil, recalcular líneas y altura efectiva del enunciado oficial; rechazar clipping aunque el objeto de texto siga contenido geométricamente.
+27. **CONNECT-GVOC-01 — enlaces a nodos:** en GV.OC-02, las conexiones entre partes interesadas y organización no terminan en vacío ni atraviesan etiquetas; comprobar extremos en render y nativa.
+28. **INCLUDE-GVOC-01 — relación no causal:** en GV.OC-03, «INCLUYE» y sus líneas sitúan privacidad/libertades civiles como parte de requisitos aplicables, no como resultado de ellos.
+29. **CONNECT-GVOC-02 — dependencia doble:** en GV.OC-05, existen dos conectores nativos editables con puntas orientadas hacia Organización y terminaciones perceptibles en los nodos correctos; no aceptar solo glifos de flecha ni líneas desconectadas.
+30. **QA-EVIDENCE-01 — clases de evidencia:** guardar y releer propiedades/nota acredita mutación estructural; sin render actual realmente inspeccionado, el estado es `pendiente de validación visual`, no `aprobada`.
+**Casos 24–30 documentados el 2026-11-15; pendientes de ejecución como batería automatizada.**
