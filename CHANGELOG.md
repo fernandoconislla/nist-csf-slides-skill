@@ -164,3 +164,9 @@
 - Regla explícita y accionable de **cierre tras aprobación de clase** añadida en `SKILL.md` y `course-class-producer`: sincronización de `Aprobada` en Sheets, preservación de `Grabada`, registro en `PROJECT_STATE.md`, lectura de vuelta, estado parcial ante errores y ninguna producción automática de la clase siguiente.
 - `course-skill-improver` registra el aprendizaje de la aprobación 5.1 y la corrección de alineación del foco 19→42 sobre imágenes base con geometrías diferentes.
 - Casos de regresión STATE-APPROVE-01…03 y VIS-REFERENCE-01 añadidos como **definidos, no ejecutados**. El cierre 5.1 fue comprobado antes de esta actualización.
+
+
+## 2026-11-15 — Regresión de centrado en clase 5.2
+- Reparados los objetos nativos de las diapositivas 46 y 49 de la presentación acumulativa: «GESTIÓN DE RIESGOS» y «PARTES EXTERNAS» quedaron con diferencia vertical geométrica `Δy=0` respecto a sus cajas respectivas, confirmada con lectura de vuelta. No se cambiaron textos normativos ni notas.
+- Incorporado protocolo universal de emparejamiento texto–contenedor, cálculo de centros con transformaciones efectivas, distinción de alineación textual vs geométrica vs óptica y conservación de escalas al actualizar transformaciones.
+- Actualizados raíz, referencia visual, builder, producer y casos de regresión ALIGN-CONTAINER-01…05. Casos documentados, **no ejecutados como batería automatizada**. Render visual final pendiente; no se declara aprobación de la clase.
