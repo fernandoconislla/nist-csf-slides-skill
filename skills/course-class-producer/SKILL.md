@@ -197,3 +197,15 @@ No realizar promesas de actividad en segundo plano. Ejecutar lo viable en el tur
 - «Actualiza skills con pendientes»: revisar raíz, productor, lecciones, builder, estilo, plantilla, temario, improver, referencias, tests, estado y changelog; deduplicar reglas ya adoptadas y verificar lecturas de GitHub.
 - Prioridad: fidelidad del original > legibilidad > foco correctamente localizado > estética. «Fidelidad» no significa insertar texto del PDF como imagen protagonista cuando un diagrama pedagógico representa mejor la relación, indicando su fuente.
 - Al aprobar una clase editada, conservar la presentación como fue aceptada; sincronizar estado sin alterar slides por iniciativa propia. Si falla una operación, inspeccionar cambios parciales antes de reintentar.
+
+## Cierre transaccional por aprobación expresa de clase — 2026-11-14
+
+**Disparador:** «aprobado», «esta clase está aprobada» o equivalente referido inequívocamente a la clase activa. La aprobación permite actualizar su **estado**, no cambiar el contenido ni crear la siguiente clase.
+
+1. **Resolver identidad:** consultar el contexto y la hoja `Temario` viva, confirmar código, título y **fila exacta**, y validar estado anterior de G/H; no usar filas memorizadas sin comprobación.
+2. **Sincronizar Sheets:** establecer **solo la casilla `Aprobada` (G) en TRUE**, de ser necesario; no alterar `Grabada` (H), estado editorial, formato, otras clases, notas ni títulos. Leer de vuelta C:H (o rango equivalente) y comprobar identidad y ambos booleanos. Si ya es TRUE, no duplicar escritura.
+3. **Sincronizar GitHub:** leer `PROJECT_STATE.md` y su SHA vigente; incorporar un registro de cierre fechado que señale clase, título, IDs/rango de slides, revisión del deck verificada, `Aprobada`, `Grabada`, clase siguiente y pendientes reales. Guardar con control de SHA y **releer** el archivo para comprobar la versión resultante. Evitar registrar como auditado aquello no comprobado.
+4. **Control del curso:** informar los dos resultados por separado, las discrepancias y lo que falta. Ante error en una fuente, comprobar primero si hubo escritura parcial; reintentar con seguridad, sin sobrescribir cambios concurrentes. **No declarar sincronización completa** si Sheets o GitHub siguen sin confirmar.
+5. **Preservación:** la aprobación protege las diapositivas tal como fueron aceptadas; la grabación solo cambia por confirmación explícita. No iniciar la clase siguiente hasta que el usuario lo pida.
+
+**Caso de aprendizaje 5.1, slides 19 y 42:** antes de trasladar un foco visual de una slide referente a otra, contrastar las **imágenes base** y sus dimensiones/proporciones; si son distintas, primero asegurar equivalencia de base y ajustar foco mediante coordenadas relativas a ella, no exclusivamente a la página. Inspeccionar miniatura/render actualizado y diferenciar lectura estructural de prueba visual real. Prohibido afirmar alineación visual verificada por haber calculado coordenadas únicamente.
