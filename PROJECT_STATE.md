@@ -251,3 +251,13 @@ Usuario aprobó explícitamente el cambio de título («listo aplica»). Cambios
 - Se eliminaron 4 objetos anteriores (`csf51_govern_chip`, `csf51_govern_connector`, `csf51_govern_pointer`, `csf51_govern_chip_txt`) y se crearon `csf51_gv_focus_outer` y `csf51_gv_focus_inner`; se preservaron rueda oficial, narración y resto del deck.
 - Primera mutación rechazada por campo incorrecto `outline.solidFill`; relectura confirmó ausencia de efectos y se corrigió al contrato válido `outline.outlineFill.solidFill`. Revisión final `b3i9UqFQjMhAEg` (43 diapositivas).
 - PDF exportado y slide 42 renderizada inspeccionada: `/mnt/data/csf51_slide42_double_border.png`. Borde inequívoco y alto contraste, sin texto oculto. Clase 5.1 sigue pendiente de aprobación visual global.
+
+
+## 24. Clase 5.1 aprobada y estado actualizado — 2026-11-14
+
+- **Aprobación expresa del usuario:** «esta clae esta aprobada» se refiere a **5.1 — Gobernar (GV): Dirección estratégica de la ciberseguridad**, tras corrección del foco gráfico de la diapositiva 42.
+- **Google Sheets maestro verificado en vivo:** pestaña `Temario`, fila 18, `G18=TRUE` (**Aprobada**) y `H18=FALSE` (**Grabada**). La aprobación no implica grabación. Clase siguiente `5.2 — Contexto organizativo (GV.OC)`, fila 19, `G19=FALSE` y `H19=FALSE`.
+- **Google Slides acumulativo verificado:** 43 diapositivas; 5.1 ocupa 41–43, con IDs `csf51_cover`, `csf51_purpose`, `csf51_categories`. Revisión verificada tras el ajuste `JgZFNDfjCL0tPQ`. En 42 se reemplazó la rueda previa por la imagen oficial de la slide 19 y se trasladó el mismo recurso de spotlight, preservando las relaciones relativas de posición y tamaño para evitar el desalineamiento provocado por diferentes proporciones de rueda. El recurso nuevo se llama `csf51_gv_spotlight_matching19`; los dos marcos previos fueron eliminados.
+- **Estado formal:** 5.1 **APROBADA, NO GRABADA**. La aprobación expresada por el usuario prevalece sobre todos los registros históricos de «pendiente». No volver a alterar 41–43 sin solicitud expresa.
+- **Próxima clase para propuesta editorial:** 5.2, cuyos puntos vigentes son 5.2.1 (propósito de GV.OC) y 5.2.2–5.2.6 (GV.OC-01 a GV.OC-05). Seguir el flujo y puertas de aprobación del orquestador. No crear ni aprobar 5.2 automáticamente.
+- **Regla de seguimiento acordada con el usuario:** cada vez que apruebe una clase, sincronizar de inmediato su estado en Google Sheets y este archivo, contrastando ambas fuentes vivas, y preservar independientemente el campo Grabada. Verificar lecturas posteriores y no modificar slides aprobadas.
