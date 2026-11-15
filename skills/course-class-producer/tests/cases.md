@@ -22,3 +22,11 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 14. **Clase 4.4:** pantalla incluye seis funciones solo enumeradas; no anticipar 4.5–4.7 ni confundir figura oficial de perfiles con proceso de cinco pasos.
 
 **Nuevos casos registrados el 2026-11-14: no ejecutados.**
+
+
+15. **STATE-APPROVE-01 — aprobación y persistencia:** una clase identificada inequívocamente recibe «esta clase está aprobada»; marcar solo G=TRUE, preservar H y otras filas, releer; anotar revisión, IDs y siguiente clase en `PROJECT_STATE.md`, releer GitHub. Rechazar éxito parcial presentado como completo.
+16. **STATE-APPROVE-02 — idempotencia y estado de grabación:** repetir aprobación de clase ya aprobada no debe añadir cambios innecesarios ni convertir H a TRUE. Una maqueta editorial aprobada no activa G.
+17. **STATE-APPROVE-03 — fallo parcial:** si Sheets se guarda y GitHub falla, reportar exactamente el estado, reintentar tras relectura segura sin repetir escrituras ciegas.
+18. **VIS-REFERENCE-01 — foco referenciado:** al copiar un elemento de foco de una slide aprobada, comprobar que imagen base y proporción coinciden; conservar coordenadas relativas y contrastar miniatura/render. Si el resaltado queda desplazado, rechazar como fallo aunque el objeto esté presente.
+
+**Casos 15–18 definidos el 2026-11-14; no equivalen a pruebas ejecutadas. El cierre efectivo de 5.1 documentado en `PROJECT_STATE.md` es evidencia operacional específica de lectura/escritura de estado, no ejecución automática de toda esta batería.**
