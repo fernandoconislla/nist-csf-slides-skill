@@ -30,3 +30,10 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 18. **VIS-REFERENCE-01 — foco referenciado:** al copiar un elemento de foco de una slide aprobada, comprobar que imagen base y proporción coinciden; conservar coordenadas relativas y contrastar miniatura/render. Si el resaltado queda desplazado, rechazar como fallo aunque el objeto esté presente.
 
 **Casos 15–18 definidos el 2026-11-14; no equivalen a pruebas ejecutadas. El cierre efectivo de 5.1 documentado en `PROJECT_STATE.md` es evidencia operacional específica de lectura/escritura de estado, no ejecución automática de toda esta batería.**
+
+
+19. **ALIGN-CONTAINER-01 — centro vertical real:** caja azul y etiqueta de una línea con `contentAlignment=MIDDLE` pero caja de texto desplazada 4 unidades: detectar `Δy`, ajustar solo traslación, conservar escala original, releer `Δy≈0`. No declarar render validado sin inspección visible.
+20. **ALIGN-CONTAINER-02 — centro horizontal real:** etiqueta con `paragraphStyle.alignment=CENTER` pero su elemento está 8 unidades a la derecha del centro del contenedor: corregir `Δx` sin variar anchura, tipografía ni estilo.
+21. **ALIGN-CONTAINER-03 — preservación de texto compuesto:** un cuadro contiene título y subtítulo en zonas superior/inferior: no exigir que ambos tengan el mismo centro que la caja principal; auditar el conjunto y su centro óptico en render.
+22. **ALIGN-CONTAINER-04 — escala y regresión:** texto con tamaño intrínseco 3.000.000 EMU y `scaleY=0,1736`; al trasladar con ABSOLUTE, conservar `scaleX/scaleY` y verificar que no crece ni invade otros bloques.
+23. **ALIGN-CONTAINER-05 — revisión de clase completa:** tras corregir una etiqueta, auditar pares texto/contenedor de todas las slides de la clase activa y comprobar que notas y diapositivas anteriores permanecen sin cambios. Casos 19–23 definidos, NO ejecutados como batería automatizada.
