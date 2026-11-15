@@ -170,3 +170,9 @@
 - Reparados los objetos nativos de las diapositivas 46 y 49 de la presentación acumulativa: «GESTIÓN DE RIESGOS» y «PARTES EXTERNAS» quedaron con diferencia vertical geométrica `Δy=0` respecto a sus cajas respectivas, confirmada con lectura de vuelta. No se cambiaron textos normativos ni notas.
 - Incorporado protocolo universal de emparejamiento texto–contenedor, cálculo de centros con transformaciones efectivas, distinción de alineación textual vs geométrica vs óptica y conservación de escalas al actualizar transformaciones.
 - Actualizados raíz, referencia visual, builder, producer y casos de regresión ALIGN-CONTAINER-01…05. Casos documentados, **no ejecutados como batería automatizada**. Render visual final pendiente; no se declara aprobación de la clase.
+
+## 2026-11-15 — Aprendizajes posteriores de la clase 5.2
+- Consolidada la jerarquía categoría GV.OC (fondo amarillo tenue, borde amarillo grueso) frente a subcategorías GV.OC-01…05 (blanco, bordes amarillos iguales), respetando las modificaciones manuales del usuario en la diapositiva 45.
+- Registrados riesgos de margen nominal vs. desbordamiento tipográfico después de reducir el ancho de la caja de definición; relaciones de partes interesadas e inclusión de privacidad; y preferencia por conectores nativos con comprobación real de puntos extremos y semántica de flechas.
+- Actualizados `SKILL.md`, `course-slide-builder`, `course-class-producer`, `references/visual-composition.md`; añadidos casos de regresión HIER/MANUAL/TEXT/CONNECT/INCLUDE/QA 24–30.
+- Evidencia: últimas reparaciones de Google Slides guardadas y releídas con notas preservadas; **render actual no validado visualmente**, casos añadidos pero no ejecutados. La clase 5.2 sigue pendiente de aprobación explícita.
