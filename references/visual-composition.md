@@ -77,3 +77,48 @@ Caso real: clase 4.6 slides 29–31; códigos `GV.RM-01`, `PR.DS-02`, `PR.DS-10`
 - **Inclusión ≠ causalidad:** en GV.OC-03, privacidad y libertades civiles son requisitos aplicables **incluidos** entre obligaciones relevantes, no una consecuencia causal de «Requisitos». Si se usa la etiqueta «INCLUYE», las conexiones y agrupación deben expresar pertenencia, sin flechas que confundan el sentido semántico.
 - **Partes interesadas:** las líneas de GV.OC-02 deben comunicar relaciones reales entre las cajas de grupos internos/externos y Organización; líneas aisladas que terminan en el vacío se consideran falla, aunque sean nativas.
 - **Estados separados:** tras actualizar Google Slides, registrar `estructura/propiedades verificadas` solo después de lectura de vuelta; `render comprobado` requiere observar la imagen actual, no solo obtener un enlace a miniatura. No marcar clase aprobada sin aceptación explícita.
+
+## Protocolo transversal de diseño preventivo → implementación → auditoría (2026-11-15)
+**Regla de precedencia:** todos los criterios refinados se aplican en los TRES momentos, no solamente después de un error. Ninguna fase puede dispensar a la siguiente; un gráfico correcto aisladamente puede fallar por su relación con el resto de la diapositiva. Usar siempre el último estado nativo, incluidas las ediciones manuales del usuario.
+
+### A. ANTES DE DISEÑAR (diseño como sistema)
+1. **Inspección de fuentes:** abrir máster, clase viva, figuras oficiales NIST, narración, estado de aprobación y últimas decisiones manuales. Separar objeto protegido, objeto editable y elemento propuesto.
+2. **Jerarquía y semántica:** establecer función → categoría → subcategorías; definir función didáctica, jerarquía, color NIST, relación lógica y representación precisa de cada objeto. Diferenciar clasificación, pertenencia, dependencia, comunicación y causalidad. No inventar causalidad ni cambiar textos oficiales.
+3. **Composición global primero:** definir área útil, columnas, cajas principales, centros ópticos, balance de masa, margen exterior, línea base de encabezados, simetría deseada, secuencia de lectura y ritmo entre slides. Evaluar la composición en relación con el **cuadro descriptivo izquierdo, título, otros paneles y espacio blanco**, no solo cada gráfico aislado.
+4. **Geometría explícita del storyboard:** planificar por elemento coordenadas, dimensiones, límites, pares texto/contenedor, anchos de línea, flechas (inicio/fin/sentido), distancias entre nodos, longitudes de conexiones, separación texto-borde y márgenes izquierdo/derecho/superior/inferior. En layouts de simetría definir ejes, distancias invariantes y tolerancias antes de crear.
+5. **Tipografía preflight:** prever wrapping real, ancho útil tras padding, interlineado, tamaño mínimo legible, énfasis y etiquetas largas (p. ej., ORGANIZACIÓN). No depender de centrado geométrico cuando el texto se corta o se divide de modo indeseado.
+6. **Puerta de maqueta:** mostrar esquema SVG 16:9 cuando proceda, con los ELEMENTOS y sus relaciones exactas; auditar densidad, jerarquía, redundancia, equilibrio y fuente antes de construir. El usuario puede modificar el diseño: su última edición prevalece sobre esta maqueta.
+
+### B. DURANTE LA IMPLEMENTACIÓN (control invariante)
+1. Construir en Slides con componentes nativos editables conservando IDs, escalas, colores, paleta y notas. Aplicar la geometría aprobada **al conjunto completo**, no ajustar un nodo olvidando su contexto.
+2. Tras cada mutación de posición o tamaño, recalcular y verificar dependencias: texto↔contenedor; flechas↔nodos; longitud de líneas equivalentes; distancia de rótulos↔cajas; simetría superior/inferior; centro del conjunto↔cuadro izquierdo; cobertura y orden de lectura.
+3. **Simetría por relaciones, no por intuición:** si dos líneas deben medir lo mismo, fijar sus extremos y exigir longitudes iguales (o una diferencia expresamente justificada). Caso GV.OC-02: cuatro conexiones de 36 unidades, dos arriba y dos abajo; desplazamiento del nodo ORGANIZACIÓN de 9 unidades para equilibrarlas. Diferenciar longitud, orientación y punto de llegada; comprobar el render.
+4. **Alineación contextual:** evaluar el centro vertical del gráfico derecho contra el centro vertical del cuadro izquierdo. En GV.OC-05, mover 21 unidades el conjunto de título, dos dependencias, organización y flechas conservó sus relaciones y dejó el centro de las fuentes en 313,69 frente a 313,50 del cuadro izquierdo. No aplicar ese desplazamiento como valor fijo en otras clases.
+5. **Identidad compartida:** nodos del mismo nivel, mismo color de borde, grosor, relleno, tipografía, radio y tamaño salvo razón explícita. Caso GV.OC-05: Tecnología y Proveedores deben usar el mismo tratamiento cian; nodos de función/categoría/subcategoría usan jerarquías acordadas.
+6. **Conexiones:** usar líneas nativas editables con puntos de inicio/fin efectivos, sentido correcto y terminaciones visualmente conectadas. Líneas que llegan a un nodo pero tienen inclinaciones o longitudes arbitrariamente distintas necesitan justificación o rediseño.
+7. **Control de wrapping:** cualquier reducción de ancho, aumento de tamaño, cambio de fuente o reposición exige comprobar el texto dentro del contenedor; si ORGANIZACIÓN se divide en «ORGANIZACIÓ / N», falla de diseño aunque las cajas estén centradas.
+8. Preservar integridad de títulos, contenido oficial, notas, láminas aprobadas y modificación manual más reciente; no restaurar elementos eliminados por el usuario.
+
+### C. AUDITORÍA POSTIMPLEMENTACIÓN (independiente)
+1. **Semántica:** fuente NIST, categoría/subcategoría, exactitud de relaciones, cobertura didáctica, narración↔pantalla, redundancia y no mezclar causalidad/inclusión/dependencia.
+2. **Identidad y jerarquía:** plantilla, paleta, grosor/bordes, uso funcional de amarillo GV, equivalencia entre hermanos, diferencia entre padre/hijos y consistencia de familia entre slides.
+3. **Tipografía y legibilidad:** glifos completos y no cortados, saltos de línea apropiados, altura de bloque, padding, 4 márgenes, contraste, fuente y consistencia de tamaños para pares equivalentes.
+4. **Alineación local:** comparar centros texto–caja usando tamaño transformado, revisar CENTER/MIDDLE y centro óptico real; registrar Δx/Δy. Para varios niveles de texto evaluar conjunto jerárquico, no centrar cada etiqueta al mismo punto.
+5. **Composición contextual:** comparar ejes y balances de TODOS los objetos, el conjunto derecho con el cuadro izquierdo y los márgenes del lienzo; examinar encabezados, intervalos y simetría espacial. Medir conectores iguales: sus longitudes, puntos y orientación; no basta con que existan cuatro líneas.
+6. **Evidencia renderizada:** observar de verdad cada slide a tamaño de presentación y la secuencia en contacto; un URL de miniatura o lectura API NO acredita inspección óptica. Volver a renderizar tras cambios, verificar desbordes, ocultamientos, conexiones, simetría y jerarquía.
+7. **Regresión:** confirmar IDs, notas, orden, estilo de elementos hermanos, slides no afectadas y que la solución no reintroduce errores previos. Reportar resultados por criterio y severidad, indicando verificado, pendiente o error; no asignar aprobación sin aceptación del usuario.
+
+### Matriz de criterios obligatorios y sus tres evidencias
+| Criterio | Antes de diseñar | Implementación | Auditoría |
+|---|---|---|---|
+| Fuente y precisión NIST | inventario oficial y significado | texto fiel, diagrama semántico | cotejo de enunciados y relaciones |
+| Jerarquía y color | niveles/roles, paleta funcional | identidad de padre/hijos y pares | contraste jerárquico sin equivalencias falsas |
+| Composición global | ejes, áreas y centro con cuadro izquierdo | posicionar conjunto, no piezas aisladas | balance contextual de toda la slide |
+| Simetría/espaciado | distancias y longitudes planeadas | invariantes y extremos medidos | comparación de distancias arriba/abajo |
+| Conectores | nodos, extremos, sentido, anclajes | líneas nativas con punta correcta | longitud, orientación y llegada real |
+| Texto y márgenes | estimación de wrapping y padding | ajustar contenedor/estilo sin clipping | inspección de glifos, márgenes y líneas |
+| Centrado local | texto↔caja identificado | transformaciones y CENTER/MIDDLE | Δx/Δy y centro óptico |
+| Editabilidad y notas | objetos protegidos, fuente maestra | shapes/líneas y notas preservadas | lectura nativa y regresión |
+| Coherencia entre slides | familia, ritmo y densidad | replicar reglas por función | revisión de todas las slides y redundancia |
+| Calidad evidencial | planificar render observable | extraer render actualizado | separar API vs inspección visual y aprobación |
+**Bloqueo:** si un criterio estructural o semántico falla en diseño, no pasar a implementación; si falla en implementación, no proclamar auditoría superada; si no se puede inspeccionar el render, declarar QA visual pendiente.
