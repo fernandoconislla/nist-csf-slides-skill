@@ -130,3 +130,9 @@ Esta skill **no vigila Google Sheets ni GitHub en segundo plano**. Se ejecuta al
 - Tras «actualiza todos los pendientes», leer skills existentes y evitar duplicar reglas; añadir solo las faltantes y verificar lectura posterior de cada archivo. Registrar evolución del caso 4.7 y aprobación en Sheet/PROJECT_STATE/CHANGELOG/FEEDBACK.
 - Diferenciar casos de regresión definidos, comprobaciones estructurales realizadas y QA visual realmente ejecutado. No inventar porcentajes ni ejecución de tests. Dar prioridad a la regla posterior de no oclusión sobre precedentes de bordes gruesos.
 - Una skill solo influye si se vuelve a leer y ejecutar; un commit no acredita su cumplimiento.
+
+## Regla aprobada de seguimiento de clases y regresión visual — 2026-11-14
+
+El usuario acordó expresamente que **cada aprobación de clase** debe cerrar inmediatamente su estado en Google Sheets y `PROJECT_STATE.md`, sin nueva orden. Incorporar este aprendizaje al orquestador, preservar por separado `Grabada` y comprobar ambas escrituras mediante lectura de vuelta. Aplicar la regla solo a clases cuya aprobación sea inequívoca y al curso/proyecto identificado; no interpretar aceptación editorial de guion o maquetas como aprobación final de una clase. **No es vigilancia en segundo plano.**
+
+Al reutilizar un recurso visual aprobado de otra diapositiva (caso foco Gobernar, slides 19→42), registrar como defecto preventivo copiar el elemento sobre una **imagen base de diferente proporción**. La corrección debe comprobar imagen base, posición relativa del foco y render real; solo registrar «verificado visualmente» si la imagen renderizada fue efectivamente inspeccionada. Convertir ambos escenarios en pruebas de regresión y distinguir test escrito de test ejecutado.
