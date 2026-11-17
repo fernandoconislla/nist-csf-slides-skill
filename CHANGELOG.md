@@ -183,3 +183,9 @@
 - `course-slide-builder`, `course-class-producer`, raíz y `course-skill-improver` reciben reglas de control geométrico y semántico, prioridad de modificaciones manuales y separación de evidencia API/render.
 - Regresión específica de GV.OC-02: cuatro líneas desiguales (27 arriba/45 abajo) → 36/36 al mover 9 unidades el nodo central. Regresión GV.OC-05: composición derecha centrada verticalmente frente al cuadro izquierdo, además de simetría interna.
 - Añadidos escenarios PRE-DESIGN/IMPLEMENT/FULL-COMPOSITION/IDENTITY/WRAP/CONNECT/CATEGORY/QA/MANUAL 31–39. **Casos escritos, no ejecutados como batería automatizada.** No se modificaron slides ni el estado de aprobación al actualizar las skills.
+
+## 2026-11-16 — Regla gráfica aprobada: un protagonista y cajas breves
+- Aprendizaje de la iteración GV.RM-07, slide 59: un solo gráfico central reconocible, flechas hacia cajas de texto corto, sin párrafos ni iconos secundarios que compitan con el foco. Objeto explícito («OPORTUNIDAD ESTRATÉGICA») y dos ramas («CARACTERIZAR» / «INCLUIR»).
+- Actualizados la skill raíz, referencia de composición y skills course-slide-builder, course-class-producer y course-skill-improver; se conserva el protocolo de tres puertas y las auditorías conceptual y visual independientes.
+- Excepciones: no imponer este patrón a figuras oficiales NIST, jerarquías, comparaciones o secuencias para las que resulte incorrecto.
+- Añadidos casos de regresión 44–47. Son pruebas documentadas, no una batería automatizada ejecutada. Las modificaciones de skills no alteran Google Slides ni implican aprobación final de clase.
