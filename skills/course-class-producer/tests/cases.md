@@ -63,3 +63,12 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 46. **FOCO-VISUAL — no sobrecarga:** sustituir bloques explicativos redundantes por texto corto y mantener la narración detallada en las notas. Revisión de simetría y espacio frente al panel NIST izquierdo.
 47. **FOCO-QA — distinguir evidencias:** comprobar geometría/conectores por API y clipping, legibilidad y equilibrio en render realmente observado; la ausencia de render impide declarar QA visual final aprobado.
 **Casos 44–47 documentados el 2026-11-16, no ejecutados como batería automatizada.**
+
+48. **QA-COVERAGE-NO-SKIP:** matriz C01–C17 con cualquier criterio aplicable sin evidencia ⇒ BLOCKED, no se acepta promedio alto como sustituto; pasar solo con todas las filas evaluadas o N/A justificado.
+49. **ICON-SILHOUETTE-GVRM07:** bombilla antigua formada por círculo + rectángulos puede parecer objeto abstracto; C02/C03 deben fallar por reconocimiento sin rótulo, silueta inconexa y escala de proyección, incluso si el rótulo la identifica. Rediseñar contorno/casquillo, renderizar y repetir reconocimiento.
+50. **ICON-AVERAGE-MASKING:** promedio conceptual ≥9,0 con símbolo principal <8,5 ⇒ NO APROBADO; el fallo no puede esconderse entre flechas o cajas bien evaluadas.
+51. **MOCKUP-RENDER-DIFF:** propuesta con bombilla inequívoca pero Slides con figura fragmentada ⇒ C15 FAIL hasta que ambas coincidan morfológicamente; cotejar geometría y captura.
+52. **RENDER-ABSENT-PREVENT:** thumbnail URL, exportación PDF o get_slide sin ver píxeles ⇒ C16 BLOCKED aunque no existan objetos fuera de canvas; prohibido afirmar QA óptico completo.
+53. **AUDIT-RETRIGGER:** tras cambiar el icono, aunque no se hayan tocado cajas/flechas, repetir C02,C03,C05,C06,C07,C12,C15,C16 y regresar a chequeo de toda la slide; conservar notas/NIST.
+54. **NOT-APPLICABLE-PROOF:** la marca NO APLICA debe incluir justificación por criterio; prohibido usarla para omitir controles difíciles, incluyendo el render.
+**Regresiones 48–54 documentadas; NO ejecutadas como pruebas automatizadas.**
