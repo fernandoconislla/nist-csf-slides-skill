@@ -57,3 +57,9 @@ Estado de cada test: `Ejecutada y conforme / Ejecutada con fallos / No ejecutada
 38. **QA-GATES-01 — trazabilidad:** cada criterio tiene evidencia de plan previo, lectura nativa después de implementación e inspección del render; si falta evidencia de una fase, no declarar las tres completadas.
 39. **MANUAL-3PHASE-01 — preservar decisión del usuario:** nueva corrección no restaura etiquetas/acento eliminados manualmente; verificar estado vivo en las tres fases.
 **Casos 31–39 documentados como regresión el 2026-11-15; NO constituyen una batería de pruebas ejecutada.**
+
+44. **FOCO-UNICO-GVRM07 — objeto explícito:** la diapositiva 59 debe identificar visual y textualmente «OPORTUNIDAD ESTRATÉGICA» como protagonista; rechazar lupa, estrella o gráfico de crecimiento genéricos que no identifiquen qué se caracteriza.
+45. **RAMAS-GVRM07 — relaciones no secuenciales:** dos ramas nativas desde el mismo objeto hacia «CARACTERIZAR — Beneficios y condiciones» e «INCLUIR — En la discusión de riesgos»; comprobar que las flechas no impliquen pasos obligatorios, aprobación ni causalidad falsa.
+46. **FOCO-VISUAL — no sobrecarga:** sustituir bloques explicativos redundantes por texto corto y mantener la narración detallada en las notas. Revisión de simetría y espacio frente al panel NIST izquierdo.
+47. **FOCO-QA — distinguir evidencias:** comprobar geometría/conectores por API y clipping, legibilidad y equilibrio en render realmente observado; la ausencia de render impide declarar QA visual final aprobado.
+**Casos 44–47 documentados el 2026-11-16, no ejecutados como batería automatizada.**
