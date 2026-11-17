@@ -134,3 +134,32 @@ En paralelo auditar precisión NIST, claridad, calidad visual, distribución, pr
 Regla para diapositivas conceptuales con UN objeto central y varias acciones o relaciones: usar un solo gráfico protagonista inequívocamente identificado, con flechas nativas que parten de él hacia cajas de texto corto (verbo y complemento conciso). El gráfico debe hacer explícito QUÉ se caracteriza o gestiona; evitar lupa, estrella, check, documento o tendencia ascendente genéricos si no transmiten la identidad del objeto. Evitar párrafos, ejemplos y adornos en las cajas; desarrollar el significado en la narración. Las flechas representan relaciones reales, no secuencia temporal, aprobación ni causalidad inventadas. Alinear simétricamente ramas, conectores y cajas, con márgenes suficientes, sin clipping, y balancear el conjunto frente a la columna NIST izquierda. Mantener Inter, paleta del curso, figuras oficiales intactas y objetos editables.
 Referencia editorial aprobada: GV.RM-07, diapositiva 59: protagonista «OPORTUNIDAD ESTRATÉGICA», ramas «CARACTERIZAR — Beneficios y condiciones» e «INCLUIR — En la discusión de riesgos». La regla es preferente SOLO cuando la semántica lo justifica: no sustituye figuras oficiales NIST, jerarquías, cronologías, comparaciones u otros gráficos que requieran relaciones diferentes.
 Puertas obligatorias: (1) planificar foco, etiquetas, sentido semántico de flechas y simetría; (2) implementar con objetos y conexiones nativas, conservar texto oficial y notas; (3) auditar cada símbolo/relación y la composición, texto, desbordes y render real observado. Las dos auditorías independientes siguen obligatorias. Aprobación de propuesta no equivale a aprobación de la slide o de la clase.
+
+## Checklist de cobertura auditora y bloqueo por criterio — 2026-11-16
+El inventario anterior es **acumulativo**: estas familias se examinan en su totalidad, nunca como selección discrecional. Registrar matriz con columnas `criterio_id | fase (diseño/implementación/post-render) | alcance (objeto/diagrama/slide/clase) | aplica/justificación | evidencia | nota | estado | reparación`.
+
+| ID | Criterio mínimo obligatorio | Evidencia/prueba de aprobación |
+|---|---|---|
+| C01 | Exactitud NIST | confrontar contenido y alcance con texto oficial; distinguir norma de ejemplos |
+| C02 | Objeto protagonista y adecuación del símbolo | qué representa exactamente, ¿se reconoce sin rótulo? alternativas de lectura |
+| C03 | Integridad morfológica del icono | contorno/silueta completa, proporciones, unión de piezas y detalles distintivos, a tamaño real; revisar icono aislado y en contexto |
+| C04 | Semántica individual de cada relación | tipo real de vínculo, origen/destino y dirección, ausencia de causalidad o secuencia inventadas |
+| C05 | Calidad de dibujo/asset | nitidez, no fragmentación, stroke consistente, encaje en estilo aprobado |
+| C06 | Composición global/foco visual | equilibrio respecto del cuadro NIST, jerarquía y lectura de primer vistazo |
+| C07 | Geometría y simetría | centros locales/globales, distancias, longitudes iguales cuando corresponde, límites reales |
+| C08 | Conectores | punta, anclajes, orden de dibujo, espacio entre extremos y cajas, sin atraviesos |
+| C09 | Texto/legibilidad | márgenes, interlineado, alineación, tamaño, wrapping y clipping observado |
+| C10 | Paleta e identidad | colores permitidos y usos coherentes; figura oficial preservada |
+| C11 | Narración y correspondencia | notes íntegramente conservadas o editadas con autorización; guion y gráfico alineados |
+| C12 | Utilidad didáctica | idea central reconocible y sin explicaciones superfluas |
+| C13 | Ausencia de redundancia | puntuar independiente repeticiones entre slide, gráfico, narración y slides cercanas |
+| C14 | Editabilidad y persistencia | IDs, texto y objetos nativos, lectura de vuelta, sin alterar slides ajenas |
+| C15 | Fidelidad maqueta→implementación | comparar forma, proporciones, sentido, textos, cromática y composición con diseño aprobado |
+| C16 | Render real + regresión | extraer render actualizado, **abrir/ver los píxeles** a escala de presentación, repetir tras cada corrección |
+| C17 | Coherencia de clase y decisiones congeladas | continuidad con slides vecinas, preservar decisiones manuales y aprobaciones explícitas |
+
+**Obligatoriedad:** para todas las filas aplicables, prueba con resultado. Si una fila no aplica, anotar fundamento comprobable. Si un fallo es crítico (falsedad NIST, icono irrecognoscible, flecha invertida, texto cortado, render no examinado), bloquear aprobación aunque los promedios sean altos. Evaluar por símbolo, no solo por conjunto. La escala decimal no es prueba: anclar cada nota a observaciones del render o hechos concretos.
+
+**Momento:** propuesta/revisión (C01–C13,C15 según aplique), construcción/readback (C01–C15,C17), render posterior (C01–C17); cada edición o feedback dispara revalidación de criterios afectados y regresión del conjunto antes de cualquier entrega. Si hay imposibilidad de render, estado `BLOCKED: QA visual pendiente` sin simular observación.
+
+**Caso de calibración GV.RM-07:** la versión inicial de bombilla formada por círculo+rectángulos recibió puntajes conceptuales altos pese a no parecer claramente una bombilla. Eso viola C02/C03/C15/C16; la bombilla debe identificarse sin leer «OPORTUNIDAD ESTRATÉGICA» y tener silueta, cuello y casquillo distinguibles. Se debe reprobar cualquier repetición de ese resultado. En auditoría, verificar primero cada icono aislado, después el diagrama y por último la slide completa. La puntuación por rama/flecha no compensa el fracaso del foco.
