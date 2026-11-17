@@ -189,3 +189,9 @@
 - Actualizados la skill raíz, referencia de composición y skills course-slide-builder, course-class-producer y course-skill-improver; se conserva el protocolo de tres puertas y las auditorías conceptual y visual independientes.
 - Excepciones: no imponer este patrón a figuras oficiales NIST, jerarquías, comparaciones o secuencias para las que resulte incorrecto.
 - Añadidos casos de regresión 44–47. Son pruebas documentadas, no una batería automatizada ejecutada. Las modificaciones de skills no alteran Google Slides ni implican aprobación final de clase.
+
+## 2026-11-16 — Cero omisiones y evaluación correcta de cada criterio
+- Reforzado protocolo integral de auditoría ante fallo de reconocimiento de bombilla GV.RM-07: inventario obligatorio C01–C17, matriz por fase/objeto con evidencia, estados PASS/FAIL/BLOCKED/NO APLICA y bloqueo por fallo crítico sin compensación por promedios.
+- Eventos de revalidación: propuesta/revisión SVG, aprobación editorial, cada cambio en Slides, final de slide y clase, modificaciones manuales, observación del usuario o cambio de criterios aplicables.
+- Añadidas pruebas inequívocas de **reconocimiento sin etiqueta, integridad de silueta, escala real, fidelidad maqueta-render**, además del control de render observado y regresión.
+- Root, referencia, builder, producer e improver sincronizados; casos de regresión 48–54 añadidos pero NO ejecutados automáticamente. Ninguna diapositiva fue modificada por esta actualización.
