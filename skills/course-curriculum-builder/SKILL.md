@@ -5,6 +5,10 @@ description: Investigar y estructurar temarios de cursos en secciones, clases y 
 
 # Course Curriculum Builder — v0.5.0
 
+## Norma vigente del curso
+
+Aplicar la [referencia de producción vigente](../../references/production-standard.md). Consultar solo el extracto local y los puntos pertinentes del temario cuando se desarrolla una clase.
+
 ## Progresión y redundancia funcional (2026-11-14)
 
 Aplicar `../../references/editorial-redundancy-svg.md` (RED-01–RED-03, STATE-02). Distinguir panorama de apertura, profundización y duplicación perjudicial. Evaluar redundancia por propósito, contenido añadido y fronteras entre clases; no penalizar una finalidad resumida en apertura por su mera repetición temática. Conservar IDs y actualizar Matriz de cobertura si un cambio curricular ha sido autorizado y ejecutado; verificar lectura de vuelta.

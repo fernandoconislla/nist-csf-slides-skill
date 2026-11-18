@@ -113,3 +113,14 @@ Ver `references/editorial-redundancy-svg.md` para contratos y criterios completo
 - **TIER-06**: foco «Nivel n» y barra al pie de la imagen sin relación perceptual exacta con el escalón señalado → exige inspección visual individual antes de dar conformidad; no basta con validar existencia estructural del marcador.
 - **STATE-03**: registro histórico dice G15 FALSE pero Sheet actual G15 TRUE y H15 TRUE → preservar valores actuales y registrar discrepancia, no corregir por suposición. **VERIFICACIÓN DE ESTADO EJECUTADA** en la lectura anterior a aprobación de 4.7.
 - Estas reglas escritas son pruebas de regresión **definidas**; solo las marcadas EJECUTADO tienen evidencia de ejecución. No inventar ejecución automatizada.
+
+## Regresión del estándar de producción — 2026-11-18
+
+- **STD-01 · Acción reconocible.** PR.AA-02, -03 y -04 deben distinguir comprobación contextual y vínculo, autenticación y verificación de una afirmación. Una firma manuscrita falla al representar una firma criptográfica. Una credencial digital dibujada como carné físico requiere rediseño.
+- **STD-02 · Una versión.** Revelar versiones con y sin rótulos como entregables falla. La prueba sin rótulos es interna; mostrar solo la versión elegida y justificar cualquier contenedor que permanezca.
+- **STD-03 · Umbral por criterio.** Promedio 9,5 y acabado premium o claridad 9,0 activa corrección y nueva auditoría. Una puntuación sobre una maqueta solo acredita esa fase.
+- **STD-04 · Marco y paleta.** Tarjeta izquierda 395 × 281 en (74, 173), gráfico 320 × 240 en (542, 193), tolerancia ±1 px. ID en azul `#4CAED8` y tonos suaves, GV en oro y PR en violeta. La 126 debe caber con margen.
+- **STD-05 · Apertura de función.** Usar 87–89 como referencia. La 118 destaca Proteger en la rueda auténtica; la 119 muestra los cinco códigos, encabezados, orientación y fuente.
+- **STD-06 · Despliegue.** Un SVG maestro editable y un PNG transparente por gráfico. La presentación mantiene el texto nativo. Verificar el marco y el dibujo visible.
+- **STD-07 · Lectura acotada.** Para la 7.3 basta el extracto PR.AT, los puntos vigentes y la clase activa. Abrir el PDF para un activo oficial nuevo o detalle visual. Una lectura del deck completo para mover un gráfico falla.
+- **STD-08 · Aprobación.** Aprobado ejecuta el siguiente paso anunciado. Cierre de clase verifica Sheets y GitHub; la casilla Grabada requiere su propia confirmación.

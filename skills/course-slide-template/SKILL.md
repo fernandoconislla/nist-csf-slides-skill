@@ -5,6 +5,10 @@ description: Proponer y, tras aprobación explícita, crear una plantilla Google
 
 # Course Slide Template — v0.2.0
 
+## Norma vigente del curso
+
+Aplicar la [referencia de producción vigente](../../references/production-standard.md). Usar los marcos, el color funcional y el patrón 87–89 vigentes para este curso.
+
 ## Layout con recursos oficiales pequeños (2026-11-14)
 
 El layout de desarrollo admite una **panorámica de tres columnas** con tres imágenes oficiales pequeñas y respectivas etiquetas. No imponer iconos/números o uniformidad por reescalado deformante: reservar imágenes en cajas iguales, escalar con contain y verificar los márgenes, centro óptico y lectura del recurso. El fondo sigue blanco, título y barra según la plantilla. La portada sigue con su imagen protagonista original. Ver `../../proposals/class-4.4-componentes-del-marco-v4.md`.
@@ -106,7 +110,7 @@ Formato **16:9**, 13,333 × 7,5 pulgadas.
 
 ## Generación tras aprobación
 - Crear una copia del diseño de referencia o derivar sus layouts respetando la estructura acordada.
-- Mantener formas, líneas y texto como objetos editables de Google Slides.
+- Mantener texto, formas y líneas de la plantilla como objetos editables de Google Slides. Insertar el gráfico de apoyo como un solo PNG transparente y mantener su SVG maestro editable.
 - No modificar la presentación original.
 - Validar colores, blancos puros, márgenes, lectura y preservación de relaciones geométricas.
 - Verificar el resultado en Slides, aplicar correcciones y compartir enlace.

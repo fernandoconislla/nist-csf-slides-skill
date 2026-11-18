@@ -5,6 +5,10 @@ description: Analiza una imagen visual de referencia y el tema de un curso; inte
 
 # Course Image Style Builder — v0.1.0
 
+## Norma vigente del curso
+
+Aplicar la [referencia de producción vigente](../../references/production-standard.md). Elegir por reconocimiento de la acción. Auditar el acabado premium y conservar una sola versión final.
+
 ## No generar iconos sustitutos en panorámicas NIST (2026-11-14)
 
 Las ilustraciones generadas no sustituyen ilustraciones oficiales auténticas **aunque se usen como miniaturas** en una vista panorámica. Cuando tres componentes NIST aparecen en tres columnas, utilizar una imagen oficial pequeña por componente y una leyenda legible. Preparar recortes fieles, o colocar marcadores SVG inequívocos antes de disponer de los activos; nunca suplantarlos por iconos IA, números decorativos o diagramas creados ad hoc. Mantener fuente, color y proporción de cada activo. Excepción: portada de identidad visual del curso.
@@ -63,7 +67,7 @@ No extraer únicamente adjetivos vagos (`premium`, `tech`, `moderno`). Traducir 
 - Preparar ilustraciones para **integrarse en diapositivas 16:9 de desarrollo con fondo blanco puro**, con recursos independientes, espacio negativo y legibilidad a escala de proyección.
 - El formato de cada recurso (cuadrado, vertical, horizontal, transparente) dependerá del contenido/ubicación; no confundir formato del recurso con formato de la diapositiva.
 - No fijar un mismo layout para todas las imágenes: preservar estilo (geometría, perspectiva, iluminación, contornos, densidad), pero variar composición según el concepto y la futura diapositiva.
-- Evitar texto decorativo y acrónimos generados dentro de ilustraciones por defecto. Etiquetas técnicas precisas se componen preferentemente como texto editable en Google Slides.
+- Evitar texto decorativo y acrónimos generados dentro de ilustraciones por defecto. Integrar en el SVG solo los rótulos técnicos que resuelvan ambigüedad. Mantener el texto de la diapositiva como texto nativo.
 - No deformar diagramas oficiales; en lugar de recrear de memoria, usar material oficial con atribución cuando corresponda.
 
 ## Propuesta visual y aprobación

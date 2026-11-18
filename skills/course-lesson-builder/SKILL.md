@@ -5,6 +5,10 @@ description: Desarrollar el contenido completo de una clase específica de un cu
 
 # Course Lesson Builder — v0.2.0
 
+## Norma vigente del curso
+
+Aplicar la [referencia de producción vigente](../../references/production-standard.md). Consultar el extracto local por código y redactar la narración de la clase activa. Mantener los ejemplos como ejemplos.
+
 ## Narración de apertura e imágenes oficiales (2026-11-14)
 
 Una diapositiva de apertura de componentes puede nombrar y resumir su finalidad mientras muestra **figuras oficiales pequeñas** sin entrar en las propiedades detalladas de cada una. Mantener correspondencia entre etiqueta de cada imagen, explicación audible y tema específico. No recortar automáticamente la narración panorámica por repetición cuando la profundización posterior cumple otra función. Ejemplo documentado: `../../proposals/class-4.4-componentes-del-marco-v4.md`.

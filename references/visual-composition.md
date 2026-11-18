@@ -1,5 +1,9 @@
 # Composición visual preventiva y validación — NIST CSF 2.0
 
+## Norma vigente del curso
+
+Aplicar la [referencia de producción vigente](production-standard.md). Esta norma consolida el patrón de introducciones, la plantilla, los assets y la auditoría vigentes.
+
 ## Panorama de componentes con activos oficiales pequeños (2026-11-14)
 
 Una visión general de un marco reconocido **no está exenta de la regla de recursos oficiales** por ser introductoria. Si se presentan tres componentes NIST y existe representación oficial adecuada de cada uno, el storyboard debe reservar tres imágenes oficiales auténticas **pequeñas** de función identificativa. Las imágenes van con nombre y descripción breve, con marco visual comparable sin alterar proporciones (contain), alineación de centros, igual altura óptica y suficiente nitidez/legibilidad; evitar números decorativos o iconos genéricos como sustitutos. En SVG, representar espacios reservados claramente rotulados, no recrear el documento original. Si un recurso oficial pequeño resulta ilegible, buscar recorte auténtico o redistribución; no sustituir por un icono IA. Ejemplo: clase 4.4 slide 02: rueda CSF 2.0, recorte NIST Profiles, figura NIST Tiers. No imponer el requisito sobre la portada ya aprobada ni usar figuras sin pertinencia.
@@ -90,12 +94,12 @@ Caso real: clase 4.6 slides 29–31; códigos `GV.RM-01`, `PR.DS-02`, `PR.DS-10`
 6. **Puerta de maqueta:** mostrar esquema SVG 16:9 cuando proceda, con los ELEMENTOS y sus relaciones exactas; auditar densidad, jerarquía, redundancia, equilibrio y fuente antes de construir. El usuario puede modificar el diseño: su última edición prevalece sobre esta maqueta.
 
 ### B. DURANTE LA IMPLEMENTACIÓN (control invariante)
-1. Construir en Slides con componentes nativos editables conservando IDs, escalas, colores, paleta y notas. Aplicar la geometría aprobada **al conjunto completo**, no ajustar un nodo olvidando su contexto.
+1. Construir texto y estructura nativos en Slides. Insertar un PNG transparente por gráfico de apoyo y conservar su SVG maestro, IDs, escalas, colores, paleta y notas. Aplicar la geometría aprobada **al conjunto completo**, no ajustar un nodo olvidando su contexto.
 2. Tras cada mutación de posición o tamaño, recalcular y verificar dependencias: texto↔contenedor; flechas↔nodos; longitud de líneas equivalentes; distancia de rótulos↔cajas; simetría superior/inferior; centro del conjunto↔cuadro izquierdo; cobertura y orden de lectura.
 3. **Simetría por relaciones, no por intuición:** si dos líneas deben medir lo mismo, fijar sus extremos y exigir longitudes iguales (o una diferencia expresamente justificada). Caso GV.OC-02: cuatro conexiones de 36 unidades, dos arriba y dos abajo; desplazamiento del nodo ORGANIZACIÓN de 9 unidades para equilibrarlas. Diferenciar longitud, orientación y punto de llegada; comprobar el render.
 4. **Alineación contextual:** evaluar el centro vertical del gráfico derecho contra el centro vertical del cuadro izquierdo. En GV.OC-05, mover 21 unidades el conjunto de título, dos dependencias, organización y flechas conservó sus relaciones y dejó el centro de las fuentes en 313,69 frente a 313,50 del cuadro izquierdo. No aplicar ese desplazamiento como valor fijo en otras clases.
 5. **Identidad compartida:** nodos del mismo nivel, mismo color de borde, grosor, relleno, tipografía, radio y tamaño salvo razón explícita. Caso GV.OC-05: Tecnología y Proveedores deben usar el mismo tratamiento cian; nodos de función/categoría/subcategoría usan jerarquías acordadas.
-6. **Conexiones:** usar líneas nativas editables con puntos de inicio/fin efectivos, sentido correcto y terminaciones visualmente conectadas. Líneas que llegan a un nodo pero tienen inclinaciones o longitudes arbitrariamente distintas necesitan justificación o rediseño.
+6. **Conexiones:** usar líneas con puntos de inicio/fin efectivos en el SVG maestro o como elementos de la plantilla, sentido correcto y terminaciones visualmente conectadas. Líneas que llegan a un nodo pero tienen inclinaciones o longitudes arbitrariamente distintas necesitan justificación o rediseño.
 7. **Control de wrapping:** cualquier reducción de ancho, aumento de tamaño, cambio de fuente o reposición exige comprobar el texto dentro del contenedor; si ORGANIZACIÓN se divide en «ORGANIZACIÓ / N», falla de diseño aunque las cajas estén centradas.
 8. Preservar integridad de títulos, contenido oficial, notas, láminas aprobadas y modificación manual más reciente; no restaurar elementos eliminados por el usuario.
 
@@ -115,7 +119,7 @@ Caso real: clase 4.6 slides 29–31; códigos `GV.RM-01`, `PR.DS-02`, `PR.DS-10`
 | Jerarquía y color | niveles/roles, paleta funcional | identidad de padre/hijos y pares | contraste jerárquico sin equivalencias falsas |
 | Composición global | ejes, áreas y centro con cuadro izquierdo | posicionar conjunto, no piezas aisladas | balance contextual de toda la slide |
 | Simetría/espaciado | distancias y longitudes planeadas | invariantes y extremos medidos | comparación de distancias arriba/abajo |
-| Conectores | nodos, extremos, sentido, anclajes | líneas nativas con punta correcta | longitud, orientación y llegada real |
+| Conectores | nodos, extremos, sentido, anclajes | líneas con punta correcta en el SVG maestro o la plantilla | longitud, orientación y llegada real |
 | Texto y márgenes | estimación de wrapping y padding | ajustar contenedor/estilo sin clipping | inspección de glifos, márgenes y líneas |
 | Centrado local | texto↔caja identificado | transformaciones y CENTER/MIDDLE | Δx/Δy y centro óptico |
 | Editabilidad y notas | objetos protegidos, fuente maestra | shapes/líneas y notas preservadas | lectura nativa y regresión |
@@ -125,15 +129,15 @@ Caso real: clase 4.6 slides 29–31; códigos `GV.RM-01`, `PR.DS-02`, `PR.DS-10`
 
 ## Auditoría dual y control de representación conceptual — 2026-11-16
 La auditoría visual general y la de **representación conceptual** se ejecutan **tanto en la propuesta como tras cada implementación/corrección**. Mostrar tabla con «elemento», «idea pretendida», «lectura del icono sin etiqueta», «riesgo de confusión», «nota 0–10 con un decimal» y «corrección», y puntuación promedio. Evaluar nodos y flechas/relaciones como unidades semánticas; una conexión que solo sugiere transmisión no prueba dependencia.
-Umbrales orientativos de representación: ≥9,5 inequívoca; 9,0–9,4 clara; 8,0–8,9 requiere etiqueta; 7,0–7,9 ambigua; <7 incorrecta. Puerta de aprobación: promedio ≥9,0 y cada símbolo principal ≥8,5; no proclamar «aprobado» basándose únicamente en el promedio general.
+Umbrales orientativos de representación: ≥9,5 inequívoca; 9,0–9,4 clara; 8,0–8,9 requiere etiqueta; 7,0–7,9 ambigua; <7 incorrecta. Puerta de aprobación: cada criterio puntuable aplicable debe superar 9,0. Los promedios sirven como resumen.
 En paralelo auditar precisión NIST, claridad, calidad visual, distribución, proporciones, geometría, jerarquía, paleta, tipografía, legibilidad, utilidad pedagógica y **ausencia de redundancia**. Separar *calidad prevista en la maqueta* de *calidad observada del render*. Evidenciar la revisión de la captura/render real; los metadatos de miniatura, la exportación por sí sola o el readback API no prueban ausencia de clipping, superposición ni calidad óptica.
 **Alineación de rótulos hermanos:** definir misma coordenada de inicio de texto, misma altura de recuadro, `contentAlignment=MIDDLE`, alineación de párrafo coherente y baseline/centro óptico verificados sobre render. Con rótulos largos como «SERVICIOS CRÍTICOS» calcular ancho útil y wrapping; jamás aceptar saltos de línea involuntarios ni compensar automáticamente con reducciones excesivas de fuente.
 **Regresión conceptual por slides 48–49:** evitar iconos genéricos que sugieran otro dominio; escudo/candado ≠ privacidad específica; apretón de manos ≠ contrato formal firmado; servidor ≠ criticidad por sí mismo; engranaje ≠ capacidades de forma inequívoca. Preservar símbolos validados por el usuario: contrato firmado, privacidad como ojo con restricción, personas + diálogo para libertades civiles, Capacidades como cuadrado con check. Comparar cambios con decisiones congeladas y prohibir regresiones.
 
 ## Patrón gráfico aprobado — foco único y flechas a cajas breves (2026-11-16)
-Regla para diapositivas conceptuales con UN objeto central y varias acciones o relaciones: usar un solo gráfico protagonista inequívocamente identificado, con flechas nativas que parten de él hacia cajas de texto corto (verbo y complemento conciso). El gráfico debe hacer explícito QUÉ se caracteriza o gestiona; evitar lupa, estrella, check, documento o tendencia ascendente genéricos si no transmiten la identidad del objeto. Evitar párrafos, ejemplos y adornos en las cajas; desarrollar el significado en la narración. Las flechas representan relaciones reales, no secuencia temporal, aprobación ni causalidad inventadas. Alinear simétricamente ramas, conectores y cajas, con márgenes suficientes, sin clipping, y balancear el conjunto frente a la columna NIST izquierda. Mantener Inter, paleta del curso, figuras oficiales intactas y objetos editables.
+Regla para diapositivas conceptuales con UN objeto central y varias acciones o relaciones: usar un solo gráfico protagonista inequívocamente identificado, con flechas que parten de él hacia cajas de texto corto (verbo y complemento conciso). El gráfico debe hacer explícito QUÉ se caracteriza o gestiona; evitar lupa, estrella, check, documento o tendencia ascendente genéricos si no transmiten la identidad del objeto. Evitar párrafos, ejemplos y adornos en las cajas; desarrollar el significado en la narración. Las flechas representan relaciones reales, no secuencia temporal, aprobación ni causalidad inventadas. Alinear simétricamente ramas, conectores y cajas, con márgenes suficientes, sin clipping, y balancear el conjunto frente a la columna NIST izquierda. Mantener Inter, paleta del curso, figuras oficiales intactas y objetos editables.
 Referencia editorial aprobada: GV.RM-07, diapositiva 59: protagonista «OPORTUNIDAD ESTRATÉGICA», ramas «CARACTERIZAR — Beneficios y condiciones» e «INCLUIR — En la discusión de riesgos». La regla es preferente SOLO cuando la semántica lo justifica: no sustituye figuras oficiales NIST, jerarquías, cronologías, comparaciones u otros gráficos que requieran relaciones diferentes.
-Puertas obligatorias: (1) planificar foco, etiquetas, sentido semántico de flechas y simetría; (2) implementar con objetos y conexiones nativas, conservar texto oficial y notas; (3) auditar cada símbolo/relación y la composición, texto, desbordes y render real observado. Las dos auditorías independientes siguen obligatorias. Aprobación de propuesta no equivale a aprobación de la slide o de la clase.
+Puertas obligatorias: (1) planificar foco, etiquetas, sentido semántico de flechas y simetría; (2) implementar según el flujo SVG maestro y PNG en Slides, conservar texto oficial y notas; (3) auditar cada símbolo/relación y la composición, texto, desbordes y render real observado. Las dos auditorías independientes siguen obligatorias. Aprobación de propuesta no equivale a aprobación de la slide o de la clase.
 
 ## Checklist de cobertura auditora y bloqueo por criterio — 2026-11-16
 El inventario anterior es **acumulativo**: estas familias se examinan en su totalidad, nunca como selección discrecional. Registrar matriz con columnas `criterio_id | fase (diseño/implementación/post-render) | alcance (objeto/diagrama/slide/clase) | aplica/justificación | evidencia | nota | estado | reparación`.
@@ -144,7 +148,7 @@ El inventario anterior es **acumulativo**: estas familias se examinan en su tota
 | C02 | Objeto protagonista y adecuación del símbolo | qué representa exactamente, ¿se reconoce sin rótulo? alternativas de lectura |
 | C03 | Integridad morfológica del icono | contorno/silueta completa, proporciones, unión de piezas y detalles distintivos, a tamaño real; revisar icono aislado y en contexto |
 | C04 | Semántica individual de cada relación | tipo real de vínculo, origen/destino y dirección, ausencia de causalidad o secuencia inventadas |
-| C05 | Calidad de dibujo/asset | nitidez, no fragmentación, stroke consistente, encaje en estilo aprobado |
+| C05 | Calidad de dibujo/asset | acabado premium comprobado en el render: nitidez, trazos, proporciones, jerarquía, densidad y ocupación visible |
 | C06 | Composición global/foco visual | equilibrio respecto del cuadro NIST, jerarquía y lectura de primer vistazo |
 | C07 | Geometría y simetría | centros locales/globales, distancias, longitudes iguales cuando corresponde, límites reales |
 | C08 | Conectores | punta, anclajes, orden de dibujo, espacio entre extremos y cajas, sin atraviesos |
@@ -153,7 +157,7 @@ El inventario anterior es **acumulativo**: estas familias se examinan en su tota
 | C11 | Narración y correspondencia | notes íntegramente conservadas o editadas con autorización; guion y gráfico alineados |
 | C12 | Utilidad didáctica | idea central reconocible y sin explicaciones superfluas |
 | C13 | Ausencia de redundancia | puntuar independiente repeticiones entre slide, gráfico, narración y slides cercanas |
-| C14 | Editabilidad y persistencia | IDs, texto y objetos nativos, lectura de vuelta, sin alterar slides ajenas |
+| C14 | Editabilidad y persistencia | SVG maestro editable, PNG en Slides, IDs y texto nativo verificados, slides ajenas conservadas |
 | C15 | Fidelidad maqueta→implementación | comparar forma, proporciones, sentido, textos, cromática y composición con diseño aprobado |
 | C16 | Render real + regresión | extraer render actualizado, **abrir/ver los píxeles** a escala de presentación, repetir tras cada corrección |
 | C17 | Coherencia de clase y decisiones congeladas | continuidad con slides vecinas, preservar decisiones manuales y aprobaciones explícitas |

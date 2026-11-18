@@ -195,3 +195,11 @@
 - Eventos de revalidación: propuesta/revisión SVG, aprobación editorial, cada cambio en Slides, final de slide y clase, modificaciones manuales, observación del usuario o cambio de criterios aplicables.
 - Añadidas pruebas inequívocas de **reconocimiento sin etiqueta, integridad de silueta, escala real, fidelidad maqueta-render**, además del control de render observado y regresión.
 - Root, referencia, builder, producer e improver sincronizados; casos de regresión 48–54 añadidos pero NO ejecutados automáticamente. Ninguna diapositiva fue modificada por esta actualización.
+
+## 2026-11-18 — Estándar de producción verificado en las clases 6.3–7.3
+
+- Se centralizaron el protagonista reconocible, los rótulos y contenedores justificados, el acabado premium y el umbral superior a 9,0 por criterio.
+- Se fijaron las coordenadas de tarjetas y gráficos, la paleta funcional y las referencias 87–89 para las introducciones de función.
+- Se adoptaron SVG maestro y un solo PNG transparente por gráfico, con texto en Slides editable.
+- Se acotaron las lecturas a extractos locales, fuentes vigentes y la clase activa. Se explicitó la ejecución tras Aprobado y la alternativa Optimizar.
+- Se añadieron casos de regresión de diseño, producción y cierre.
